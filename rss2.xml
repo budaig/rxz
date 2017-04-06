@@ -8,28 +8,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>易知 简能</description>
-    <pubDate>Thu, 06 Apr 2017 09:50:24 GMT</pubDate>
+    <pubDate>Thu, 06 Apr 2017 11:55:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>Windows 8 用户密码管理批处理</title>
-      <link>http://www.zhinuo.site/MISC/4312.html</link>
-      <guid>http://www.zhinuo.site/MISC/4312.html</guid>
+      <link>http://www.zhinuo.site/MISC/690688740.html</link>
+      <guid>http://www.zhinuo.site/MISC/690688740.html</guid>
       <pubDate>Thu, 06 Apr 2017 09:45:46 GMT</pubDate>
       <description>
       
         &lt;p&gt;Windows 8 用户密码管理批处理&lt;br&gt;批处理快捷方便，可以节省一些时间。  &lt;/p&gt;
-&lt;p&gt;请复制下面的代码，右键另存为.bat文件。&lt;br&gt;双击运行就可以愉快的修改管理员密码了。  &lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tab
+&lt;p&gt;&lt;img src=&quot;http://i4.buimg.com/567571/84bc0e716d41e7b5.jpg&quot; alt=&quot;Windows 8 用户密码管理&quot;&gt;&lt;/p&gt;
+
       
       </description>
       
       <content:encoded><![CDATA[<p>Windows 8 用户密码管理批处理<br>批处理快捷方便，可以节省一些时间。  </p>
+<p><img src="http://i4.buimg.com/567571/84bc0e716d41e7b5.jpg" alt="Windows 8 用户密码管理"></p>
 <p>请复制下面的代码，右键另存为.bat文件。<br>双击运行就可以愉快的修改管理员密码了。  </p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">@echo off</div><div class="line">echo;</div><div class="line">REM @ECHO +++ 如需变更用户登陆密码请以管理员身份运行 +++</div><div class="line">net user</div><div class="line">REM @ECHO +++ 请以管理员身份运行 输入要变更的密码 以回车确认修改 +++</div><div class="line">echo;</div><div class="line">@ECHO +++ 请输入要变更密码的用户名 +++</div><div class="line">echo;</div><div class="line"></div><div class="line">:: BatchGotAdmin </div><div class="line">:------------------------------------- </div><div class="line">REM --&gt; Check for permissions </div><div class="line">&gt;nul 2&gt;&amp;1 &quot;%SYSTEMROOT%\system32\cacls.exe&quot; &quot;%SYSTEMROOT%\system32\config\system&quot; </div><div class="line"></div><div class="line">REM --&gt; If error flag set, we do not have admin. </div><div class="line">if &apos;%errorlevel%&apos; NEQ &apos;0&apos; ( </div><div class="line"> echo Requesting administrative privileges... </div><div class="line"> goto UACPrompt </div><div class="line">) else ( goto gotAdmin ) </div><div class="line"></div><div class="line">:UACPrompt </div><div class="line"> echo Set UAC = CreateObject^(&quot;Shell.Application&quot;^) &gt; &quot;%temp%\getadmin.vbs&quot; </div><div class="line"> echo UAC.ShellExecute &quot;%~s0&quot;, &quot;&quot;, &quot;&quot;, &quot;runas&quot;, 1 &gt;&gt; &quot;%temp%\getadmin.vbs&quot; </div><div class="line"></div><div class="line"> &quot;%temp%\getadmin.vbs&quot; </div><div class="line"> exit /B </div><div class="line"></div><div class="line">:gotAdmin </div><div class="line"> if exist &quot;%temp%\getadmin.vbs&quot; ( del &quot;%temp%\getadmin.vbs&quot; ) </div><div class="line"> pushd &quot;%CD%&quot; </div><div class="line"> CD /D &quot;%~dp0&quot; </div><div class="line">:-------------------------------------- </div><div class="line"></div><div class="line">set /p PCUser=</div><div class="line">net user %PCUser% *</div><div class="line">rem net user Wego *</div><div class="line">echo;</div><div class="line">@ECHO +++窗口将在5秒后自动关闭+++</div><div class="line">echo;</div><div class="line">rem control userpasswords2 命令可打开管理窗口</div><div class="line">echo +++ 请按任意键退出 +++</div><div class="line">echo;</div><div class="line">pause &gt; nul</div></pre></td></tr></table></figure>
 ]]></content:encoded>
       
-      <comments>http://www.zhinuo.site/MISC/4312.html#disqus_thread</comments>
+      <comments>http://www.zhinuo.site/MISC/690688740.html#disqus_thread</comments>
     </item>
     
     <item>
@@ -415,30 +416,6 @@
     </item>
     
     <item>
-      <title>分享：中医修正 - 新年献疑：《金匮真言论》真言在哪里？</title>
-      <link>http://www.zhinuo.site/excerpt/13326.html</link>
-      <guid>http://www.zhinuo.site/excerpt/13326.html</guid>
-      <pubDate>Thu, 29 Dec 2016 03:22:33 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;新年献疑：-《金匮真言论》真言在哪里？-2013-01-01-11-52-54&quot;&gt;&lt;a href=&quot;#新年献疑：-《金匮真言论》真言在哪里？-2013-01-01-11-52-54&quot; class=&quot;headerlink&quot; title=&quot;新年献疑： 《金匮真言论》真
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3 id="新年献疑：-《金匮真言论》真言在哪里？-2013-01-01-11-52-54"><a href="#新年献疑：-《金匮真言论》真言在哪里？-2013-01-01-11-52-54" class="headerlink" title="新年献疑： 《金匮真言论》真言在哪里？  (2013-01-01 11:52:54)"></a><a href="http://blog.sina.com.cn/s/blog_5a5ee16d0102ea2i.html" title="跳转至原文" target="_blank" rel="external">新年献疑： 《金匮真言论》真言在哪里？ </a> (2013-01-01 11:52:54)</h3><p></p><p align="right"><font style="BACKGroUnD-CoLor: #ffffff">修正传真（771）03182919</font></p><p></p>
-<p>这是《黄帝内经素问》第一卷的最后一篇，处于承先启后的位置。作者既然以“真言”名篇，应该有一两句真言吧？医圣张机，看懂了真言，才“撰用《素问》九卷”，将《素问》列为《伤寒杂病论》的第一参考书。不过，从后世中医人一路挣扎下来的泥泞看，从政府大力扶持却依然被吼废除的现实情况看，敝人断定没人看出本篇的真言何在。<br>敝人真心希望中医人有认真探究的精神，因此一年内不会说出自己的看法，期待有年轻人说出我的心里话。<br>本博文将在一月内更新数次。</p>
-<p><strong>以下是《素问 金匮真言论》原文：</strong></p>
-<p>黄帝问曰：天有八风，经有五风，何谓？岐伯对曰：八风发邪，以为经风，触五藏，邪气发病。所谓得<span style="background:lime;mso-highlight: lime">四时</span>之胜者，<span style="background:aqua;mso-highlight:aqua">春</span>胜<span style="background:yellow;mso-highlight:yellow">长夏</span>，<span style="background:yellow;mso-highlight:yellow">长夏</span>胜<span style="background:aqua;mso-highlight:aqua">冬</span>，<span style="background:aqua;mso-highlight:aqua">冬</span>胜<span style="background:aqua;mso-highlight:aqua">夏</span>，<span style="background:aqua;mso-highlight:aqua">夏</span>胜<span style="background:aqua;mso-highlight:aqua">秋</span>，<span style="background:aqua;mso-highlight:aqua">秋</span>胜<span style="background:aqua;mso-highlight:aqua">春</span>，所谓<span style="background:lime;mso-highlight: lime">四时</span>之胜也。<br>东风生于<span style="background:aqua;mso-highlight:aqua">春</span>，病在肝，俞在颈项；南风生于<span style="background:aqua;mso-highlight:aqua">夏</span>，病在心，俞在胸胁；<br>西风生于<span style="background:aqua;mso-highlight:aqua">秋</span>，病在肺，俞在肩背；北风生于<span style="background:aqua;mso-highlight:aqua">冬</span>，病在肾，俞在腰股；中央为土，病在脾，俞在脊。<br>故<span style="background:aqua;mso-highlight:aqua">春</span>气者病在头，<span style="background:aqua;mso-highlight:aqua">夏</span>气者病在藏，<span style="background:aqua;mso-highlight:aqua">秋</span>气者病在肩背，<span style="background:aqua;mso-highlight:aqua">冬</span>气者病在四支。<br>故<span style="background:aqua;mso-highlight:aqua">春</span>善病鼽衄，<span style="background:aqua;mso-highlight:aqua">仲夏</span>善病胸胁，<span style="background:yellow;mso-highlight:yellow">长夏</span>善病洞泄寒中，<span style="background:aqua;mso-highlight:aqua">秋</span>善病风疟，<span style="background:aqua;mso-highlight:aqua">冬</span>善病痹厥。<br>故冬不按蹻，春不鼽衄，春不病颈项，仲夏不病胸胁，长夏不病洞泄寒中，秋不病风疟，冬不病痹厥，飧泄而汗出也。</p>
-<p>夫精者身之本也。故藏于精者春不病温。夏暑汗不出者，秋成风疟。此平人脉法也。<br>故曰：阴中有阴，阳中有阳。平旦至日中，天之阳，阳中之阳也；日中至黄昏，天之阳，阳中之阴也；合夜至鸡鸣，天之阴，阴中之阴也；鸡鸣至平旦，天之阴，阴中之阳也。</p>
-<p>故人亦应之。夫言人之阴阳，则外为阳，内为阴。言人身之阴阳，则背为阳，腹为阴。言人身之藏府中阴阳。则藏者为阴，府者为阳。肝心脾肺肾五藏，皆为阴。胆胃大肠小肠膀胱三焦六府，皆为阳。所以欲知阴中之阴阳中之阳者何也，为<span style="background:aqua;mso-highlight:aqua">冬</span>病在阴，<span style="background:aqua;mso-highlight:aqua">夏</span>病在阳，<span style="background:aqua;mso-highlight:aqua">春</span>病在阴，<span style="background:aqua;mso-highlight:aqua">秋</span>病在阳，皆视其所在，为施针石也。<br>故背为阳，阳中之阳，心也；背为阳，阳中之阴，肺也；腹为阴，阴中之阴，肾也；腹为阴，阴中之阳，肝也；腹为阴，阴中之至阴，脾也。此皆阴阳表里内外雌雄相俞应也，故以应天之阴阳也。</p>
-<p><em>帝曰：五藏应<span style="background:lime;mso-highlight: lime">四时</span>，各有收受乎？岐伯曰：有。东方青色，入通于肝，开窍于目，藏精于肝，其病发惊骇。其味酸，其类草木，其畜鸡，其谷麦，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为岁星，是以气在头也，其音角，其数八，是以知病之在筋也，其臭臊。<br>南方赤色，入通于心，开窍于耳，藏精于心，故病在五藏，其味苦，其类火，其畜羊，其谷黍，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为荧惑星，是以知病之在脉也，其音徵，其数七，其臭焦。<br>中央黄色，入通于脾，开窍于口，藏精于脾，故病在舌本，其味甘，其类土，其畜牛，其谷稷，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为镇星，是以知病之在肉也，其音宫，其数五，其臭香。<br>西方白色，入通于肺，开窍于鼻，藏精于肺，故病在背，其味辛，其类金，其畜马，其谷稻，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为太白星，是以知病之在皮毛也，其音商，其数九，其臭腥。<br>北方黑色，入通于肾，开窍于二阴，藏精于肾，故病在谿，其味咸，其类水，其畜彘，其谷豆，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为辰星，是以知病之在骨也，其音羽，其数六，其臭腐。<br>故善为脉者，谨察五藏六府，一逆一从，阴阳表里雌雄之纪，藏之心意，合心于精，非其人勿教，非其真勿授，是谓得道。</em></p>
-<p>原文地址：<a href="http://blog.sina.com.cn/s/blog_5a5ee16d0102ea2i.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_5a5ee16d0102ea2i.html</a></p>
-]]></content:encoded>
-      
-      <comments>http://www.zhinuo.site/excerpt/13326.html#disqus_thread</comments>
-    </item>
-    
-    <item>
       <title>分享：中医修正 - 藏气流传</title>
       <link>http://www.zhinuo.site/excerpt/51285.html</link>
       <guid>http://www.zhinuo.site/excerpt/51285.html</guid>
@@ -473,6 +450,30 @@
 ]]></content:encoded>
       
       <comments>http://www.zhinuo.site/excerpt/51285.html#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>分享：中医修正 - 新年献疑：《金匮真言论》真言在哪里？</title>
+      <link>http://www.zhinuo.site/excerpt/13326.html</link>
+      <guid>http://www.zhinuo.site/excerpt/13326.html</guid>
+      <pubDate>Thu, 29 Dec 2016 03:22:33 GMT</pubDate>
+      <description>
+      
+        &lt;h3 id=&quot;新年献疑：-《金匮真言论》真言在哪里？-2013-01-01-11-52-54&quot;&gt;&lt;a href=&quot;#新年献疑：-《金匮真言论》真言在哪里？-2013-01-01-11-52-54&quot; class=&quot;headerlink&quot; title=&quot;新年献疑： 《金匮真言论》真
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="新年献疑：-《金匮真言论》真言在哪里？-2013-01-01-11-52-54"><a href="#新年献疑：-《金匮真言论》真言在哪里？-2013-01-01-11-52-54" class="headerlink" title="新年献疑： 《金匮真言论》真言在哪里？  (2013-01-01 11:52:54)"></a><a href="http://blog.sina.com.cn/s/blog_5a5ee16d0102ea2i.html" title="跳转至原文" target="_blank" rel="external">新年献疑： 《金匮真言论》真言在哪里？ </a> (2013-01-01 11:52:54)</h3><p></p><p align="right"><font style="BACKGroUnD-CoLor: #ffffff">修正传真（771）03182919</font></p><p></p>
+<p>这是《黄帝内经素问》第一卷的最后一篇，处于承先启后的位置。作者既然以“真言”名篇，应该有一两句真言吧？医圣张机，看懂了真言，才“撰用《素问》九卷”，将《素问》列为《伤寒杂病论》的第一参考书。不过，从后世中医人一路挣扎下来的泥泞看，从政府大力扶持却依然被吼废除的现实情况看，敝人断定没人看出本篇的真言何在。<br>敝人真心希望中医人有认真探究的精神，因此一年内不会说出自己的看法，期待有年轻人说出我的心里话。<br>本博文将在一月内更新数次。</p>
+<p><strong>以下是《素问 金匮真言论》原文：</strong></p>
+<p>黄帝问曰：天有八风，经有五风，何谓？岐伯对曰：八风发邪，以为经风，触五藏，邪气发病。所谓得<span style="background:lime;mso-highlight: lime">四时</span>之胜者，<span style="background:aqua;mso-highlight:aqua">春</span>胜<span style="background:yellow;mso-highlight:yellow">长夏</span>，<span style="background:yellow;mso-highlight:yellow">长夏</span>胜<span style="background:aqua;mso-highlight:aqua">冬</span>，<span style="background:aqua;mso-highlight:aqua">冬</span>胜<span style="background:aqua;mso-highlight:aqua">夏</span>，<span style="background:aqua;mso-highlight:aqua">夏</span>胜<span style="background:aqua;mso-highlight:aqua">秋</span>，<span style="background:aqua;mso-highlight:aqua">秋</span>胜<span style="background:aqua;mso-highlight:aqua">春</span>，所谓<span style="background:lime;mso-highlight: lime">四时</span>之胜也。<br>东风生于<span style="background:aqua;mso-highlight:aqua">春</span>，病在肝，俞在颈项；南风生于<span style="background:aqua;mso-highlight:aqua">夏</span>，病在心，俞在胸胁；<br>西风生于<span style="background:aqua;mso-highlight:aqua">秋</span>，病在肺，俞在肩背；北风生于<span style="background:aqua;mso-highlight:aqua">冬</span>，病在肾，俞在腰股；中央为土，病在脾，俞在脊。<br>故<span style="background:aqua;mso-highlight:aqua">春</span>气者病在头，<span style="background:aqua;mso-highlight:aqua">夏</span>气者病在藏，<span style="background:aqua;mso-highlight:aqua">秋</span>气者病在肩背，<span style="background:aqua;mso-highlight:aqua">冬</span>气者病在四支。<br>故<span style="background:aqua;mso-highlight:aqua">春</span>善病鼽衄，<span style="background:aqua;mso-highlight:aqua">仲夏</span>善病胸胁，<span style="background:yellow;mso-highlight:yellow">长夏</span>善病洞泄寒中，<span style="background:aqua;mso-highlight:aqua">秋</span>善病风疟，<span style="background:aqua;mso-highlight:aqua">冬</span>善病痹厥。<br>故冬不按蹻，春不鼽衄，春不病颈项，仲夏不病胸胁，长夏不病洞泄寒中，秋不病风疟，冬不病痹厥，飧泄而汗出也。</p>
+<p>夫精者身之本也。故藏于精者春不病温。夏暑汗不出者，秋成风疟。此平人脉法也。<br>故曰：阴中有阴，阳中有阳。平旦至日中，天之阳，阳中之阳也；日中至黄昏，天之阳，阳中之阴也；合夜至鸡鸣，天之阴，阴中之阴也；鸡鸣至平旦，天之阴，阴中之阳也。</p>
+<p>故人亦应之。夫言人之阴阳，则外为阳，内为阴。言人身之阴阳，则背为阳，腹为阴。言人身之藏府中阴阳。则藏者为阴，府者为阳。肝心脾肺肾五藏，皆为阴。胆胃大肠小肠膀胱三焦六府，皆为阳。所以欲知阴中之阴阳中之阳者何也，为<span style="background:aqua;mso-highlight:aqua">冬</span>病在阴，<span style="background:aqua;mso-highlight:aqua">夏</span>病在阳，<span style="background:aqua;mso-highlight:aqua">春</span>病在阴，<span style="background:aqua;mso-highlight:aqua">秋</span>病在阳，皆视其所在，为施针石也。<br>故背为阳，阳中之阳，心也；背为阳，阳中之阴，肺也；腹为阴，阴中之阴，肾也；腹为阴，阴中之阳，肝也；腹为阴，阴中之至阴，脾也。此皆阴阳表里内外雌雄相俞应也，故以应天之阴阳也。</p>
+<p><em>帝曰：五藏应<span style="background:lime;mso-highlight: lime">四时</span>，各有收受乎？岐伯曰：有。东方青色，入通于肝，开窍于目，藏精于肝，其病发惊骇。其味酸，其类草木，其畜鸡，其谷麦，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为岁星，是以气在头也，其音角，其数八，是以知病之在筋也，其臭臊。<br>南方赤色，入通于心，开窍于耳，藏精于心，故病在五藏，其味苦，其类火，其畜羊，其谷黍，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为荧惑星，是以知病之在脉也，其音徵，其数七，其臭焦。<br>中央黄色，入通于脾，开窍于口，藏精于脾，故病在舌本，其味甘，其类土，其畜牛，其谷稷，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为镇星，是以知病之在肉也，其音宫，其数五，其臭香。<br>西方白色，入通于肺，开窍于鼻，藏精于肺，故病在背，其味辛，其类金，其畜马，其谷稻，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为太白星，是以知病之在皮毛也，其音商，其数九，其臭腥。<br>北方黑色，入通于肾，开窍于二阴，藏精于肾，故病在谿，其味咸，其类水，其畜彘，其谷豆，其应<span style="background:lime;mso-highlight: lime">四时</span>，上为辰星，是以知病之在骨也，其音羽，其数六，其臭腐。<br>故善为脉者，谨察五藏六府，一逆一从，阴阳表里雌雄之纪，藏之心意，合心于精，非其人勿教，非其真勿授，是谓得道。</em></p>
+<p>原文地址：<a href="http://blog.sina.com.cn/s/blog_5a5ee16d0102ea2i.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_5a5ee16d0102ea2i.html</a></p>
+]]></content:encoded>
+      
+      <comments>http://www.zhinuo.site/excerpt/13326.html#disqus_thread</comments>
     </item>
     
     <item>
@@ -1267,7 +1268,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1/JoZAeN/xqaNyHIOJcJmI9hU9FX2GA4J+eppsz2obz5ob+A7joVnAWbPhUMUtpqqjSoC9afDMMwJTLUaghNJfH9hPaOWitggz4duPAF5MFKvKKBCMFueST51siFhpf8ZWwOzFnzWlhjIw5mdBPty1d1b/EPXBRN5JWP5Fido4oMofqC9XUqLRnRWlid12E65b0Rr+MNaxOqjIlV9ab+hprC7TVl7jckB6mYlv0uklzqsxjhvp0osjgwgPRN2eW7ynXyntVuPmvFVlR860nR/o2uJyj08CZ2xOAzxU58BZaUI7rxRXYF6ON4OzqSGHJtvlPbyAX5OuX5U7GjYzoCp0YyHoTKFWvzjpEn9MeP99uJfFVzdtyPg5XYGc4yU4a4D03HkimY18Egtd9FTt9Q26WuFxfLvOH1p7UZ0yqkqVltmskt8uEZspmXd8dYY9y227lh97tVA0dsdZePUyK9h8xOjCJfVDhWE0BTzWOCEjwOZrWht0V/LvY2h/reTzrWG4apYgPLkDqL54iuMzNaMmA9PfG47sQLfURQfhUKGQH5pUor6pU7zkguhXt9XRVZ9ZxOdE6MVBGqaIt6FN3bTYkxpd6Ql3SsY6i1Uk/uN4XZHQbg5v6x+3V94sX86UfAZm7tayOKXa8hw5PWU3rsUzoXeNYSUUC+gU2yUfptgSylJn0CsxJU9SZi4HyyPy5bEmAwJdka41y+ojZgLyXrrH7b0JKj/Zg+r2BzGAhjB4BsDOaG9gLzxbHG7SsclOssG2UhNA33cPkoD99JsGV3ifR1GWI9fUN+LhkO52AtdIKydYT0kx1SdLJnVPl+oY7j6D1EEFXmCpPltT/920yyFiwDeDkRqQPLTrhVQPiZbsyltoTJC8Gmnsy3JlhdgH8Rs3xooOOtfLQ2OjtgAsKwp9acnNdNrawDZv5GtAvKfA4H4f9+xU+njafutgDSD8dN/ayrYu/FUmQcOT0wtoGsByXHm/ICOmqO7M= </div>]]></content:encoded>
+      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1+aSW7/xpLCnj2C0N7TmX0trppyAcdFIb1YMCYN4u4BkuauXWTNlabxtklrGOsE4v/go3x5j5IsmzZEDLh4o5FwjykW50T9N/6ENwfizNu8jurKdxFIcClJLo90hacFtzmtzwlHfuzn6cbhr8ZL+oQJxu+FPRnIeHPxApM/+C4P+17A47u0MTSRn83iu3jgGwq1FGM+jgRM/2ELZqrnqs1ApYomuYb3CDuFW/06GLpkrs/6ZgTRJallQKssLSUC7MYNsAQjcG5y1fwiBuoFoCws9KaNoLlUvUxMApVZC1Ky8V+E4q6ISK5HG0nNovGx90goOEbP7eRFmp3I9uk2pL7T6zTKv405Vm5uBAxJfn4sF9/VSPRAx7dltiSpds/7WuTSwk6QQNVlJOi3lm63xF7hy61GjM9pB/nB8PBVpWf64NDvGtyS+mzaWsiq/ZSYxZnuwTX/lkemRjO6Uf8lzR2T+M6pQG50bI/gSYP1r8QemcreoIxloKlQ2E/YOYdZIaASY+WRCjgrtEbGdpnfdnlE0wYBknt2yZ7EJ0a1TnCcTyO0hSRD4oG0bKHATVkBl+JptUCPvX9tCfpYYvgmnv6yC+4IbXULzHfuPIquX4M41KngRMqGxM1EihWutjya+jWm+AZ4ArrMnHMhd03WfLhUXAOJhJSwrHACUADREoCKPkIkDm5vhiNmhUcSWbVFWh20CAduAukD9vSDMmQHCkVXPkA9UOgm2bt+J9TLlbeNKS7UILv+9YRqz7VdoBis93vXx3RU9nrBhglMULFPsAswq2/c6M7OVkb8hRCwvepaJ/isyh0x86Ni3oPtiTMnJPNva8ML8uS8YHabLOEkV/EhtVQS6tZydZ2+FEsxutrF5He1qoYzNjxE3XD5DGHd4vzgvT0wQ3WxBWZ1hfwMjMOhFaW7d8bi1XA2X5LaBU0EUTm8nDmApXwNuIOmOTXeGHA8gtLPu8kk3x9fPBPzn3nKCGW49v3cWqo= </div>]]></content:encoded>
       
       <comments>http://www.zhinuo.site/writing/38458.html#disqus_thread</comments>
     </item>
@@ -1302,7 +1303,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX19GZTreUQlWkVWYEA/aYUfOs93Iy4zR1YteQN+Hvncr587DN90R8Cgv8uQ4l2TEsGoZ8U5ThrnTo42s26jbRjNUVf+PQwHjkKN7blKYa1K8YrcPkquHO3QzF7l2oFuVl7fZT0AlCsUiy3vSRzsTjneB4nDI9RLrdnxxKUR03d/qQFROla3pzvUtH2MP5/8Wpb1VftYsfm82BhdO4Z9RTcrLmfJZR2oGP7aATa6OeD0gOesBVMngMAdioD2NGvWull2JNGW4Jw6fLQ07MqgFSa4ZbFXaA6fZDEHcjp3Exy/L3cAr2XAnlkydx3/8wzNgllRkMU4ZNjXWOBIW04nLneuI+GtIS4oJpAD6PaCYLXfS/m0UB3kONZhODVrekl0kWfDJghHuqDPKuLHuHgKvPyV2jPDuNfPc7OvOA9YUoe3c6gVCW+BjulBSnUTtK2qCsK1f0sN1/AB49VVpmcK4DUGHmZfuUH9VdOa+tV5pWySibBPnsswEviYesy+wuyXu0wawFFeWPTRKdpG9zqamO1LOYJjSiZ9k4geNv5dEW/5B+hGcLQZn4cQpJkzCMsPeNkfwvXTBqxf89gsjmHKoQ21GqLUMFHIRD+OGQsaSOZTksm/9eZFRgNkNJ7tOmFmHBJuvji7IybghANsdUz+C1HJRIdd0DOxBTyHpeRS/IZYkzHebifkfN9bqU7xM99scfk4GDR7fdab9eCHVeiB+RHa92IoELy0Wyae37DKy0ja2kmSLbnceKg+7+RUCDQwMqxjPYssi2nuHwPDAqdGo2VDs8tye7ydP657cJPlDkpVxo3i1bQfqXeuHiudB9BZuTqnrlZvoOqLdTEyXQTNpn37a/Jm4G/Jx7Hg85LScaFNBABusFeJs4m8A/eq993pSy99tED6tMpJGXX3vvzH1YtmyYdObTCvh2REvyxu/m2xaDJyby0YPeuo++DdTvhbSzyPNRZ8Ir/6NXERJ0FhkCQeED7IbB1te12Xa6nJiK4ZTiUu+IbbERY2UZ7WDZuRwsJf2tAzQrOkKBdwOpcDYRqojoB4XZJCjz5WwGrVhsi2ZADym830jlq2O </div>]]></content:encoded>
+      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX19s9ii/bpFc9Y7Xa+T7zqpiyzaC0n0RYXb62SUrhKMxA3+4Hyf2Kjg0dyhGXjaT92wFE2v2owPmD/obTF/GfLV8oojHTLOZPKiKtCz5MPjKU+jk8vGfv7HIF3PcRAWXGThH2SE0sjL8111XHrnq9GBWcKDguPSmUKCEWYwWTpAXGi2SwKwDOOgPo4mOmgzcQgU69pVrDhcBxRZxS+NwB/9s20q9jLULp3FFdEaD46q0RGj4C/nJa6NaNLDIUpafTF0xqYy/hfkm/IXZZzqlj+FB/rlbHDCVV6CiPUaDsJsAR2oc+z06IVMK5FZAr9LFl/9H4+NTCgY8Yi1dszWSVcrC8lmIM7P+2/lFaNMtSvUeCQELVxoWEMXed+aP1oRGcBkMOz5KZ0i5R1HENtylk9jXbH3VTbTwpas0BBbKAytuELSoyh6G49ZIvjL3BP3H8WOTkCf03zBpAjNmGSm7KLn5sAn7EgIIahQfHk+YmA56uGPKaOoNBX7NtprNKjSYmBkAQLIz7NnH2ryowixHg2AOQUkVwGDbnTQR+Z8gKFgMRzycT2nxvUzkudGKW/hdg8MMtDDzMFyYfj/lkUHCavDU+krn+40+IldXWOlAz5llUF+q5giP6EfwdoiOiw3u8HtIRdFg1il8PZCMGWWFYmmGWjw8xH22Eo/mngrACQdmE2Hs+t16GwWbICuGFkdWsmEl7LfugDjHyzjMdjb8dsVQMTW8W0/cPoN4GgFnBxZ7nxFij+d0qCmLV7idfSTcU4Ig+BqIi1p/BPw5CJsCTous8dp+FUk6b9e4LZPJiCZjNiG2GVmbCRy42NdWlRVd3pHjpkWs9KymEopI81ntZrYJQzpYwLy5rS/UnMpdysDwCgTZ3qMCK6yvgHQmuxADtjFcFgOzIepydxkSoW4QEuERPh9mEuqNopxCz2wfP9J/dPY9QzFyo27TzmJL2KDgw9NGEMfpNv2T3xl3G9zNb9no5plCbrvV9mMPRRPpnXMvgSoKHF38FudaxaTMjAdssr1B+QUPHbopaS7CjJEZnFUW18mTT9COBgwBGSHkhV9+35Xp6svF6y+q </div>]]></content:encoded>
       
       <comments>http://www.zhinuo.site/writing/676.html#disqus_thread</comments>
     </item>
