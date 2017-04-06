@@ -13,8 +13,8 @@
     
     <item>
       <title>Windows 8 用户密码管理批处理</title>
-      <link>http://www.zhinuo.site/MISC/null.html</link>
-      <guid>http://www.zhinuo.site/MISC/null.html</guid>
+      <link>http://www.zhinuo.site/MISC/4312.html</link>
+      <guid>http://www.zhinuo.site/MISC/4312.html</guid>
       <pubDate>Thu, 06 Apr 2017 09:45:46 GMT</pubDate>
       <description>
       
@@ -29,7 +29,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">@echo off</div><div class="line">echo;</div><div class="line">REM @ECHO +++ 如需变更用户登陆密码请以管理员身份运行 +++</div><div class="line">net user</div><div class="line">REM @ECHO +++ 请以管理员身份运行 输入要变更的密码 以回车确认修改 +++</div><div class="line">echo;</div><div class="line">@ECHO +++ 请输入要变更密码的用户名 +++</div><div class="line">echo;</div><div class="line"></div><div class="line">:: BatchGotAdmin </div><div class="line">:------------------------------------- </div><div class="line">REM --&gt; Check for permissions </div><div class="line">&gt;nul 2&gt;&amp;1 &quot;%SYSTEMROOT%\system32\cacls.exe&quot; &quot;%SYSTEMROOT%\system32\config\system&quot; </div><div class="line"></div><div class="line">REM --&gt; If error flag set, we do not have admin. </div><div class="line">if &apos;%errorlevel%&apos; NEQ &apos;0&apos; ( </div><div class="line"> echo Requesting administrative privileges... </div><div class="line"> goto UACPrompt </div><div class="line">) else ( goto gotAdmin ) </div><div class="line"></div><div class="line">:UACPrompt </div><div class="line"> echo Set UAC = CreateObject^(&quot;Shell.Application&quot;^) &gt; &quot;%temp%\getadmin.vbs&quot; </div><div class="line"> echo UAC.ShellExecute &quot;%~s0&quot;, &quot;&quot;, &quot;&quot;, &quot;runas&quot;, 1 &gt;&gt; &quot;%temp%\getadmin.vbs&quot; </div><div class="line"></div><div class="line"> &quot;%temp%\getadmin.vbs&quot; </div><div class="line"> exit /B </div><div class="line"></div><div class="line">:gotAdmin </div><div class="line"> if exist &quot;%temp%\getadmin.vbs&quot; ( del &quot;%temp%\getadmin.vbs&quot; ) </div><div class="line"> pushd &quot;%CD%&quot; </div><div class="line"> CD /D &quot;%~dp0&quot; </div><div class="line">:-------------------------------------- </div><div class="line"></div><div class="line">set /p PCUser=</div><div class="line">net user %PCUser% *</div><div class="line">rem net user Wego *</div><div class="line">echo;</div><div class="line">@ECHO +++窗口将在5秒后自动关闭+++</div><div class="line">echo;</div><div class="line">rem control userpasswords2 命令可打开管理窗口</div><div class="line">echo +++ 请按任意键退出 +++</div><div class="line">echo;</div><div class="line">pause &gt; nul</div></pre></td></tr></table></figure>
 ]]></content:encoded>
       
-      <comments>http://www.zhinuo.site/MISC/null.html#disqus_thread</comments>
+      <comments>http://www.zhinuo.site/MISC/4312.html#disqus_thread</comments>
     </item>
     
     <item>
@@ -1263,17 +1263,11 @@
       <pubDate>Sun, 28 Aug 2016 01:11:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;把你藏在左心房,&lt;br&gt;将思念种右心室,&lt;br&gt;任思绪来了又去.  &lt;/p&gt;
-&lt;p&gt;让你的笑靨在脑海奔腾,&lt;br&gt;放你的身影在心头游走.  &lt;/p&gt;
-&lt;p&gt;想见你的时候,&lt;br&gt;打开我的左心房；&lt;br&gt;想念你的时候,&lt;br&gt;开启我的右心室.  &lt;/p&gt;
-
+        本文已隐藏, 请输入密码浏览.
       
       </description>
       
-      <content:encoded><![CDATA[<p>把你藏在左心房,<br>将思念种右心室,<br>任思绪来了又去.  </p>
-<p>让你的笑靨在脑海奔腾,<br>放你的身影在心头游走.  </p>
-<p>想见你的时候,<br>打开我的左心房；<br>想念你的时候,<br>开启我的右心室.  </p>
-]]></content:encoded>
+      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1/JoZAeN/xqaNyHIOJcJmI9hU9FX2GA4J+eppsz2obz5ob+A7joVnAWbPhUMUtpqqjSoC9afDMMwJTLUaghNJfH9hPaOWitggz4duPAF5MFKvKKBCMFueST51siFhpf8ZWwOzFnzWlhjIw5mdBPty1d1b/EPXBRN5JWP5Fido4oMofqC9XUqLRnRWlid12E65b0Rr+MNaxOqjIlV9ab+hprC7TVl7jckB6mYlv0uklzqsxjhvp0osjgwgPRN2eW7ynXyntVuPmvFVlR860nR/o2uJyj08CZ2xOAzxU58BZaUI7rxRXYF6ON4OzqSGHJtvlPbyAX5OuX5U7GjYzoCp0YyHoTKFWvzjpEn9MeP99uJfFVzdtyPg5XYGc4yU4a4D03HkimY18Egtd9FTt9Q26WuFxfLvOH1p7UZ0yqkqVltmskt8uEZspmXd8dYY9y227lh97tVA0dsdZePUyK9h8xOjCJfVDhWE0BTzWOCEjwOZrWht0V/LvY2h/reTzrWG4apYgPLkDqL54iuMzNaMmA9PfG47sQLfURQfhUKGQH5pUor6pU7zkguhXt9XRVZ9ZxOdE6MVBGqaIt6FN3bTYkxpd6Ql3SsY6i1Uk/uN4XZHQbg5v6x+3V94sX86UfAZm7tayOKXa8hw5PWU3rsUzoXeNYSUUC+gU2yUfptgSylJn0CsxJU9SZi4HyyPy5bEmAwJdka41y+ojZgLyXrrH7b0JKj/Zg+r2BzGAhjB4BsDOaG9gLzxbHG7SsclOssG2UhNA33cPkoD99JsGV3ifR1GWI9fUN+LhkO52AtdIKydYT0kx1SdLJnVPl+oY7j6D1EEFXmCpPltT/920yyFiwDeDkRqQPLTrhVQPiZbsyltoTJC8Gmnsy3JlhdgH8Rs3xooOOtfLQ2OjtgAsKwp9acnNdNrawDZv5GtAvKfA4H4f9+xU+njafutgDSD8dN/ayrYu/FUmQcOT0wtoGsByXHm/ICOmqO7M= </div>]]></content:encoded>
       
       <comments>http://www.zhinuo.site/writing/38458.html#disqus_thread</comments>
     </item>
@@ -1304,15 +1298,11 @@
       <pubDate>Sun, 28 Aug 2016 01:09:00 GMT</pubDate>
       <description>
       
-        &lt;p&gt;想我吗？&lt;br&gt;即使仅仅偶尔&lt;br&gt;那么几次，&lt;br&gt;也能让我如&lt;br&gt;雨后彩虹般炫目。  &lt;/p&gt;
-&lt;p&gt;愿是清拂的微风，&lt;br&gt;在每个日出和日落，&lt;br&gt;一次又一次，&lt;br&gt;泛起你心中，&lt;br&gt;涟漪的水花，&lt;br&gt;久久回荡在，&lt;br&gt;心灵的最深处。    &lt;/p&gt;
-
+        本文已隐藏, 请输入密码浏览.
       
       </description>
       
-      <content:encoded><![CDATA[<p>想我吗？<br>即使仅仅偶尔<br>那么几次，<br>也能让我如<br>雨后彩虹般炫目。  </p>
-<p>愿是清拂的微风，<br>在每个日出和日落，<br>一次又一次，<br>泛起你心中，<br>涟漪的水花，<br>久久回荡在，<br>心灵的最深处。    </p>
-]]></content:encoded>
+      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX19GZTreUQlWkVWYEA/aYUfOs93Iy4zR1YteQN+Hvncr587DN90R8Cgv8uQ4l2TEsGoZ8U5ThrnTo42s26jbRjNUVf+PQwHjkKN7blKYa1K8YrcPkquHO3QzF7l2oFuVl7fZT0AlCsUiy3vSRzsTjneB4nDI9RLrdnxxKUR03d/qQFROla3pzvUtH2MP5/8Wpb1VftYsfm82BhdO4Z9RTcrLmfJZR2oGP7aATa6OeD0gOesBVMngMAdioD2NGvWull2JNGW4Jw6fLQ07MqgFSa4ZbFXaA6fZDEHcjp3Exy/L3cAr2XAnlkydx3/8wzNgllRkMU4ZNjXWOBIW04nLneuI+GtIS4oJpAD6PaCYLXfS/m0UB3kONZhODVrekl0kWfDJghHuqDPKuLHuHgKvPyV2jPDuNfPc7OvOA9YUoe3c6gVCW+BjulBSnUTtK2qCsK1f0sN1/AB49VVpmcK4DUGHmZfuUH9VdOa+tV5pWySibBPnsswEviYesy+wuyXu0wawFFeWPTRKdpG9zqamO1LOYJjSiZ9k4geNv5dEW/5B+hGcLQZn4cQpJkzCMsPeNkfwvXTBqxf89gsjmHKoQ21GqLUMFHIRD+OGQsaSOZTksm/9eZFRgNkNJ7tOmFmHBJuvji7IybghANsdUz+C1HJRIdd0DOxBTyHpeRS/IZYkzHebifkfN9bqU7xM99scfk4GDR7fdab9eCHVeiB+RHa92IoELy0Wyae37DKy0ja2kmSLbnceKg+7+RUCDQwMqxjPYssi2nuHwPDAqdGo2VDs8tye7ydP657cJPlDkpVxo3i1bQfqXeuHiudB9BZuTqnrlZvoOqLdTEyXQTNpn37a/Jm4G/Jx7Hg85LScaFNBABusFeJs4m8A/eq993pSy99tED6tMpJGXX3vvzH1YtmyYdObTCvh2REvyxu/m2xaDJyby0YPeuo++DdTvhbSzyPNRZ8Ir/6NXERJ0FhkCQeED7IbB1te12Xa6nJiK4ZTiUu+IbbERY2UZ7WDZuRwsJf2tAzQrOkKBdwOpcDYRqojoB4XZJCjz5WwGrVhsi2ZADym830jlq2O </div>]]></content:encoded>
       
       <comments>http://www.zhinuo.site/writing/676.html#disqus_thread</comments>
     </item>

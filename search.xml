@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[Windows 8 用户密码管理批处理]]></title>
-      <url>%2FMISC%2Fnull.html</url>
+      <url>%2FMISC%2F4312.html</url>
       <content type="text"><![CDATA[Windows 8 用户密码管理批处理批处理快捷方便，可以节省一些时间。 请复制下面的代码，右键另存为.bat文件。双击运行就可以愉快的修改管理员密码了。 @echo offecho;REM @ECHO +++ 如需变更用户登陆密码请以管理员身份运行 +++net userREM @ECHO +++ 请以管理员身份运行 输入要变更的密码 以回车确认修改 +++echo;@ECHO +++ 请输入要变更密码的用户名 +++echo;:: BatchGotAdmin :------------------------------------- REM --&gt; Check for permissions &gt;nul 2&gt;&amp;1 &quot;%SYSTEMROOT%\system32\cacls.exe&quot; &quot;%SYSTEMROOT%\system32\config\system&quot; REM --&gt; If error flag set, we do not have admin. if &apos;%errorlevel%&apos; NEQ &apos;0&apos; ( echo Requesting administrative privileges... goto UACPrompt ) else ( goto gotAdmin ) :UACPrompt echo Set UAC = CreateObject^(&quot;Shell.Application&quot;^) &gt; &quot;%temp%\getadmin.vbs&quot; echo UAC.ShellExecute &quot;%~s0&quot;, &quot;&quot;, &quot;&quot;, &quot;runas&quot;, 1 &gt;&gt; &quot;%temp%\getadmin.vbs&quot; &quot;%temp%\getadmin.vbs&quot; exit /B :gotAdmin if exist &quot;%temp%\getadmin.vbs&quot; ( del &quot;%temp%\getadmin.vbs&quot; ) pushd &quot;%CD%&quot; CD /D &quot;%~dp0&quot; :-------------------------------------- set /p PCUser=net user %PCUser% *rem net user Wego *echo;@ECHO +++窗口将在5秒后自动关闭+++echo;rem control userpasswords2 命令可打开管理窗口echo +++ 请按任意键退出 +++echo;pause &gt; nul]]></content>
     </entry>
 
@@ -327,7 +327,7 @@
     <entry>
       <title><![CDATA[左右(2003年10月)]]></title>
       <url>%2Fwriting%2F38458.html</url>
-      <content type="text"><![CDATA[把你藏在左心房,将思念种右心室,任思绪来了又去. 让你的笑靨在脑海奔腾,放你的身影在心头游走. 想见你的时候,打开我的左心房；想念你的时候,开启我的右心室.]]></content>
+      <content type="text"><![CDATA[欢迎, 请输入密码继续. Decrypt U2FsdGVkX1/JoZAeN/xqaNyHIOJcJmI9hU9FX2GA4J+eppsz2obz5ob+A7joVnAWbPhUMUtpqqjSoC9afDMMwJTLUaghNJfH9hPaOWitggz4duPAF5MFKvKKBCMFueST51siFhpf8ZWwOzFnzWlhjIw5mdBPty1d1b/EPXBRN5JWP5Fido4oMofqC9XUqLRnRWlid12E65b0Rr+MNaxOqjIlV9ab+hprC7TVl7jckB6mYlv0uklzqsxjhvp0osjgwgPRN2eW7ynXyntVuPmvFVlR860nR/o2uJyj08CZ2xOAzxU58BZaUI7rxRXYF6ON4OzqSGHJtvlPbyAX5OuX5U7GjYzoCp0YyHoTKFWvzjpEn9MeP99uJfFVzdtyPg5XYGc4yU4a4D03HkimY18Egtd9FTt9Q26WuFxfLvOH1p7UZ0yqkqVltmskt8uEZspmXd8dYY9y227lh97tVA0dsdZePUyK9h8xOjCJfVDhWE0BTzWOCEjwOZrWht0V/LvY2h/reTzrWG4apYgPLkDqL54iuMzNaMmA9PfG47sQLfURQfhUKGQH5pUor6pU7zkguhXt9XRVZ9ZxOdE6MVBGqaIt6FN3bTYkxpd6Ql3SsY6i1Uk/uN4XZHQbg5v6x+3V94sX86UfAZm7tayOKXa8hw5PWU3rsUzoXeNYSUUC+gU2yUfptgSylJn0CsxJU9SZi4HyyPy5bEmAwJdka41y+ojZgLyXrrH7b0JKj/Zg+r2BzGAhjB4BsDOaG9gLzxbHG7SsclOssG2UhNA33cPkoD99JsGV3ifR1GWI9fUN+LhkO52AtdIKydYT0kx1SdLJnVPl+oY7j6D1EEFXmCpPltT/920yyFiwDeDkRqQPLTrhVQPiZbsyltoTJC8Gmnsy3JlhdgH8Rs3xooOOtfLQ2OjtgAsKwp9acnNdNrawDZv5GtAvKfA4H4f9+xU+njafutgDSD8dN/ayrYu/FUmQcOT0wtoGsByXHm/ICOmqO7M=]]></content>
     </entry>
 
     
@@ -341,7 +341,7 @@
     <entry>
       <title><![CDATA[想念的涟漪(2003年8月)]]></title>
       <url>%2Fwriting%2F676.html</url>
-      <content type="text"><![CDATA[想我吗？即使仅仅偶尔那么几次，也能让我如雨后彩虹般炫目。 愿是清拂的微风，在每个日出和日落，一次又一次，泛起你心中，涟漪的水花，久久回荡在，心灵的最深处。]]></content>
+      <content type="text"><![CDATA[欢迎, 请输入密码继续. Decrypt U2FsdGVkX19GZTreUQlWkVWYEA/aYUfOs93Iy4zR1YteQN+Hvncr587DN90R8Cgv8uQ4l2TEsGoZ8U5ThrnTo42s26jbRjNUVf+PQwHjkKN7blKYa1K8YrcPkquHO3QzF7l2oFuVl7fZT0AlCsUiy3vSRzsTjneB4nDI9RLrdnxxKUR03d/qQFROla3pzvUtH2MP5/8Wpb1VftYsfm82BhdO4Z9RTcrLmfJZR2oGP7aATa6OeD0gOesBVMngMAdioD2NGvWull2JNGW4Jw6fLQ07MqgFSa4ZbFXaA6fZDEHcjp3Exy/L3cAr2XAnlkydx3/8wzNgllRkMU4ZNjXWOBIW04nLneuI+GtIS4oJpAD6PaCYLXfS/m0UB3kONZhODVrekl0kWfDJghHuqDPKuLHuHgKvPyV2jPDuNfPc7OvOA9YUoe3c6gVCW+BjulBSnUTtK2qCsK1f0sN1/AB49VVpmcK4DUGHmZfuUH9VdOa+tV5pWySibBPnsswEviYesy+wuyXu0wawFFeWPTRKdpG9zqamO1LOYJjSiZ9k4geNv5dEW/5B+hGcLQZn4cQpJkzCMsPeNkfwvXTBqxf89gsjmHKoQ21GqLUMFHIRD+OGQsaSOZTksm/9eZFRgNkNJ7tOmFmHBJuvji7IybghANsdUz+C1HJRIdd0DOxBTyHpeRS/IZYkzHebifkfN9bqU7xM99scfk4GDR7fdab9eCHVeiB+RHa92IoELy0Wyae37DKy0ja2kmSLbnceKg+7+RUCDQwMqxjPYssi2nuHwPDAqdGo2VDs8tye7ydP657cJPlDkpVxo3i1bQfqXeuHiudB9BZuTqnrlZvoOqLdTEyXQTNpn37a/Jm4G/Jx7Hg85LScaFNBABusFeJs4m8A/eq993pSy99tED6tMpJGXX3vvzH1YtmyYdObTCvh2REvyxu/m2xaDJyby0YPeuo++DdTvhbSzyPNRZ8Ir/6NXERJ0FhkCQeED7IbB1te12Xa6nJiK4ZTiUu+IbbERY2UZ7WDZuRwsJf2tAzQrOkKBdwOpcDYRqojoB4XZJCjz5WwGrVhsi2ZADym830jlq2O]]></content>
     </entry>
 
     
