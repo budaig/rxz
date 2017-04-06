@@ -8,8 +8,29 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>易知 简能</description>
-    <pubDate>Wed, 05 Apr 2017 08:11:39 GMT</pubDate>
+    <pubDate>Thu, 06 Apr 2017 09:50:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Windows 8 用户密码管理批处理</title>
+      <link>http://www.zhinuo.site/MISC/null.html</link>
+      <guid>http://www.zhinuo.site/MISC/null.html</guid>
+      <pubDate>Thu, 06 Apr 2017 09:45:46 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Windows 8 用户密码管理批处理&lt;br&gt;批处理快捷方便，可以节省一些时间。  &lt;/p&gt;
+&lt;p&gt;请复制下面的代码，右键另存为.bat文件。&lt;br&gt;双击运行就可以愉快的修改管理员密码了。  &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tab
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Windows 8 用户密码管理批处理<br>批处理快捷方便，可以节省一些时间。  </p>
+<p>请复制下面的代码，右键另存为.bat文件。<br>双击运行就可以愉快的修改管理员密码了。  </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">@echo off</div><div class="line">echo;</div><div class="line">REM @ECHO +++ 如需变更用户登陆密码请以管理员身份运行 +++</div><div class="line">net user</div><div class="line">REM @ECHO +++ 请以管理员身份运行 输入要变更的密码 以回车确认修改 +++</div><div class="line">echo;</div><div class="line">@ECHO +++ 请输入要变更密码的用户名 +++</div><div class="line">echo;</div><div class="line"></div><div class="line">:: BatchGotAdmin </div><div class="line">:------------------------------------- </div><div class="line">REM --&gt; Check for permissions </div><div class="line">&gt;nul 2&gt;&amp;1 &quot;%SYSTEMROOT%\system32\cacls.exe&quot; &quot;%SYSTEMROOT%\system32\config\system&quot; </div><div class="line"></div><div class="line">REM --&gt; If error flag set, we do not have admin. </div><div class="line">if &apos;%errorlevel%&apos; NEQ &apos;0&apos; ( </div><div class="line"> echo Requesting administrative privileges... </div><div class="line"> goto UACPrompt </div><div class="line">) else ( goto gotAdmin ) </div><div class="line"></div><div class="line">:UACPrompt </div><div class="line"> echo Set UAC = CreateObject^(&quot;Shell.Application&quot;^) &gt; &quot;%temp%\getadmin.vbs&quot; </div><div class="line"> echo UAC.ShellExecute &quot;%~s0&quot;, &quot;&quot;, &quot;&quot;, &quot;runas&quot;, 1 &gt;&gt; &quot;%temp%\getadmin.vbs&quot; </div><div class="line"></div><div class="line"> &quot;%temp%\getadmin.vbs&quot; </div><div class="line"> exit /B </div><div class="line"></div><div class="line">:gotAdmin </div><div class="line"> if exist &quot;%temp%\getadmin.vbs&quot; ( del &quot;%temp%\getadmin.vbs&quot; ) </div><div class="line"> pushd &quot;%CD%&quot; </div><div class="line"> CD /D &quot;%~dp0&quot; </div><div class="line">:-------------------------------------- </div><div class="line"></div><div class="line">set /p PCUser=</div><div class="line">net user %PCUser% *</div><div class="line">rem net user Wego *</div><div class="line">echo;</div><div class="line">@ECHO +++窗口将在5秒后自动关闭+++</div><div class="line">echo;</div><div class="line">rem control userpasswords2 命令可打开管理窗口</div><div class="line">echo +++ 请按任意键退出 +++</div><div class="line">echo;</div><div class="line">pause &gt; nul</div></pre></td></tr></table></figure>
+]]></content:encoded>
+      
+      <comments>http://www.zhinuo.site/MISC/null.html#disqus_thread</comments>
+    </item>
     
     <item>
       <title>分享：神龙氏古中医 - 立春漫谈</title>
@@ -2049,28 +2070,6 @@
 ]]></content:encoded>
       
       <comments>http://www.zhinuo.site/spark/15562.html#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>惊蛰</title>
-      <link>http://www.zhinuo.site/spark/28819.html</link>
-      <guid>http://www.zhinuo.site/spark/28819.html</guid>
-      <pubDate>Mon, 06 Jun 2016 04:28:02 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;节气随想&quot;&gt;&lt;a href=&quot;#节气随想&quot; class=&quot;headerlink&quot; title=&quot;节气随想&quot;&gt;&lt;/a&gt;节气随想&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngggmynj2
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3 id="节气随想"><a href="#节气随想" class="headerlink" title="节气随想"></a>节气随想</h3><p><img src="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngggmynj21hc0xctkq.jpg" alt="惊蛰"></p>
-<p>惊蛰，震卦之象，阳出地面，春回大地，万物复苏之始。  </p>
-<p>黄帝内经云，春三月谓发陈。  </p>
-<p>如何发陈？舒志缓形，以秋冬收藏之精、气，待春气之疏达。  </p>
-<p>发陈，出新。  </p>
-<p><strong><font color="red">！！！</font><font color="green" face="微软雅黑" size="3">“悟”分类下的文章用来记录个人偶思偶得的碎想。请独立思考，切勿轻信。<br>如若这些小言琐语能引发您的遐想、感悟，不亦乐乎！</font></strong></p>
-]]></content:encoded>
-      
-      <comments>http://www.zhinuo.site/spark/28819.html#disqus_thread</comments>
     </item>
     
   </channel>
