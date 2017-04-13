@@ -8,8 +8,52 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>易知 简能</description>
-    <pubDate>Wed, 12 Apr 2017 06:12:15 GMT</pubDate>
+    <pubDate>Thu, 13 Apr 2017 07:44:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>船山文集《读通鉴论》上册 摘录笔记四</title>
+      <link>http://www.zhinuo.site/spark/60968722.html</link>
+      <guid>http://www.zhinuo.site/spark/60968722.html</guid>
+      <pubDate>Thu, 13 Apr 2017 08:14:15 GMT</pubDate>
+      <description>
+      
+        &lt;h4 id=&quot;漢昭帝&quot;&gt;&lt;a href=&quot;#漢昭帝&quot; class=&quot;headerlink&quot; title=&quot;漢昭帝&quot;&gt;&lt;/a&gt;漢昭帝&lt;/h4&gt;&lt;h4 id=&quot;漢宣帝&quot;&gt;&lt;a href=&quot;#漢宣帝&quot; class=&quot;headerlink&quot; title=&quot;漢宣帝&quot;&gt;&lt;/a&gt;漢宣帝&lt;/h
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h4 id="漢昭帝"><a href="#漢昭帝" class="headerlink" title="漢昭帝"></a>漢昭帝</h4><h4 id="漢宣帝"><a href="#漢宣帝" class="headerlink" title="漢宣帝"></a>漢宣帝</h4><blockquote>
+<p>爵賞者，人君馭下之柄而非但以馭下也，即以正位而凝命也。辭受者，人臣自靖之節而非但以自靖也，即以安上而遠咎也。故賞有所不行，爵有所不受，而國家以寧。  </p>
+</blockquote>
+<p><pre>：爵賞之用，對可安民興邦；錯可禍民亂國。</pre><br>  </p>
+<blockquote>
+<p>學何爲者也？非覽古今之成敗而審趨避之術也。惟澹與靜以養廉恥之心以明取捨之節以昭忠孝之志。純一於天性，終遠於名利。故可貴可賤，可履虎尾而不咥，可乘高墉而射隼。居震世之功而不媿於屋漏。無他，無欲故靜。  </p>
+</blockquote>
+<p><pre>：淡泊致遠。</pre><br>  </p>
+<blockquote>
+<p>春秋之法爲尊者諱爲親者諱。春秋以正亂臣賊子之罪，垂諸萬世者也。桓宣弑立而微其辭。尊則君，親則祖，未有不自敬愛其尊親而可以持天下之公論者也。  </p>
+</blockquote>
+<p><pre>：禮之諱。人之常情。</pre><br>  </p>
+<blockquote>
+<p>夫法之立也有限而人之犯也無方，以有限之法盡無方之慝te，是誠有所不能該矣。  </p>
+</blockquote>
+<p><pre>：如此則法令日益滋章，框條林立。</pre><br>  </p>
+<blockquote>
+<p>抑先王之將納民於物而弭其無方之姦頑者，尤自有教化以先之，愛養以成之，而不專恃乎此。  </p>
+</blockquote>
+<p><pre>：因人因時循序漸進，化而無擾。</pre><br>  </p>
+<blockquote>
+<p>子夏聞孝。子曰：『色難。』豈徒子之於父母哉。上之使民，朋友之相結，賓主之相酬，言未宣事未接而早有以移民之情。惟神與氣不可强制之俄頃而獲人心者也。詩雲：『溫溫恭人，惟德之基。』德之用大矣，而溫恭爲之基。溫恭者，仁之榮也。仁榮内達而德資以行，豈淺鮮哉！子曰：『切切偲偲，怡怡如也，可謂士矣。』非便辟之謂也。其氣靜者，貌不期而恭；其量遠者，色不期而溫。善世而不伐，德博而化，寬以居之，仁以守之，學問以養之，然後和氣中涵而英華外順。  </p>
+</blockquote>
+<p><pre>：溫恭之用，之養，之溢於形。</pre><br>  </p>
+<blockquote>
+<p>敬其身以遠暴慢，心御氣而道御心。有惴惴之小心斯有溫溫之恭德。  </p>
+</blockquote>
+<p><pre>：謹小細微假以時日，乃或致溫恭。</pre><br>  </p>
+]]></content:encoded>
+      
+      <comments>http://www.zhinuo.site/spark/60968722.html#disqus_thread</comments>
+    </item>
     
     <item>
       <title>船山文集《读通鉴论》上册 摘录笔记三</title>
@@ -1468,7 +1512,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX19SargGbqNIBvVMx5HFUbvwofi/UKaQ1CUHxTcFqcGrZ2NTGQJJly1q7V8I3nXa1/bDcQR4VbrLBMVNBxSecBU8MRObjEbjE4L9Ehb+8qx4jEsk1XvtOBs7qIG+fAud3UtQuj5T+K8vnZrfdGTTONqjV+sOMw08HUCJN3Zz3j7NMoyDNi649QJHdo7ikjr0/2niOT6G8AyRAypjzSLDXBF4S4JCAJC3RGdN72ReJAQQGlY1vSqdXp48++pAN9/Qwf4JxU2V1CWuulrQSUwL/L93tkSUrdXYnPTtZAbnsvvZmR0+B+Xv+uczDj6+oT0NLi3joS5laPTmCzUUaKJh/LXKyg5hEKPifxaOS97k2718h7cip+XQ3Zcxo/cNlJNPYsGL/prbJQyF6Nunv5UYWSAQdsLrsuA+cqFKm8LbyD9PppIXmdxZiBNnCL0beOn4D6l69wE27tGkgWIXCRKxL8xtnUpT9EXr5WhjH7wv008AhZ07g5sMHIEnyTHfmk/+ppW2iVaTJxdkpQJkMbCh2WaQF4TfBXL5Il25OKkZlQu6MQPeXPKkuk+nk4UmK58ICo88kzP5KJ92C+mc/xZpmZSKr3CuZOmWFfxtPD0hA3d2kvPjusjZf7ea3bdEA0fJC+h+T64g0EkT08T/dDw17cl1gpjMF2jq4UDT2+X8zsQdPAm9bgnPXNTRJ2rQHhZrOHSQ6pi6quJqhA0xuGbPtWvTHQr6E4kxpFNqS74/2XZLPrCVUIqtAbtiqKzNQLmbKEHUV9FRQTg3ub0nKz90RorMnnbHJv2KZF5sbqvGOrIC4ylb8IqL8XibunHqZBDB0fdoUTEouledehCoza9lmG/dLUYOmNS1oa44PDhIZ7ZphvWmSY3hPd3wOI1tY0VxPMXgWdg7nMEJl9gp+9MKtTK2MCKH00BEV7ILVF1CmPux3z8dzQBBA8A4UF7VONExpQbUY1LPX+Vb05AlQ+dMvHlXGC+SFfmtGoE= </div>]]></content:encoded>
+      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1+m5vuzwW7+d+dnPgJ8MB96lLNLisW98UzQi/mm/tnQYePab1uU3RQQU5m2vkhk+UtroVgfVSCiF3uSHkrVrAf2ThSi7tibd4oMQY0N1osuYM3jqqCmQQv+lMgBKPmQqlb74ty6Vn3Y9lT33xrKOZNza23MRv+hhfJ3QWtOBlP65Mm9L5fGGAAgWS5flJQ7IYxYpQ+H6+f9KZgy5Oot27P3CkZo3bOcmp47BLIQbMXMDVd5LTmuAx1fxCs8LpFJXs/jqhwT05XHw8q2ZSg1vKlCqnroidE8EbhEAT3KctJKMCbo+KRtY5MmfKMza45+N8bFC5I7DDDZSe9pIABc/V5LW5vF0ha3Jp2fUEtgEN/9pTxjZVoFWUtTWnPM+jGo3IoiRn5seCScbYwDvKiKlJIEDoincniHesvQgPtyIbWiZp43OIVgACZt7d2rRxNehZTp4lpx5L0otXAvUsgatSZYMApbzrihHZQ+KjHGTiGoknLAy5h4bvMWZIIEKPTD7pkq85I3c66+QSQh08eqRN1DVoZXroJhIb5mF2lIT51StA3p9JEgGG3KLZH7Pg3tZJbLM8PLWcCmkGl3Xx6gH9W0H1ZZbzwFtyU84wwkLvztCNMCiqN0ugWlCSsJvM7ms1K2W89hBqF25HMxbJ8cG9br0GdgydDwSuIvY+Ozc5Bwz1Mnb4VU9llEvoxtEH4Jtd22+rgTb3u2vkwUBq0w94sVwahUKAGZAtvPRgO4CczglSdSoIX9FhQ/VhhQTV0E+jp9sqMdRI1CBMi7T2qofu5m8AYxWL1SyVvmP9pxd8K8RYMC9Fo2Pb61ypgMxg+PVwo1nZaE/+HID8RPnao0xMrK2rRiF+UM2fARpb3ADv8QHIU7QvTWsfFq9On7Hi0MTN4hvDyIKYhd0vS2jY2YHWRyo8Flh7Xy1QijaL4NcLqhc3FIsYIJ09gLjfc23u32YZq+ikhBBRs3LwuJc9TA9RO9qU+geF+TGaA= </div>]]></content:encoded>
       
       <comments>http://www.zhinuo.site/writing/38458.html#disqus_thread</comments>
     </item>
@@ -1503,7 +1547,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1+R81f5Oi8fa1afCPPjt5/K7Jz5RDHzrWjLRzQeBJHsJami+zMPtSPyC8PGl7v/D3Ks9G/VIH3wIfxzYfWsFtYoKXSldTsv/9ir2wM3TD6uoAe0LG5q046uzKaJKPJqE2Ieyi+zhNCpUwWhHeW3kY36ewwdBeF6YLFDY4Kw0J20kLQO6ueNs9X1IpF7GFHkpj6PyFCG3+tBB8iKJu3wW2Rypjq6wwrVlqlRvBQEQ5L3hADj2DkHrOlRL01VzWNg6oCQnv9S0WKnIQFB16U43634eRifzRKKATS+i4wyndgoSPEyd84Ok4dLzNcAEpGetMLpusrLSQhiXU+/XRYrnrtJXSZr1uowgDAeTIZoyTj8J9voO2b3xEZOOLD9FekyTf0XLecx0L1rlQ+hPetyL16VPgDGbMR6y6NC1uQmwgzSSgAsWVFMFdDduK9k18PEiTIOHvn3d6Dowd3GaYHFd2QPvIK7dmkiFPdUwJPHYM3bhaAcK+JAbkgRUguzlEyzlBM24+4VrqZE0o8d2nq3udZZ8FMGNJsUEmRPygIhNKOnXApyXluKEBfO4Pj4Lyfta9i7t1DSXTA/cNPQh2qO2fmQTkjUMm9uOoohfz/oxAn8Exkl5pzMzBMTMR0YCrUJg1J7+OT9Xu9wme4bCWAFWEram78Pm7xbwsjFoU5QGnY9jfF1RrYgIgtBq8NjtJL6OeX6tsutchFW1hBGtlSuB0uexRgQzwfGJBqR+j2jXN3Dst+rvoev3POwOol+ijnhgAByl29AWuyGyGjEQv6UQtvMrnZ2KsMgQ9aFjQH3l6wvQhftvUzu+WvW+BOkBHfiBkzd5q6f3jX3c0WyPXDBr1WKxrXTV209EVz0wDbdV2Dc9KvgjQImFX6I7uqFPdr57s6AS9Fzb+2v+RFoiq4NqgvZGZlh6LKGW34HhfsmrUmPh6+9SHLlaDV6603dus7LjQxtV5w354CHotUgqjXZ/Q3yOfzXBXqRZ+4y6MapQzTD+G7ncnhDHVVpPmjZCrGXIvGa0VqHjymc1uPFAQw0LBuxk0IswltXSSoLfjVWeWXJDQS1iF/J+ijO </div>]]></content:encoded>
+      <content:encoded><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><h3 id="encrypt-message">欢迎, 请输入密码继续.</h3><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX19QgjggRWKM0RRgxCa/xbZmLBQFUxJGyBxo5PJTMlX/XpI9UJI8fC8Hor/aZSIOx3xobitpLI69hK0G4PkCOEYAyHPkwT8xEyd5i3lkasst4fhfYJzC7gYIX7++OB8v3VoQPBsjYMzxwDyRho36efJiAGQeppQu9k8riWKZCYryFkI+0y2nyMvRKyJ4dsLWQfaikIB6ZuZwTv7C9y7tqQEQHssn368VdYCsDHB42et6cGAXwvO3yN7tEQ0Xr/lpH2XeQtCD6WyyfUsLgNwoDFl53y3arlrH9nHehcefC1mo+1lieS2MHvISkiCk3qvWW+kr+opJhIidwuWiI8mGGT3CNvD+ECebkckes9WJHMO49jdVOf/Hc9iUd//uuFGYKOcDUKSSJXneXXuNNOp6Pf/jMYyKMqdlYIOaUdvu80nWs8Z8xq4floaVBWBe0COB22PSdPtHFEMK9rq+4DOexfclMiwk4MrO8Hl5tqqYyNExCYjfJmTOzREQd+mJggJFCmlZk32q3xjCEuo+tH0gjc+Budozw77M8pTjhQ1ZgFF/A45jNDnMkurGq03L9VyL27/tE3YKFmTeOEUP8sBUskNYBcw23xoaNiSBAGV6RPTTF2yBiw/9kIZ9vNASfdnpF6desAjoVWdFOE+bG07Tkg6RFVUVjWiTyP2Yvgf6BfrQidfsc5ZPVkz5xXDeTMAaHX2SPfWgvRWkFyJCKwJxKxjx22sJwIoKgF63EjsZ1sfBKeY9qZrUxcWQhEftcAd3ZC6/uLgMuIPF5n0IjN7wjqE9SVx9pY8npTxLQkgxw1Rjxx10h+A5igaft7iuOmYz5tfu8LhDGhWzt3wNgoT5k6no6gcHP9kpYJ0+Ys3BPhZ/gONVo1SsbxMU4/Vyl2Qs2KkUWh/AooZjo/itYC+mty20IlIEBVjj2wTKr4ZUlTRiZHiTMf/bZq0LlTCfeUuKRlWpwrr+TtuWwhKH8q5kn9YMEzVwD8QmW+q9bZgWUVfsWh4RJ+VcYLDdug2C5NV37a/2bsfpU+pRvyWh+CF9cC7DX2vFNk/nsjAzUTiXN4NaerrALsgC+dt8 </div>]]></content:encoded>
       
       <comments>http://www.zhinuo.site/writing/676.html#disqus_thread</comments>
     </item>
@@ -2173,27 +2217,6 @@
 ]]></content:encoded>
       
       <comments>http://www.zhinuo.site/spark/33839.html#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>立夏</title>
-      <link>http://www.zhinuo.site/spark/30771.html</link>
-      <guid>http://www.zhinuo.site/spark/30771.html</guid>
-      <pubDate>Mon, 06 Jun 2016 04:35:43 GMT</pubDate>
-      <description>
-      
-        &lt;h3 id=&quot;节气随想&quot;&gt;&lt;a href=&quot;#节气随想&quot; class=&quot;headerlink&quot; title=&quot;节气随想&quot;&gt;&lt;/a&gt;节气随想&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/mw690/8bf740e1gw1f72nh7o4kxj2
-      
-      </description>
-      
-      <content:encoded><![CDATA[<h3 id="节气随想"><a href="#节气随想" class="headerlink" title="节气随想"></a>节气随想</h3><p><img src="https://ws1.sinaimg.cn/mw690/8bf740e1gw1f72nh7o4kxj21hc0xc7wh.jpg" alt="立夏"></p>
-<p>立夏，夏三月之始。立者建、成。</p>
-<p>黄帝内经言：夏三月，此谓蕃秀(言夏三月承春三月之发陈出新，因而滋长繁盛)，天地气交(言阴阳合和之融洽，于此而渐趋于盛极。夏三月，泰和而离明)，万物华实。&nbsp;</p>
-<p>夜卧早起，无厌于日 (言人宜应夏日蕃盛之阳气，以外阳扶助体内之阳，以养长。) ，使志无怒(怒伤肝，肝伤则无以发陈，无以滋长。)，使华英成秀，使气得泄，若所爱在外，此夏气之应养长之道也。&nbsp;  </p>
-<p><strong><font color="red">！！！</font><font color="green" face="微软雅黑" size="3">“悟”分类下的文章用来记录个人偶思偶得的碎想。请独立思考，切勿轻信。<br>如若这些小言琐语能引发您的遐想、感悟，不亦乐乎！</font></strong></p>
-]]></content:encoded>
-      
-      <comments>http://www.zhinuo.site/spark/30771.html#disqus_thread</comments>
     </item>
     
   </channel>
