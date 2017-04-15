@@ -1653,7 +1653,7 @@ pre .javascript .function {
 .sidebar {
   position: fixed;
   right: 0;
-  top: 0;
+  top: 90px;
   bottom: 0;
   opacity: 0.85;
   width: 0;
@@ -1808,7 +1808,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffd9db;
+  background: #8581f6;
 }
 .links-of-blogroll {
   font-size: 13px;
