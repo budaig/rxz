@@ -1034,7 +1034,6 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .site-nav {
-    background: #f5f5f5;
     display: none;
     margin: 0 -10px;
     padding: 0 10px;
@@ -1653,7 +1652,7 @@ pre .javascript .function {
 .sidebar {
   position: fixed;
   right: 0;
-  top: 90px;
+  top: 0;
   bottom: 0;
   opacity: 0.85;
   width: 0;
@@ -1808,7 +1807,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #ff20c7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2227,13 +2226,13 @@ pre .javascript .function {
   border: none;
 }
 .local-search-pop-overlay {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 2080;
-  background-color: #000;
+  background-color: rgba(0,0,0,0.3);
 }
 .local-search-popup {
   display: none;
@@ -2248,7 +2247,6 @@ pre .javascript .function {
   color: #333;
   z-index: 9999;
   border-radius: 5px;
-  border: 1px solid #000;
 }
 @media (max-width: 767px) {
   .local-search-popup {
@@ -2285,7 +2283,6 @@ pre .javascript .function {
   background: #f5f5f5;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border-bottom: 1px solid #000;
 }
 .local-search-popup #local-search-result {
   overflow: auto;
@@ -2601,22 +2598,10 @@ hr {
   height: 2px;
 }
 .main-inner {
-  margin-top: 120px;
+  margin-top: 80px;
 }
 .header {
   background: #f5f5f5;
-  z-index: 999;
-  opacity: 0.9;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-}
-@media (max-width: 767px) {
-  .header {
-    height: 58px;
-    position: fixed;
-  }
 }
 .header-inner {
   padding: 25px 0 20px;
