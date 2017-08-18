@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 
 
@@ -10,6 +10,13 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
 
 
 
@@ -37,12 +44,38 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="布袋, 知诺, zhinuo" />
@@ -56,7 +89,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.2" />
 
 
 
@@ -81,8 +114,9 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"right","display":"post","offset":80,"offset_float":0,"b2t":false,"scrollpercent":true},
+    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
+    tabs: true,
     motion: true,
     duoshuo: {
       userId: '0',
@@ -106,17 +140,7 @@
 
 
 
-  <title>
-  
-
-  
-    标签 | 布袋小知诺
-  
-</title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
+  <title>标签 | 布袋小知诺</title>
   
 
 
@@ -142,12 +166,16 @@
 
 
 
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
   
   
     
   
 
-  <div class="container sidebar-position-right  ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -194,7 +222,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
+          <a href="/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -204,7 +232,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
+          <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -214,7 +242,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
+          <a href="/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -224,7 +252,7 @@
       
         
         <li class="menu-item menu-item-links">
-          <a href="/links" rel="section">
+          <a href="/links/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-link"></i> <br />
             
@@ -260,7 +288,7 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+      <input autocomplete="off"
              placeholder="搜索..." spellcheck="false"
              type="text" id="local-search-input">
     </div>
@@ -286,7 +314,11 @@
             
 
   <div id="posts" class="posts-expand">
-  <header class="post-header">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
 	<h2 class="post-title" itemprop="name headline">标签</h2>
 
@@ -294,16 +326,28 @@
 
 </header>
 
-    
-    
-      <div class="tag-cloud">
-        <div class="tag-cloud-title">
-            目前共计 151 个标签
-        </div>
-        <div class="tag-cloud-tags">
-          <a href="/tags/DriveDroid/" style="font-size: 12px; color: #ccc">DriveDroid</a> <a href="/tags/FTP/" style="font-size: 12px; color: #ccc">FTP</a> <a href="/tags/FTP-Express/" style="font-size: 12px; color: #ccc">FTP Express</a> <a href="/tags/ROOT/" style="font-size: 14.4px; color: #b3b3b3">ROOT</a> <a href="/tags/SFTP/" style="font-size: 12px; color: #ccc">SFTP</a> <a href="/tags/SSH/" style="font-size: 13.2px; color: #c0c0c0">SSH</a> <a href="/tags/SuperSU/" style="font-size: 14.4px; color: #b3b3b3">SuperSU</a> <a href="/tags/bootstrap/" style="font-size: 12px; color: #ccc">bootstrap</a> <a href="/tags/css/" style="font-size: 12px; color: #ccc">css</a> <a href="/tags/html/" style="font-size: 12px; color: #ccc">html</a> <a href="/tags/jquery/" style="font-size: 12px; color: #ccc">jquery</a> <a href="/tags/ssh-server/" style="font-size: 12px; color: #ccc">ssh server</a> <a href="/tags/windows密码/" style="font-size: 12px; color: #ccc">windows密码</a> <a href="/tags/win管理员密码修改/" style="font-size: 12px; color: #ccc">win管理员密码修改</a> <a href="/tags/七损八益/" style="font-size: 12px; color: #ccc">七损八益</a> <a href="/tags/三伏养生/" style="font-size: 12px; color: #ccc">三伏养生</a> <a href="/tags/中医/" style="font-size: 24px; color: #4f4f4f">中医</a> <a href="/tags/中医修正/" style="font-size: 13.2px; color: #c0c0c0">中医修正</a> <a href="/tags/中医归正/" style="font-size: 16.8px; color: #9a9a9a">中医归正</a> <a href="/tags/中文精简/" style="font-size: 12px; color: #ccc">中文精简</a> <a href="/tags/乾坤/" style="font-size: 18px; color: #8e8e8e">乾坤</a> <a href="/tags/二十四节气/" style="font-size: 28.8px; color: #1d1d1d">二十四节气</a> <a href="/tags/伤寒/" style="font-size: 22.8px; color: #5c5c5c">伤寒</a> <a href="/tags/伤寒杂病论/" style="font-size: 12px; color: #ccc">伤寒杂病论</a> <a href="/tags/伤寒论/" style="font-size: 12px; color: #ccc">伤寒论</a> <a href="/tags/修心养生/" style="font-size: 13.2px; color: #c0c0c0">修心养生</a> <a href="/tags/健康养生/" style="font-size: 12px; color: #ccc">健康养生</a> <a href="/tags/儒/" style="font-size: 13.2px; color: #c0c0c0">儒</a> <a href="/tags/儒学/" style="font-size: 14.4px; color: #b3b3b3">儒学</a> <a href="/tags/先天/" style="font-size: 12px; color: #ccc">先天</a> <a href="/tags/先天后天/" style="font-size: 12px; color: #ccc">先天后天</a> <a href="/tags/八卦/" style="font-size: 27.6px; color: #2a2a2a">八卦</a> <a href="/tags/六十四卦/" style="font-size: 24px; color: #4f4f4f">六十四卦</a> <a href="/tags/六节/" style="font-size: 26.4px; color: #363636">六节</a> <a href="/tags/养生/" style="font-size: 20.4px; color: #757575">养生</a> <a href="/tags/冬至/" style="font-size: 12px; color: #ccc">冬至</a> <a href="/tags/劝学/" style="font-size: 12px; color: #ccc">劝学</a> <a href="/tags/医圣/" style="font-size: 12px; color: #ccc">医圣</a> <a href="/tags/博客美化/" style="font-size: 12px; color: #ccc">博客美化</a> <a href="/tags/卦辞/" style="font-size: 13.2px; color: #c0c0c0">卦辞</a> <a href="/tags/后天/" style="font-size: 12px; color: #ccc">后天</a> <a href="/tags/周岁/" style="font-size: 12px; color: #ccc">周岁</a> <a href="/tags/周易/" style="font-size: 24px; color: #4f4f4f">周易</a> <a href="/tags/周易内传/" style="font-size: 12px; color: #ccc">周易内传</a> <a href="/tags/国学/" style="font-size: 21.6px; color: #686868">国学</a> <a href="/tags/处暑/" style="font-size: 12px; color: #ccc">处暑</a> <a href="/tags/夏秋/" style="font-size: 12px; color: #ccc">夏秋</a> <a href="/tags/夏至/" style="font-size: 13.2px; color: #c0c0c0">夏至</a> <a href="/tags/大寒/" style="font-size: 12px; color: #ccc">大寒</a> <a href="/tags/大暑/" style="font-size: 13.2px; color: #c0c0c0">大暑</a> <a href="/tags/大通缩/" style="font-size: 13.2px; color: #c0c0c0">大通缩</a> <a href="/tags/大雪/" style="font-size: 12px; color: #ccc">大雪</a> <a href="/tags/太阳/" style="font-size: 12px; color: #ccc">太阳</a> <a href="/tags/太阳寒水/" style="font-size: 12px; color: #ccc">太阳寒水</a> <a href="/tags/安卓/" style="font-size: 14.4px; color: #b3b3b3">安卓</a> <a href="/tags/安安/" style="font-size: 12px; color: #ccc">安安</a> <a href="/tags/密码修改/" style="font-size: 12px; color: #ccc">密码修改</a> <a href="/tags/寒暑/" style="font-size: 12px; color: #ccc">寒暑</a> <a href="/tags/寒露/" style="font-size: 12px; color: #ccc">寒露</a> <a href="/tags/小公主/" style="font-size: 12px; color: #ccc">小公主</a> <a href="/tags/小寒/" style="font-size: 12px; color: #ccc">小寒</a> <a href="/tags/小暑/" style="font-size: 13.2px; color: #c0c0c0">小暑</a> <a href="/tags/小满/" style="font-size: 13.2px; color: #c0c0c0">小满</a> <a href="/tags/小病为贵/" style="font-size: 12px; color: #ccc">小病为贵</a> <a href="/tags/小雪/" style="font-size: 12px; color: #ccc">小雪</a> <a href="/tags/屯卦/" style="font-size: 12px; color: #ccc">屯卦</a> <a href="/tags/巽风/" style="font-size: 12px; color: #ccc">巽风</a> <a href="/tags/序卦传/" style="font-size: 12px; color: #ccc">序卦传</a> <a href="/tags/张仲景/" style="font-size: 12px; color: #ccc">张仲景</a> <a href="/tags/彖辞/" style="font-size: 13.2px; color: #c0c0c0">彖辞</a> <a href="/tags/心学/" style="font-size: 14.4px; color: #b3b3b3">心学</a> <a href="/tags/惊蛰/" style="font-size: 13.2px; color: #c0c0c0">惊蛰</a> <a href="/tags/感冒发烧/" style="font-size: 12px; color: #ccc">感冒发烧</a> <a href="/tags/批处理/" style="font-size: 12px; color: #ccc">批处理</a> <a href="/tags/文言/" style="font-size: 13.2px; color: #c0c0c0">文言</a> <a href="/tags/方解/" style="font-size: 12px; color: #ccc">方解</a> <a href="/tags/日高天凉/" style="font-size: 12px; color: #ccc">日高天凉</a> <a href="/tags/时间/" style="font-size: 12px; color: #ccc">时间</a> <a href="/tags/春分/" style="font-size: 13.2px; color: #c0c0c0">春分</a> <a href="/tags/曾子/" style="font-size: 13.2px; color: #c0c0c0">曾子</a> <a href="/tags/杂卦传/" style="font-size: 12px; color: #ccc">杂卦传</a> <a href="/tags/杠杆/" style="font-size: 13.2px; color: #c0c0c0">杠杆</a> <a href="/tags/汉宣帝/" style="font-size: 12px; color: #ccc">汉宣帝</a> <a href="/tags/汉文帝/" style="font-size: 12px; color: #ccc">汉文帝</a> <a href="/tags/汉昭帝/" style="font-size: 12px; color: #ccc">汉昭帝</a> <a href="/tags/汉景帝/" style="font-size: 12px; color: #ccc">汉景帝</a> <a href="/tags/汉武帝/" style="font-size: 12px; color: #ccc">汉武帝</a> <a href="/tags/汉高祖/" style="font-size: 12px; color: #ccc">汉高祖</a> <a href="/tags/河图/" style="font-size: 13.2px; color: #c0c0c0">河图</a> <a href="/tags/清明/" style="font-size: 13.2px; color: #c0c0c0">清明</a> <a href="/tags/炎症/" style="font-size: 12px; color: #ccc">炎症</a> <a href="/tags/爻辞/" style="font-size: 14.4px; color: #b3b3b3">爻辞</a> <a href="/tags/王夫之/" style="font-size: 25.2px; color: #434343">王夫之</a> <a href="/tags/王船山/" style="font-size: 14.4px; color: #b3b3b3">王船山</a> <a href="/tags/王阳明/" style="font-size: 14.4px; color: #b3b3b3">王阳明</a> <a href="/tags/病机/" style="font-size: 12px; color: #ccc">病机</a> <a href="/tags/癌症/" style="font-size: 12px; color: #ccc">癌症</a> <a href="/tags/癌症治疗/" style="font-size: 13.2px; color: #c0c0c0">癌症治疗</a> <a href="/tags/白血病/" style="font-size: 12px; color: #ccc">白血病</a> <a href="/tags/白露/" style="font-size: 12px; color: #ccc">白露</a> <a href="/tags/知识/" style="font-size: 12px; color: #ccc">知识</a> <a href="/tags/秋分/" style="font-size: 12px; color: #ccc">秋分</a> <a href="/tags/秦始皇/" style="font-size: 12px; color: #ccc">秦始皇</a> <a href="/tags/立冬/" style="font-size: 12px; color: #ccc">立冬</a> <a href="/tags/立夏/" style="font-size: 13.2px; color: #c0c0c0">立夏</a> <a href="/tags/立春/" style="font-size: 12px; color: #ccc">立春</a> <a href="/tags/立秋/" style="font-size: 13.2px; color: #c0c0c0">立秋</a> <a href="/tags/简史/" style="font-size: 12px; color: #ccc">简史</a> <a href="/tags/经济原理/" style="font-size: 12px; color: #ccc">经济原理</a> <a href="/tags/经济模型/" style="font-size: 12px; color: #ccc">经济模型</a> <a href="/tags/经络/" style="font-size: 13.2px; color: #c0c0c0">经络</a> <a href="/tags/肾/" style="font-size: 12px; color: #ccc">肾</a> <a href="/tags/肾虚/" style="font-size: 12px; color: #ccc">肾虚</a> <a href="/tags/脾胃/" style="font-size: 12px; color: #ccc">脾胃</a> <a href="/tags/致良知/" style="font-size: 14.4px; color: #b3b3b3">致良知</a> <a href="/tags/船山/" style="font-size: 12px; color: #ccc">船山</a> <a href="/tags/船山文集/" style="font-size: 15.6px; color: #a7a7a7">船山文集</a> <a href="/tags/节气/" style="font-size: 12px; color: #ccc">节气</a> <a href="/tags/节食/" style="font-size: 14.4px; color: #b3b3b3">节食</a> <a href="/tags/芒种/" style="font-size: 13.2px; color: #c0c0c0">芒种</a> <a href="/tags/荀子/" style="font-size: 12px; color: #ccc">荀子</a> <a href="/tags/蒙卦/" style="font-size: 12px; color: #ccc">蒙卦</a> <a href="/tags/补肾/" style="font-size: 12px; color: #ccc">补肾</a> <a href="/tags/解热镇痛药/" style="font-size: 12px; color: #ccc">解热镇痛药</a> <a href="/tags/论语/" style="font-size: 13.2px; color: #c0c0c0">论语</a> <a href="/tags/诗歌/" style="font-size: 19.2px; color: #818181">诗歌</a> <a href="/tags/诗词/" style="font-size: 19.2px; color: #818181">诗词</a> <a href="/tags/说卦传/" style="font-size: 12px; color: #ccc">说卦传</a> <a href="/tags/读通鉴论/" style="font-size: 15.6px; color: #a7a7a7">读通鉴论</a> <a href="/tags/谷雨/" style="font-size: 13.2px; color: #c0c0c0">谷雨</a> <a href="/tags/象辞/" style="font-size: 13.2px; color: #c0c0c0">象辞</a> <a href="/tags/财富/" style="font-size: 12px; color: #ccc">财富</a> <a href="/tags/货币/" style="font-size: 15.6px; color: #a7a7a7">货币</a> <a href="/tags/货币乘数/" style="font-size: 12px; color: #ccc">货币乘数</a> <a href="/tags/超级授权/" style="font-size: 14.4px; color: #b3b3b3">超级授权</a> <a href="/tags/超级授权管理/" style="font-size: 12px; color: #ccc">超级授权管理</a> <a href="/tags/运动养生/" style="font-size: 12px; color: #ccc">运动养生</a> <a href="/tags/远程传输/" style="font-size: 12px; color: #ccc">远程传输</a> <a href="/tags/远程文件传输/" style="font-size: 12px; color: #ccc">远程文件传输</a> <a href="/tags/道/" style="font-size: 13.2px; color: #c0c0c0">道</a> <a href="/tags/释/" style="font-size: 13.2px; color: #c0c0c0">释</a> <a href="/tags/金匮要略/" style="font-size: 12px; color: #ccc">金匮要略</a> <a href="/tags/金融/" style="font-size: 15.6px; color: #a7a7a7">金融</a> <a href="/tags/阴阳/" style="font-size: 30px; color: #111">阴阳</a> <a href="/tags/随身启动镜像工具/" style="font-size: 12px; color: #ccc">随身启动镜像工具</a> <a href="/tags/雨水/" style="font-size: 12px; color: #ccc">雨水</a> <a href="/tags/需卦/" style="font-size: 12px; color: #ccc">需卦</a> <a href="/tags/霜降/" style="font-size: 12px; color: #ccc">霜降</a> <a href="/tags/风邪/" style="font-size: 12px; color: #ccc">风邪</a> <a href="/tags/饮食养生/" style="font-size: 12px; color: #ccc">饮食养生</a> <a href="/tags/高血压/" style="font-size: 12px; color: #ccc">高血压</a>
-        </div>
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <div class="tag-cloud">
+            <div class="tag-cloud-title">
+                目前共计 152 个标签
+            </div>
+            <div class="tag-cloud-tags">
+              <a href="/tags/DriveDroid/" style="font-size: 12px; color: #ccc">DriveDroid</a> <a href="/tags/FTP/" style="font-size: 12px; color: #ccc">FTP</a> <a href="/tags/FTP-Express/" style="font-size: 12px; color: #ccc">FTP Express</a> <a href="/tags/ROOT/" style="font-size: 14.25px; color: #b5b5b5">ROOT</a> <a href="/tags/SFTP/" style="font-size: 12px; color: #ccc">SFTP</a> <a href="/tags/SSH/" style="font-size: 13.13px; color: #c0c0c0">SSH</a> <a href="/tags/SuperSU/" style="font-size: 14.25px; color: #b5b5b5">SuperSU</a> <a href="/tags/bootstrap/" style="font-size: 12px; color: #ccc">bootstrap</a> <a href="/tags/css/" style="font-size: 12px; color: #ccc">css</a> <a href="/tags/html/" style="font-size: 12px; color: #ccc">html</a> <a href="/tags/jquery/" style="font-size: 12px; color: #ccc">jquery</a> <a href="/tags/ssh-server/" style="font-size: 12px; color: #ccc">ssh server</a> <a href="/tags/windows密码/" style="font-size: 12px; color: #ccc">windows密码</a> <a href="/tags/win管理员密码修改/" style="font-size: 12px; color: #ccc">win管理员密码修改</a> <a href="/tags/七损八益/" style="font-size: 12px; color: #ccc">七损八益</a> <a href="/tags/三伏养生/" style="font-size: 12px; color: #ccc">三伏养生</a> <a href="/tags/中医/" style="font-size: 23.25px; color: #575757">中医</a> <a href="/tags/中医修正/" style="font-size: 13.13px; color: #c0c0c0">中医修正</a> <a href="/tags/中医归正/" style="font-size: 16.5px; color: #9d9d9d">中医归正</a> <a href="/tags/中文精简/" style="font-size: 12px; color: #ccc">中文精简</a> <a href="/tags/乾坤/" style="font-size: 17.63px; color: #929292">乾坤</a> <a href="/tags/二十四节气/" style="font-size: 28.88px; color: #1d1d1d">二十四节气</a> <a href="/tags/伤寒/" style="font-size: 22.13px; color: #636363">伤寒</a> <a href="/tags/伤寒杂病论/" style="font-size: 12px; color: #ccc">伤寒杂病论</a> <a href="/tags/伤寒论/" style="font-size: 12px; color: #ccc">伤寒论</a> <a href="/tags/修心养生/" style="font-size: 13.13px; color: #c0c0c0">修心养生</a> <a href="/tags/健康养生/" style="font-size: 12px; color: #ccc">健康养生</a> <a href="/tags/儒/" style="font-size: 13.13px; color: #c0c0c0">儒</a> <a href="/tags/儒学/" style="font-size: 14.25px; color: #b5b5b5">儒学</a> <a href="/tags/先天/" style="font-size: 12px; color: #ccc">先天</a> <a href="/tags/先天后天/" style="font-size: 12px; color: #ccc">先天后天</a> <a href="/tags/八卦/" style="font-size: 27.75px; color: #282828">八卦</a> <a href="/tags/六十四卦/" style="font-size: 23.25px; color: #575757">六十四卦</a> <a href="/tags/六节/" style="font-size: 26.63px; color: #343434">六节</a> <a href="/tags/养生/" style="font-size: 19.88px; color: #7a7a7a">养生</a> <a href="/tags/冬至/" style="font-size: 12px; color: #ccc">冬至</a> <a href="/tags/劝学/" style="font-size: 12px; color: #ccc">劝学</a> <a href="/tags/医圣/" style="font-size: 12px; color: #ccc">医圣</a> <a href="/tags/博客美化/" style="font-size: 12px; color: #ccc">博客美化</a> <a href="/tags/卦辞/" style="font-size: 13.13px; color: #c0c0c0">卦辞</a> <a href="/tags/后天/" style="font-size: 12px; color: #ccc">后天</a> <a href="/tags/周岁/" style="font-size: 12px; color: #ccc">周岁</a> <a href="/tags/周易/" style="font-size: 24.38px; color: #4b4b4b">周易</a> <a href="/tags/周易内传/" style="font-size: 12px; color: #ccc">周易内传</a> <a href="/tags/国学/" style="font-size: 21px; color: #6f6f6f">国学</a> <a href="/tags/处暑/" style="font-size: 12px; color: #ccc">处暑</a> <a href="/tags/夏秋/" style="font-size: 12px; color: #ccc">夏秋</a> <a href="/tags/夏至/" style="font-size: 13.13px; color: #c0c0c0">夏至</a> <a href="/tags/大寒/" style="font-size: 12px; color: #ccc">大寒</a> <a href="/tags/大暑/" style="font-size: 13.13px; color: #c0c0c0">大暑</a> <a href="/tags/大通缩/" style="font-size: 13.13px; color: #c0c0c0">大通缩</a> <a href="/tags/大雪/" style="font-size: 12px; color: #ccc">大雪</a> <a href="/tags/太阳/" style="font-size: 12px; color: #ccc">太阳</a> <a href="/tags/太阳寒水/" style="font-size: 12px; color: #ccc">太阳寒水</a> <a href="/tags/安卓/" style="font-size: 14.25px; color: #b5b5b5">安卓</a> <a href="/tags/安安/" style="font-size: 12px; color: #ccc">安安</a> <a href="/tags/密码修改/" style="font-size: 12px; color: #ccc">密码修改</a> <a href="/tags/寒暑/" style="font-size: 12px; color: #ccc">寒暑</a> <a href="/tags/寒露/" style="font-size: 12px; color: #ccc">寒露</a> <a href="/tags/小公主/" style="font-size: 12px; color: #ccc">小公主</a> <a href="/tags/小寒/" style="font-size: 12px; color: #ccc">小寒</a> <a href="/tags/小暑/" style="font-size: 13.13px; color: #c0c0c0">小暑</a> <a href="/tags/小满/" style="font-size: 13.13px; color: #c0c0c0">小满</a> <a href="/tags/小病为贵/" style="font-size: 12px; color: #ccc">小病为贵</a> <a href="/tags/小雪/" style="font-size: 12px; color: #ccc">小雪</a> <a href="/tags/屯卦/" style="font-size: 12px; color: #ccc">屯卦</a> <a href="/tags/巽风/" style="font-size: 12px; color: #ccc">巽风</a> <a href="/tags/序卦传/" style="font-size: 12px; color: #ccc">序卦传</a> <a href="/tags/张仲景/" style="font-size: 12px; color: #ccc">张仲景</a> <a href="/tags/彖辞/" style="font-size: 13.13px; color: #c0c0c0">彖辞</a> <a href="/tags/心学/" style="font-size: 14.25px; color: #b5b5b5">心学</a> <a href="/tags/惊蛰/" style="font-size: 13.13px; color: #c0c0c0">惊蛰</a> <a href="/tags/感冒发烧/" style="font-size: 12px; color: #ccc">感冒发烧</a> <a href="/tags/批处理/" style="font-size: 12px; color: #ccc">批处理</a> <a href="/tags/文言/" style="font-size: 13.13px; color: #c0c0c0">文言</a> <a href="/tags/方解/" style="font-size: 12px; color: #ccc">方解</a> <a href="/tags/日高天凉/" style="font-size: 12px; color: #ccc">日高天凉</a> <a href="/tags/时间/" style="font-size: 12px; color: #ccc">时间</a> <a href="/tags/春分/" style="font-size: 13.13px; color: #c0c0c0">春分</a> <a href="/tags/曾子/" style="font-size: 13.13px; color: #c0c0c0">曾子</a> <a href="/tags/杂卦传/" style="font-size: 12px; color: #ccc">杂卦传</a> <a href="/tags/杠杆/" style="font-size: 13.13px; color: #c0c0c0">杠杆</a> <a href="/tags/汉宣帝/" style="font-size: 12px; color: #ccc">汉宣帝</a> <a href="/tags/汉文帝/" style="font-size: 12px; color: #ccc">汉文帝</a> <a href="/tags/汉昭帝/" style="font-size: 12px; color: #ccc">汉昭帝</a> <a href="/tags/汉景帝/" style="font-size: 12px; color: #ccc">汉景帝</a> <a href="/tags/汉武帝/" style="font-size: 12px; color: #ccc">汉武帝</a> <a href="/tags/汉高祖/" style="font-size: 12px; color: #ccc">汉高祖</a> <a href="/tags/河图/" style="font-size: 13.13px; color: #c0c0c0">河图</a> <a href="/tags/清明/" style="font-size: 13.13px; color: #c0c0c0">清明</a> <a href="/tags/炎症/" style="font-size: 12px; color: #ccc">炎症</a> <a href="/tags/爻辞/" style="font-size: 14.25px; color: #b5b5b5">爻辞</a> <a href="/tags/王夫之/" style="font-size: 25.5px; color: #404040">王夫之</a> <a href="/tags/王船山/" style="font-size: 14.25px; color: #b5b5b5">王船山</a> <a href="/tags/王阳明/" style="font-size: 14.25px; color: #b5b5b5">王阳明</a> <a href="/tags/病机/" style="font-size: 12px; color: #ccc">病机</a> <a href="/tags/癌症/" style="font-size: 12px; color: #ccc">癌症</a> <a href="/tags/癌症治疗/" style="font-size: 13.13px; color: #c0c0c0">癌症治疗</a> <a href="/tags/白血病/" style="font-size: 12px; color: #ccc">白血病</a> <a href="/tags/白露/" style="font-size: 12px; color: #ccc">白露</a> <a href="/tags/知识/" style="font-size: 12px; color: #ccc">知识</a> <a href="/tags/秋分/" style="font-size: 12px; color: #ccc">秋分</a> <a href="/tags/秦始皇/" style="font-size: 12px; color: #ccc">秦始皇</a> <a href="/tags/立冬/" style="font-size: 12px; color: #ccc">立冬</a> <a href="/tags/立夏/" style="font-size: 13.13px; color: #c0c0c0">立夏</a> <a href="/tags/立春/" style="font-size: 12px; color: #ccc">立春</a> <a href="/tags/立秋/" style="font-size: 13.13px; color: #c0c0c0">立秋</a> <a href="/tags/简史/" style="font-size: 12px; color: #ccc">简史</a> <a href="/tags/经济原理/" style="font-size: 12px; color: #ccc">经济原理</a> <a href="/tags/经济模型/" style="font-size: 12px; color: #ccc">经济模型</a> <a href="/tags/经络/" style="font-size: 13.13px; color: #c0c0c0">经络</a> <a href="/tags/肾/" style="font-size: 12px; color: #ccc">肾</a> <a href="/tags/肾虚/" style="font-size: 12px; color: #ccc">肾虚</a> <a href="/tags/脾胃/" style="font-size: 12px; color: #ccc">脾胃</a> <a href="/tags/致良知/" style="font-size: 14.25px; color: #b5b5b5">致良知</a> <a href="/tags/船山/" style="font-size: 12px; color: #ccc">船山</a> <a href="/tags/船山文集/" style="font-size: 15.38px; color: #a9a9a9">船山文集</a> <a href="/tags/船山易学/" style="font-size: 12px; color: #ccc">船山易学</a> <a href="/tags/节气/" style="font-size: 12px; color: #ccc">节气</a> <a href="/tags/节食/" style="font-size: 14.25px; color: #b5b5b5">节食</a> <a href="/tags/芒种/" style="font-size: 13.13px; color: #c0c0c0">芒种</a> <a href="/tags/荀子/" style="font-size: 12px; color: #ccc">荀子</a> <a href="/tags/蒙卦/" style="font-size: 12px; color: #ccc">蒙卦</a> <a href="/tags/补肾/" style="font-size: 12px; color: #ccc">补肾</a> <a href="/tags/解热镇痛药/" style="font-size: 12px; color: #ccc">解热镇痛药</a> <a href="/tags/论语/" style="font-size: 13.13px; color: #c0c0c0">论语</a> <a href="/tags/诗歌/" style="font-size: 18.75px; color: #868686">诗歌</a> <a href="/tags/诗词/" style="font-size: 18.75px; color: #868686">诗词</a> <a href="/tags/说卦传/" style="font-size: 12px; color: #ccc">说卦传</a> <a href="/tags/读通鉴论/" style="font-size: 15.38px; color: #a9a9a9">读通鉴论</a> <a href="/tags/谷雨/" style="font-size: 13.13px; color: #c0c0c0">谷雨</a> <a href="/tags/象辞/" style="font-size: 13.13px; color: #c0c0c0">象辞</a> <a href="/tags/财富/" style="font-size: 12px; color: #ccc">财富</a> <a href="/tags/货币/" style="font-size: 15.38px; color: #a9a9a9">货币</a> <a href="/tags/货币乘数/" style="font-size: 12px; color: #ccc">货币乘数</a> <a href="/tags/超级授权/" style="font-size: 14.25px; color: #b5b5b5">超级授权</a> <a href="/tags/超级授权管理/" style="font-size: 12px; color: #ccc">超级授权管理</a> <a href="/tags/运动养生/" style="font-size: 12px; color: #ccc">运动养生</a> <a href="/tags/远程传输/" style="font-size: 12px; color: #ccc">远程传输</a> <a href="/tags/远程文件传输/" style="font-size: 12px; color: #ccc">远程文件传输</a> <a href="/tags/道/" style="font-size: 13.13px; color: #c0c0c0">道</a> <a href="/tags/释/" style="font-size: 13.13px; color: #c0c0c0">释</a> <a href="/tags/金匮要略/" style="font-size: 12px; color: #ccc">金匮要略</a> <a href="/tags/金融/" style="font-size: 15.38px; color: #a9a9a9">金融</a> <a href="/tags/阴阳/" style="font-size: 30px; color: #111">阴阳</a> <a href="/tags/随身启动镜像工具/" style="font-size: 12px; color: #ccc">随身启动镜像工具</a> <a href="/tags/雨水/" style="font-size: 12px; color: #ccc">雨水</a> <a href="/tags/需卦/" style="font-size: 12px; color: #ccc">需卦</a> <a href="/tags/霜降/" style="font-size: 12px; color: #ccc">霜降</a> <a href="/tags/风邪/" style="font-size: 12px; color: #ccc">风邪</a> <a href="/tags/饮食养生/" style="font-size: 12px; color: #ccc">饮食养生</a> <a href="/tags/高血压/" style="font-size: 12px; color: #ccc">高血压</a>
+            </div>
+          </div>
+        
       </div>
+      
+      
+      
+    </div>
+    
+    
     
   </div>
 
@@ -327,6 +371,7 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
@@ -347,8 +392,8 @@
 
           
             <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">128</span>
+              <a href="/archives/">
+                <span class="site-state-item-count">129</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -370,7 +415,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">151</span>
+                <span class="site-state-item-count">152</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -395,7 +440,9 @@
                   
                     <i class="fa fa-fw fa-github"></i>
                   
-                  GitHub
+                    
+                      GitHub
+                    
                 </a>
               </span>
             
@@ -404,7 +451,9 @@
                   
                     <i class="fa fa-fw fa-globe"></i>
                   
-                  微博
+                    
+                      微博
+                    
                 </a>
               </span>
             
@@ -489,8 +538,6 @@
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
-          <span id="scrollpercent"><span>0</span>%</span>
-        
       </div>
     
 
@@ -522,6 +569,12 @@
 
 
 
+
+
+
+
+
+
   
   <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
 
@@ -547,21 +600,25 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
 
 
 
   
-  
-
   
 
   
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  
+
+  
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
 
 
 
@@ -591,149 +648,323 @@
 
 
 
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
-  
-
-
-
-
-
 
   
 
   <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
+    var isXml = true;
     // Search DB path;
     var search_path = "search.xml";
-    if (search_path.length == 0) {
+    if (search_path.length === 0) {
       search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
     }
     var path = "/" + search_path;
     // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
 
     function proceedsearch() {
       $("body")
         .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
         .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
       $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
     }
+
     // search function;
     var searchFunc = function(path, search_id, content_id) {
       'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
       $.ajax({
         url: path,
-        dataType: "xml",
+        dataType: isXml ? "xml" : "json",
         async: true,
-        success: function( xmlResponse ) {
+        success: function(res) {
           // get the contents from search data
           isfetched = true;
           $('.popup').detach().appendTo('.header-inner');
-          var datas = $( "entry", xmlResponse ).map(function() {
+          var datas = isXml ? $("entry", res).map(function() {
             return {
-              title: $( "title", this ).text(),
+              title: $("title", this).text(),
               content: $("content",this).text(),
-              url: $( "url" , this).text()
+              url: $("url" , this).text()
             };
-          }).get();
-          var $input = document.getElementById(search_id);
-          var $resultContent = document.getElementById(content_id);
-          $input.addEventListener('input', function(){
-            var matchcounts = 0;
-            var str='<ul class=\"search-result-list\">';
-            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-            $resultContent.innerHTML = "";
-            if (this.value.trim().length > 1) {
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
               // perform local searching
               datas.forEach(function(data) {
                 var isMatch = false;
-                var content_index = [];
-                var data_title = data.title.trim().toLowerCase();
-                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                var data_url = decodeURIComponent(data.url);
-                var index_title = -1;
-                var index_content = -1;
-                var first_occur = -1;
-                // only match artiles with not empty titles and contents
-                if(data_title != '') {
-                  keywords.forEach(function(keyword, i) {
-                    index_title = data_title.indexOf(keyword);
-                    index_content = data_content.indexOf(keyword);
-                    if( index_title >= 0 || index_content >= 0 ){
-                      isMatch = true;
-                      if (i == 0) {
-                        first_occur = index_content;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
                       }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
                     }
 
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
                   });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
                 }
+
                 // show search results
+
                 if (isMatch) {
-                  matchcounts += 1;
-                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                  var content = data.content.trim().replace(/<[^>]+>/g,"");
-                  if (first_occur >= 0) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
                     // cut out 100 characters
-                    var start = first_occur - 20;
-                    var end = first_occur + 80;
+                    var start = position - 20;
+                    var end = position + 80;
                     if(start < 0){
                       start = 0;
                     }
-                    if(start == 0){
-                      end = 50;
+                    if (end < position + word.length) {
+                      end = position + word.length;
                     }
                     if(end > content.length){
                       end = content.length;
                     }
-                    var match_content = content.substring(start, end);
-                    // highlight all keywords
-                    keywords.forEach(function(keyword){
-                      var regS = new RegExp(keyword, "gi");
-                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                    });
-
-                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
                   }
-                  str += "</li>";
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
                 }
-              })};
-            str += "</ul>";
-            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-            $resultContent.innerHTML = str;
-          });
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
           proceedsearch();
         }
-      });}
+      });
+    }
 
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
       e.stopPropagation();
-      if (isfetched == false) {
+      if (isfetched === false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
         proceedsearch();
       };
     });
 
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    });
+    $('.popup-btn-close').click(onPopupClose);
     $('.popup').click(function(e){
       e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
     });
   </script>
 
@@ -744,7 +975,7 @@
   
 
   
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
   <script>AV.initialize("gmm95Ifj4kJcsSWXFaOWxfID-gzGzoHsz", "B3fsvdnzzYdLaS83Fio7SECO");</script>
   <script>
     function showTime(Counter) {
@@ -866,6 +1097,10 @@
 })();
 </script>
 
+
+  
+
+  
 
   
 
