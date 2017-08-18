@@ -113,7 +113,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -593,7 +593,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngrf016j21hc0xc1am.jpg" rel="gallery_cj6hwevuv00i3qgi7kg4q68xt"
+                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngrf016j21hc0xc1am.jpg" rel="gallery_cj6hxa9bu00ae0gi7rec1tlah"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngrf016j21hc0xc1am.jpg" itemprop="contentUrl"/>
               </a>
@@ -1580,7 +1580,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://i4.buimg.com/567571/84bc0e716d41e7b5.jpg" rel="gallery_cj6hwev2a000aqgi751dt5w51"
+                 href="http://i4.buimg.com/567571/84bc0e716d41e7b5.jpg" rel="gallery_cj6hxa90u000d0gi74awr489o"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://i4.buimg.com/567571/84bc0e716d41e7b5.jpg" itemprop="contentUrl"/>
               </a>
@@ -1919,7 +1919,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72nglunvaj21hc0xcqej.jpg" rel="gallery_cj6hwevr100egqgi7u86yz4q5"
+                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72nglunvaj21hc0xcqej.jpg" rel="gallery_cj6hxa995007f0gi72f7q3lxq"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72nglunvaj21hc0xcqej.jpg" itemprop="contentUrl"/>
               </a>
@@ -2006,6 +2006,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -2172,6 +2174,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

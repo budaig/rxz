@@ -113,7 +113,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -753,7 +753,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ws1.sinaimg.cn/mw690/8bf740e1gw1f72nh4nnsfj21hc0xc4qp.jpg" rel="gallery_cj6hwevt400gcqgi71765p4sr"
+                 href="https://ws1.sinaimg.cn/mw690/8bf740e1gw1f72nh4nnsfj21hc0xc4qp.jpg" rel="gallery_cj6hxa98r006u0gi7fk5lk62l"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://ws1.sinaimg.cn/mw690/8bf740e1gw1f72nh4nnsfj21hc0xc4qp.jpg" itemprop="contentUrl"/>
               </a>
@@ -930,7 +930,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngggmynj21hc0xctkq.jpg" rel="gallery_cj6hwevqe00drqgi76bfhk8re"
+                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngggmynj21hc0xctkq.jpg" rel="gallery_cj6hxa98g006h0gi7bial3utb"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngggmynj21hc0xctkq.jpg" itemprop="contentUrl"/>
               </a>
@@ -1107,7 +1107,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ws3.sinaimg.cn/mw690/8bf740e1gw1f72ngk3413j21hc0xcnbu.jpg" rel="gallery_cj6hwevus00hzqgi7lat1qm2y"
+                 href="https://ws3.sinaimg.cn/mw690/8bf740e1gw1f72ngk3413j21hc0xcnbu.jpg" rel="gallery_cj6hxa9c400ao0gi72ensya3n"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://ws3.sinaimg.cn/mw690/8bf740e1gw1f72ngk3413j21hc0xcnbu.jpg" itemprop="contentUrl"/>
               </a>
@@ -1607,7 +1607,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngo8uutj21hc0xcwvd.jpg" rel="gallery_cj6hwevs300fhqgi77ckqxo2l"
+                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngo8uutj21hc0xcwvd.jpg" rel="gallery_cj6hxa99l007z0gi7s0n0fpjd"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngo8uutj21hc0xcwvd.jpg" itemprop="contentUrl"/>
               </a>
@@ -1944,7 +1944,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ws2.sinaimg.cn/mw690/8bf740e1gw1f72nghi9iqj21hc0xcwru.jpg" rel="gallery_cj6hwevok00bwqgi72q3gle8g"
+                 href="https://ws2.sinaimg.cn/mw690/8bf740e1gw1f72nghi9iqj21hc0xcwru.jpg" rel="gallery_cj6hxa96t004t0gi7bnx0egzq"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://ws2.sinaimg.cn/mw690/8bf740e1gw1f72nghi9iqj21hc0xcwru.jpg" itemprop="contentUrl"/>
               </a>
@@ -2031,6 +2031,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -2197,6 +2199,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

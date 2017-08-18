@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="六节,阴阳,修心养生,中医归正,时间," />
+  <meta name="keywords" content="阴阳,六节,中医归正,修心养生,时间," />
 
 
 
@@ -131,7 +131,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -525,13 +525,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/六节/" rel="tag"># 六节</a>
-          
             <a href="/tags/阴阳/" rel="tag"># 阴阳</a>
           
-            <a href="/tags/修心养生/" rel="tag"># 修心养生</a>
+            <a href="/tags/六节/" rel="tag"># 六节</a>
           
             <a href="/tags/中医归正/" rel="tag"># 中医归正</a>
+          
+            <a href="/tags/修心养生/" rel="tag"># 修心养生</a>
           
             <a href="/tags/时间/" rel="tag"># 时间</a>
           
@@ -633,6 +633,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -824,6 +826,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

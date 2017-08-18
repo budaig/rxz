@@ -137,7 +137,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -453,7 +453,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngrf016j21hc0xc1am.jpg" rel="gallery_cj6hwevue00hlqgi7kk5ihfw0"
+                 href="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngrf016j21hc0xc1am.jpg" rel="gallery_cj6hxa9br00aa0gi7jx9xgf9n"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="https://ws4.sinaimg.cn/mw690/8bf740e1gw1f72ngrf016j21hc0xc1am.jpg" itemprop="contentUrl"/>
               </a>
@@ -645,6 +645,8 @@
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -835,6 +837,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="阴阳,寒暑,七损八益,养生," />
+  <meta name="keywords" content="寒暑,七损八益,阴阳,养生," />
 
 
 
@@ -120,7 +120,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"post","offset":80,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: true,
@@ -508,11 +508,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/阴阳/" rel="tag"># 阴阳</a>
-          
             <a href="/tags/寒暑/" rel="tag"># 寒暑</a>
           
             <a href="/tags/七损八益/" rel="tag"># 七损八益</a>
+          
+            <a href="/tags/阴阳/" rel="tag"># 阴阳</a>
           
             <a href="/tags/养生/" rel="tag"># 养生</a>
           
@@ -614,6 +614,8 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
     
     <div class="sidebar-inner">
 
@@ -805,6 +807,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
