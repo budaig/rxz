@@ -1809,6 +1809,7 @@ pre .javascript .function {
   height: 14px;
   padding: 5px;
   background: #222;
+  opacity: 0.7;
   line-height: 0;
   z-index: 1050;
   cursor: pointer;
@@ -1929,7 +1930,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6b30ff;
+  background: #79c785;
 }
 .links-of-blogroll {
   font-size: 13px;
