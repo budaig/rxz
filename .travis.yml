@@ -1,11 +1,16 @@
 language: node_js
 node_js: 6.11.3
+install:
+- npm install
+- npm install hexo-cli -g
 cache:
   apt: true
   directories:
   - node_modules
 addons:
   ssh_known_hosts: git.coding.net
+before_script:
+  - npm install -g gulp
 script:
 - hexo clean
 - hexo generate
