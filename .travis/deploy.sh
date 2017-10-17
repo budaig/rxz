@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Decrypt the private key
-openssl aes-256-cbc -K $encrypted_d0af8ee98daa_key -iv $encrypted_d0af8ee98daa_iv -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
+openssl aes-256-cbc -K $encrypted_0073154072eb_key -iv $encrypted_0073154072eb_iv -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
 # Set the permission of the key
 chmod 600 ~/.ssh/4gcbdg
 # Start SSH agent
