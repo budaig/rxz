@@ -1,0 +1,16 @@
+Host *
+	StrictHostKeyChecking no
+	IdentityFile ~/.ssh/4gcbdg
+	IdentitiesOnly yes
+	
+#github gitbdg
+Host gitwgm
+  Hostname github.com
+  User git
+  IdentityFile ~/.ssh/4gcbdg
+  
+Host gitbdg
+  Hostname git.coding.net
+  StrictHostKeyChecking no
+  IdentityFile ~/.ssh/4gcbdg
+  IdentitiesOnly yes
