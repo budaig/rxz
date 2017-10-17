@@ -1,8 +1,8 @@
 language: node_js
 node_js: 6.11.3
 install:
-- npm install
-- npm install hexo-cli -g
+  - npm install
+  - npm install hexo-cli -g
 cache:
   apt: true
   directories:
@@ -12,8 +12,9 @@ addons:
 before_script:
   - npm install -g gulp
 script:
-- hexo clean
-- hexo generate
+  - gulp dist
+  - hexo clean
+  - hexo generate
 branches:
   only:
   - source
