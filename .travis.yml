@@ -12,7 +12,6 @@ addons:
 before_script:
   - npm install -g gulp
 script:
-  - gulp dist
   - hexo clean
   - hexo generate
 branches:
