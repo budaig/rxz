@@ -3,30 +3,21 @@ node_js: 6.11.3
 cache:
   apt: true
   directories:
-    - node_modules
+  - node_modules
 addons:
   ssh_known_hosts: git.coding.net
 script:
-  - hexo clean
-  - hexo generate
+- hexo clean
+- hexo generate
 branches:
   only:
   - source
 env:
   global:
-    secure: "a53csuwMMiWudKbHJqdzlZr4e0ftmT6qt2BtZ+n6gwjY56Bjcs6lM1Q5tZIRjwNYTlaMU
-      3UK1GI0xjXpERE+Rj5E9gk0Dia4QTveOT8KZa6loTzJUDjj7s2W3pIEKWoPG8Ute0drc4CVWnm12W90H
-      73cKV3CZJPfiuGA8++a8QyS4J3qs9FUyKZdjEeUJBnhymY+RQOLPue1MrvCtugxSSdV5jBagP2Udw0+U
-      QSInOLn8rWvMHPdsoYpaXZKaYHFc+nRqJgQbAtahjjR/OTsTzMyWvZxIKyPLGqRI6mjsprGQ5JAscfWR
-      2lTBHXgklFJR+lIDP4UrRIDfISerSocZo8+WgqOHxeWzwaSEvB9XH9EaQDZLXBR9UURC1/3uqf0Dyuhb
-      PK5Sj8sJ8ms3YwNvNYOiOlWj06BBCC5yrmzslfnrmEXp/wXuNXDW+cnJv4xNuwYrrwZG1KfN64umRtZJ
-      01jL1zVZQQFCrinOzR15mvTUeAVUBE3OvN0F5oV8lexk0K/Lo1iezZEa1jPDen1d2mWKJu73woD2S8eR
-      l63V0G58tz67z3tMAKi2yypbX2PBo0tFiJu+jcxcDXY+Yl9/Yik+bJAfIDOmBNCXlO56a4yQ7aUQVkue
-      3wz8drV5ttIupIxB/SUEh/gjIZsxjN8AYC0kZYvHuJdx/JOqAuWDH8="
+    secure:  "mJprA32KXZoDUbOFDVHWW48b+RvhKDhMJnEdmz0YmqAJYQ2dnWyYO8/bsVgiXaVLWv9Z3i+3VKYoxr1sY+xe9JKNgbT9C3uUIO8sMrttKir0lJin2oi0b3LfMRDbFFsMIWPVfcfGTaH5Q0nMV9hefLciAhzu/lWL/0C58TNYDk0giozBW/YeeRtCWyO0Kf9wzLxaB+h3sntZgpvvEiqvvxz1t9qnFRCu2gH6hN3ZXKEqTFe9Niq5J8M6OncIGDt9Llt/ue8HXhupO3fyCpy8w/N2tqpzWWNMamkvlOZXmYl5gLHHDKSURsO4Ye9dy6HpxRSurV4+8grjyIb6tDkwwGZAbUSyDR47rRm++140NQXVu53fSRDbyO2+ywtKr7rS9AKYx2vGIB5HI8tw/uS5q1iG/onaQsL6AyN8DOeyvQnqrHw4MnLswdeC9q9qQNMPNaOqxcjf04Omv+oTTPums6G/fCILsngsUWU1mTRTEww64b2liEI0ROPUoLeZeVzz4nWB/1cqdceQJvoOga08Itqk6bxuCRHZjpz9uTp2v82p7QCdKpu5dN/EPHtkiRKEjqUD4x4n72TrTXStVhV4ew23IWT5PnNMMtJxmnewigrQ0dbB8up5rxh1/fAWq6Q5QfygWbQyLZtyWix+mHD1KiOI/M549wGC0/mwk9Dbmvw="
 before_install:
-- openssl aes-256-cbc -K $encrypted_d0af8ee98daa_key -iv $encrypted_d0af8ee98daa_iv
-  -in .travis/codingbdm.enc -out ~/.ssh/codingbdm -d
-  
+- openssl aes-256-cbc -K $encrypted_0073154072eb_key -iv $encrypted_0073154072eb_iv
+  -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
 deploy:
   provider: script
   script: sh .travis/deploy.sh
