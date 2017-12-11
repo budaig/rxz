@@ -116,8 +116,6 @@ Plugins:
 
 
 # Miscellaneous
-# links:
-  # 知诺备份: http://www.zhinuo.space/ .托管于 openshift 上，基于 wordpress，优点是主题个人比较喜欢，缺点是速度和稳定性都很一般。
 
 #sitemap
 sitemap:
@@ -135,45 +133,12 @@ theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-# deploy: # github coding 单个部署
-   # type: git
-   # repository: git@gitbdg:budaig/budaig.github.com.git
- # #  repository: https://github.com/budaig/budaig.github.com.git
- # #  repository: git@gitwgm:wegome/wegome.github.io.git
- # #  repository: https://github.com/wegome/wegome.github.io.git
-   # branch: master # coding-pages 或 自定名
 deploy: # github coding 同时部署
 - type: git
   repo: 
      github: git@gitbdg:budaig/budaig.github.com.git,master   
-     #  github: https://github.com/budaig/budaig.github.com.git,master
-     #  github: git@gitwgm:wegome/wegome.github.io.git,master
-     #  github: https://github.com/wegome/wegome.github.io.git,master
      coding: git@codingbdg:budaig/budaig.git,coding-pages
-     #  coding: https://git.coding.net/budaig/budaig.git,coding-pages
-     #  coding: git@git.coding.net:budaim/budaim.git,coding-pages
-     #  coding: https://git.coding.net/budaim/budaim.git,coding-pages
 - type: baidu_url_submitter
-# deploy:
-  # type: ftpsync
-  # host: 192.168.98.101
-  # user: wego
-  # pass: 3155
-  # remote: /MF/www/hexowgm
-  # port: 2221
-  # connections: 1
-  # verbose: true
-
-# encrypt https://github.com/edolphin-ydf/hexo-encrypt
-# encrypt:
-  # # pwdfile: encrypt_password     # this store the password in a file, the whole content of this file will be regarded as the password
-  # password: 3155 # this set password here
-  # # replace_all_url: true # this will replace img url in all posts
-  # # base_url: http://you img base url/    # this will connect with you img url in you post, except full url(start with http://)
-  # # qiniu_ak: your qiniu access key 
-  # # qiniu_sk: your qiniu secrect key 
-  # # img_url_ttl: 86400000  # 3600 second, the ttl for qiniu img url
-  # type: base64 # or qiniu , if base64, the base_url, qiniu_ak, qiniu_sk and img_url_ttl is unnecessary
 
 # Security
 ## https://github.com/MikeCoder/hexo-blog-encrypt 密码不能为纯数字
