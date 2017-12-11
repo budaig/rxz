@@ -141,8 +141,8 @@ social_icons:
 #links_layout: block
 #links_layout: inline
 links:
-  布袋知诺: http://www.zhinuo.space
-  小布袋知诺: http://zhinuo.site
+  布袋知诺: https://www.zhinuo.space
+  小布袋知诺: https://zhinuo.site
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -412,8 +412,8 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-baidushare:
-  type: slide
+#baidushare:
+  #type: slide
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.
@@ -438,11 +438,11 @@ baidushare:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
-    enable: false
+    enable: true
     options:
-      iconStyle: box
+      iconStyle: default
       boxForm: horizontal
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook

@@ -10,4 +10,5 @@ public/
 CNAME
 debug.log
 cmd2Ruby.lnk
-Deploy git.bat
+DeployGit.bat
+DeployGitF.bat
