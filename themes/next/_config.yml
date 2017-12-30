@@ -305,7 +305,7 @@ font:
   global:
     external: true
     family: Lato
-    size:16.8
+    size: 16.8
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
   # Fallback to `global` font settings.
@@ -351,7 +351,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-baidu_analytics: 6ac4538130df06cdc96c06f820d69383
+#baidu_analytics: 6ac4538130df06cdc96c06f820d69383
 
 # Duoshuo ShortName
 #duoshuo_shortname: zhinuo
