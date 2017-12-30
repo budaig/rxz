@@ -10,10 +10,14 @@ override: false
 # Site Information Settings
 # ---------------------------------------------------------------
 
-# To get favicons visit: https://realfavicongenerator.net
-# Put your favicons into `hexo-site/source/` or `hexo-site/themes/next/source/images/` directory.
+# To get or check favicons visit: https://realfavicongenerator.net
+# Put your favicons into `hexo-site/source/` (recommend) or `hexo-site/themes/next/source/images/` directory.
+
 # Default NexT favicons placed in `hexo-site/themes/next/source/images/` directory.
-# And if you want to place your icons in `hexo-site/source/`, you must remove `/images` prefix from pathes.
+# And if you want to place your icons in `hexo-site/source/` root directory, you must remove `/images` prefix from pathes.
+
+# For example, you put your favicons into `hexo-site/source/images` directory.
+# Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
   small: /images/favicon-16x16.png
   medium: /images/favicon-32x32.png
@@ -137,8 +141,9 @@ social_icons:
   transition: false
 
 # Blog rolls
-#links_title: Links
-#links_layout: block
+links_icon: link
+links_title: Links
+links_layout: block
 #links_layout: inline
 links:
   布袋知诺: https://www.zhinuo.space
@@ -289,7 +294,7 @@ font:
   enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
-  host: 
+  host:
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -300,14 +305,14 @@ font:
   global:
     external: true
     family: Lato
-    size: 16.8
+    size:16.8
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
   # Fallback to `global` font settings.
   headings:
     external: true
     family:
-    size: 
+    size:
 
   # Font settings for posts.
   # Fallback to `global` font settings.
@@ -320,7 +325,7 @@ font:
   logo:
     external: true
     family:
-    size: 
+    size:
 
   # Font settings for <code> and code blocks.
   codes:
@@ -369,9 +374,10 @@ changyan:
   appid:
   appkey:
 
+
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
-# more info please open https://github.com/xCss/Valine 主题中引用时 所有appId Key 大小写必须一致
+# more info please open https://valine.js.org
 valine:
   enable: true
   appId: 6RhYnLpY01UcXsbPoCPXpXA2-gzGzoHsz
