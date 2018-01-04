@@ -12,8 +12,8 @@ addons:
 before_script:
 - npm install -g gulp
 script:
-- hexo clean
-- hexo generate
+- hexo clean --config source/_data/next.yml
+- hexo generate --config source/_data/next.yml
 branches:
   only:
   - source
