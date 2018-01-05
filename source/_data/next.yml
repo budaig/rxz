@@ -29,8 +29,6 @@ root: /
 permalink: :category/:abbrlink.html      # :category/:id.html   #:id-:title.html 
 permalink_default:
   lang: zh-CN
- 
-# Header
 
 # Directory
 source_dir: source
@@ -107,7 +105,6 @@ jsonContent:
 ## Plugins: https://hexo.io/plugins/
 Plugins:
 
-
 # Miscellaneous
 
 #sitemap
@@ -173,6 +170,9 @@ search:
     # - '*.min.css'
   # browsers:
     # - 'last 2 versions'
+
+
+
 
 
 # ---------------------------------------------------------------
