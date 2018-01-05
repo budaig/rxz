@@ -118,7 +118,7 @@ feed:
   limit: 1000000
 
 ## Themes: https://hexo.io/themes/
-theme: nextv6
+theme: next
 # theme: next514ok
 
 # Deployment
