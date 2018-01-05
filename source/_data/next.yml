@@ -118,7 +118,7 @@ feed:
   limit: 1000000
 
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: nextv6
 # theme: next514ok
 
 # Deployment
@@ -399,7 +399,7 @@ excerpt_description: true
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
   enable: true
-  length: 150
+  length: 168
 
 # Post meta display settings
 post_meta:
