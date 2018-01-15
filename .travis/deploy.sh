@@ -16,4 +16,5 @@ git config --global user.name "budaig"
 git config --global user.email brux@qq.com
 # Deploy to GitHub
 hexo deploy --config source/_data/next.yml
+# hexo deploy
 rm -rf ~/.ssh

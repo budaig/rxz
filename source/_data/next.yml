@@ -171,7 +171,11 @@ search:
   # browsers:
     # - 'last 2 versions'
 
-
+# symbols_count_time:
+  # symbols: true
+  # time: false
+  # total_symbols: false
+  # total_time: false
 
 
 
@@ -421,6 +425,7 @@ symbols_count_time:
   time: false
   total_symbols: false
   total_time: false
+# symbols_count_time:
   separated_meta: true
   item_text_post: true
   item_text_total: false
@@ -453,7 +458,7 @@ post_copyright:
 # Reduce padding / margin indents on devices with narrow width.
 mobile_layout_economy: false
 
-# Android Chrome header panel color ($black-deep).
+# Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#222"
 
 # Custom Logo.

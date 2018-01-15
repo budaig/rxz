@@ -107,11 +107,11 @@
                 <span class="post-meta-item-text">{{ __('post.in') }}</span>
               {% endif %}
               {% for cat in post.categories %}
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="{{ url_for(cat.path) }}" itemprop="url" rel="index">
-                    <span itemprop="name">{{ cat.name }}</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">{#
+                  #}<a href="{{ url_for(cat.path) }}" itemprop="url" rel="index">{#
+                    #}<span itemprop="name">{{ cat.name }}</span>{#
+                  #}</a>{#
+                #}</span>
 
                 {% set cat_length = post.categories.length %}
                 {% if cat_length > 1 and loop.index !== cat_length %}
@@ -215,8 +215,8 @@
           {% endif %}
 
           {% if config.symbols_count_time.symbols or config.symbols_count_time.time %}
-            <span class="post-meta-divider">|</span>
-            <span class="post-wordcount">
+            <span class="post-meta-divider">|</span>   {### add ###}
+            <span class="post-wordcount">   {### div ###}
               {% if not theme.symbols_count_time.separated_meta %}
                 <span class="post-meta-divider">|</span>
               {% endif %}
@@ -248,7 +248,7 @@
                 #}{{ symbolsTime(post.content, theme.symbols_count_time.awl, theme.symbols_count_time.wpm) }}{#
               #}</span>
               {% endif %}
-            </span>
+            </span>   {### div ###}
           {% endif %}
 
           {% if post.description and (not theme.excerpt_description or not is_index) %}
