@@ -7,7 +7,8 @@
 
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
-  {{ partial('_partials/head.swig', {}, {cache: theme.cache.enable}) }}
+  {{ partial('_partials/head/head.swig', {}, {cache: theme.cache.enable}) }}
+  {% include '_partials/head/head-unique.swig' %}
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
   {% include '_scripts/noscript.swig' %}
@@ -85,10 +86,12 @@
   {% include '_third-party/analytics/lean-analytics.swig' %}
   {% include '_third-party/analytics/firestore.swig' %}
   {% include '_third-party/seo/baidu-push.swig' %}
+  {% include '_third-party/math/index.swig' %}
   {% include '_third-party/needsharebutton.swig' %}
   {% include '_third-party/rating.swig' %}
-  {% include '_third-party/mathjax.swig' %}
+  {% include '_third-party/pangu.swig' %}
   {% include '_third-party/scroll-cookie.swig' %}
   {% include '_third-party/exturl.swig' %}
+  {% include '_third-party/bookmark.swig' %}
 </body>
 </html>

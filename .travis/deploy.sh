@@ -15,6 +15,6 @@ cp .travis/ssh_config ~/.ssh/config
 git config --global user.name "budaig"
 git config --global user.email brux@qq.com
 # Deploy to GitHub
-hexo deploy --config source/_data/next.yml
-# hexo deploy
+hexo deploy
+# hexo deploy --config source/_data/next.yml
 rm -rf ~/.ssh

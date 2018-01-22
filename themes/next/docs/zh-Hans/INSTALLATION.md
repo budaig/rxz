@@ -14,7 +14,7 @@
 <p align="center">从 GitHub 下载主题。</br>
 为了下载这一主题，共有 <b>3 种选项</b>可选。你需要选择其中<b>唯一一个方式</b>。</p>
 
-### 选项 1：下载[最新 release 版本][releases-latest-url]</h3>
+### 选项 1：下载[最新 release 版本][releases-latest-url]
 
    通常情况下请选择 **stable** 版本。推荐不熟悉的用户按此方式进行。
 
@@ -116,5 +116,5 @@ theme: next
 [curl-tar-url]: http://lmgtfy.com/?q=linux+curl+tar+install
 [curl-tar-wget-url]: http://lmgtfy.com/?q=linux+curl+tar+wget+install
 
-[update-with-git-url]: https://github.com/theme-next/hexo-theme-next/blob/master/docs/cn/README.md#update
-[docs-data-files-url]: https://github.com/theme-next/hexo-theme-next/blob/master/docs/cn/DATA-FILES.md
+[update-with-git-url]: https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-Hans/README.md#update
+[docs-data-files-url]: https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-Hans/DATA-FILES.md
