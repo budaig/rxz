@@ -32,11 +32,12 @@ post:
   read_more: 阅读全文
   untitled: 未命名
   toc_empty: 此文章未包含目录
-  visitors: 浏览
+  views: 浏览
   symbols_count: 字数
   symbols_time: 阅读时长
   total_symbols: 字数总计
   total_time: 总阅读时间
+  related_posts: 相似文章
   copyright:
     author: 文章作者
     link: 文章链接
@@ -48,6 +49,8 @@ page:
 footer:
   powered: "Hosted by %s"
   theme: 主题
+  total_views: 总访问量
+  total_visitors: 总访客量
 counter:
   tag_cloud:
     zero: 暂无标签

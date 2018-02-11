@@ -40,7 +40,7 @@
 
 {% if theme.footer.powered %}
   <div class="powered-by">{#
-  #}{{ __('footer.powered', '<a class="theme-link" target="_blank" href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>') }}{#
+  #}{{ __('footer.powered', '<a class="theme-link" target="_blank"' + nofollow + ' href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>') }}{#
 #}</div>
 {% endif %}
 
