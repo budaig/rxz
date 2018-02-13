@@ -743,9 +743,6 @@ reading_progress:
   color: "#65002F"
   height: 2px
 
-# valine comment
-# Example: https://cdn.jsdelivr.net/npm/valine@1.1.8/dist/Valine.min.js
-valine:
 
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
