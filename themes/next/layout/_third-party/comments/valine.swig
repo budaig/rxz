@@ -1,4 +1,4 @@
-{% if theme.valine.enable and theme.valine.appId and theme.valine.appKey %}
+{% if theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
@@ -12,8 +12,8 @@
         el: '#comments' ,
         verify: {{ theme.valine.verify }},
         notify: {{ theme.valine.notify }},
-        appId: '{{ theme.valine.appId }}',
-        appKey: '{{ theme.valine.appKey }}',
+        appId: '{{ theme.valine.appid }}',
+        appKey: '{{ theme.valine.appkey }}',
         placeholder: '{{ theme.valine.placeholder }}',
         avatar:'{{ theme.valine.avatar }}',
         guest_info:guest,

@@ -55,7 +55,7 @@
       {% endif %}
     </div>
 
-  {% elseif theme.valine.enable and theme.valine.appId and theme.valine.appKey %}
+  {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
     <div class="comments" id="comments">
     </div>
   {% endif %}

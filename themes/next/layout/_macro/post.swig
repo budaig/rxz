@@ -187,7 +187,7 @@
                   <span class="post-comments-count gitment-comments-count" data-xid="{{ url_for(post.path) }}" itemprop="commentsCount"></span>
                 </a>
               </span>
-            {% elseif theme.valine.enable and theme.valine.appId and theme.valine.appKey %}
+            {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">

@@ -36,7 +36,7 @@ post:
   symbols_count: 字数
   symbols_time: 阅读时长
   total_symbols: 字数总计
-  total_time: 总阅读时间
+  total_time: 总阅读时长
   related_posts: 相似文章
   copyright:
     author: 文章作者
@@ -85,7 +85,7 @@ symbol:
   colon: "："
 reward:
   donate: 赞赏
-  wechatpay: 微信
+  wechatpay: 微信支付
   alipay: 支付宝
   bitcoin: 比特币
 gitmentbutton: 显示 Gitment 评论
