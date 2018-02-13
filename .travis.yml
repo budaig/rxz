@@ -1,5 +1,7 @@
 language: node_js
 node_js: 6.12.2
+before_install:
+  - export TZ='Asia/Shanghai'
 install:
 - npm install
 - npm install hexo-cli -g
@@ -21,6 +23,7 @@ env:
   global:
   - secure: "xWjC/0hUlUOL3j31U/TH6LPT7VEJ7mnR5/VV4ZMRayQajcIQyqeOsgOZvQqtCVLEQqWWL51aYVEfFxiSTzH05O+/uuEwbP3ru8f7TwVUhs3brElOEHQOl9qLgv0S9n7wWDKNDXKpXW+yetfSXA8t0KSgjL3yTSGhX6R87cjhhC7IY26trEg3qXKhKKC23So8dH4awzi1OpZhkMF/o3Zwp+nDS7V+Cmt4DOHLCyNxueRkZXzVXqnLYSeDdAW++3gLYe6a5bUuXbKDA/eydClbwj+P7I0bweIpL3cq0HN+hsQfPp2CVFlll3tN+pLYdKBifZE+eqfCkWFb9Kq+j7pO6j9ke3DNDCvdM50Co+q985QpF/lMOXABjY4TOHQ2cYXnP2d9QaaD23TuWyjgdcswXvSPdNxffNn34hfCThebLZIKqsxlT0qSlvUUCFFArbpJGQaLatxmEV4lkUiAmFhhG1u8hKziNBiR7DrJ5xij8mUzY5hUbO7EFuWWqoxsCOTVZEOq1/7rzDUVzDoeakDpA3i9br9K+GiRRkhvXE7Ci7lpYKSvy5wgN8If0MNbWBd21GUAAfG8NZsw5oKWrcp6wWiaJekOIWBCUHpld3h+fMsqI3mxQ/B+xV+2c2lBXT0nNlhcCy3r2zJkgXPzNdxJsV5OCMyKavj4D9CjepJ8nHI="
 before_install:
+- export TZ='Asia/Shanghai'
 - openssl aes-256-cbc -K $encrypted_0073154072eb_key -iv $encrypted_0073154072eb_iv
   -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
 deploy:
