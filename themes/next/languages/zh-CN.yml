@@ -5,6 +5,7 @@ title:
   tag: 标签
   link: 链接
   intro: 自话
+  blogroll: 博萃
   schedule: 日程表
 author: 博主
 menu:
@@ -14,6 +15,7 @@ menu:
   tags: 标签
   links: 链接
   intro: 自话
+  blogroll: 博萃
   about: 关于
   search: 搜索
   schedule: 日程表

@@ -117,6 +117,7 @@ menu:
   archives: /archives/ || archive
   #links: /links/ || link
   intro: /intro || hashtag
+  blogroll: /blogroll/ || external-link
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
