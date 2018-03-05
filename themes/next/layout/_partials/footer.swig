@@ -40,11 +40,27 @@
 
 {% if theme.footer.powered %}
   <div class="powered-by">{#
-  #}{{ __('footer.powered', '<a class="theme-link" target="_blank"' + nofollow + ' href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>') }}{#
+  #}{{ __('footer.powered', '<a class="theme-link" target="_blank"' + nofollow + ' href="https://hexo.io">Hexo</a>') }}{#
+#}</div>
+{% endif %}
+{% if theme.footer.hostedby %}
+  <div class="powered-by">{#
+  #}{{ __('footer.hostedby', '<a class="theme-link" target="_blank"' + nofollow + ' href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>') }}{#
+#}</div>
+{% endif %}
+{% if theme.footer.customhost %}
+  <div class="powered-by">{#
+  #}{{ theme.footer.customhost }}{#
 #}</div>
 {% endif %}
 
 {% if theme.footer.powered and theme.footer.theme.enable %}
+  <span class="post-meta-divider">|</span>
+{% endif %}
+{% if theme.footer.hostedby and theme.footer.theme.enable %}
+  <span class="post-meta-divider">|</span>
+{% endif %}
+{% if theme.footer.customhost and theme.footer.theme.enable %}
   <span class="post-meta-divider">|</span>
 {% endif %}
 

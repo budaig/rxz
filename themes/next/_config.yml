@@ -72,7 +72,10 @@ footer:
   copyright: 布袋小知诺
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
-  powered: true
+  powered: false
+  # Custom link (Hosted by Coding).
+  #hostedby: true
+  customhost: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
@@ -263,7 +266,7 @@ post_meta:
   created_at: true
   updated_at: false
   # Only show 'updated' if different from 'created'.
-  updated_diff: false
+  updated_diff: true
   categories: true
 
 # Post wordcount display settings
@@ -523,6 +526,7 @@ gitment:
 # Warning: JiaThis does not support https.
 #jiathis:
   ##uid: Get this uid from http://www.jiathis.com/
+
 #add_this_id:
 
 # NeedMoreShare2
@@ -618,6 +622,9 @@ leancloud_visitors:
   enable: true
   app_id: gmm95Ifj4kJcsSWXFaOWxfID-gzGzoHsz
   app_key: B3fsvdnzzYdLaS83Fio7SECO
+  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+  security: true
+  betterPerformance: false
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -781,7 +788,7 @@ fastclick: false
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
-lazyload: true
+lazyload: true 
 
 # Progress bar in the top during page loading.
 # Dependencies: https://github.com/theme-next/theme-next-pace
@@ -943,4 +950,4 @@ js: js
 images: images
 
 # Theme version
-version: 6.0.4
+version: 6.0.5
