@@ -35,6 +35,7 @@ post:
   untitled: 未命名
   toc_empty: 此文章未包含目录
   views: 浏览
+  comments_count: 评论
   symbols_count: 字数
   symbols_time: 阅读时长
   total_symbols: 字数总计
@@ -92,3 +93,7 @@ reward:
   alipay: 支付宝
   bitcoin: 比特币
 gitmentbutton: 显示 Gitment 评论
+accessibility:
+  nav_toggle: 切换导航栏
+  prev_page: 上一页
+  next_page: 下一页

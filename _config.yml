@@ -72,6 +72,7 @@ tag_map:
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY年MM月DD日 @ HH:mm
 time_format: HH:mm:ss
+#date_format_full: YYYY年MM月DD日 @ HH:mm
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -177,4 +178,9 @@ symbols_count_time:
   total_symbols: false
   total_time: false
 
-
+leancloud_counter_security:
+  enable_sync: true
+  app_id: <<your app id>>
+  app_key: <<your app key>>
+  username: <<your username>> # Will be asked while deploying if is left blank
+  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
