@@ -73,9 +73,18 @@
               {% if theme.post_meta.item_text %}
                 <span class="post-meta-item-text">{{ __('post.posted') }}</span>
               {% endif %}
+
+              {% if not is_index %}
+              <time title="{{ __('post.created') }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">{#
+              #}{{ date(post.date, config.date_format_full) }}{#
+            #}</time>
+              {% endif %}
+              {% if is_index %}
               <time title="{{ __('post.created') }}" itemprop="dateCreated datePublished" datetime="{{ moment(post.date).format() }}">{#
               #}{{ date(post.date, config.date_format) }}{#
             #}</time>
+              {% endif %}
+
             {% endif %}
 
             {% set date_updated_diff = date(post.date, config.date_format) != date(post.updated, config.date_format) %}
@@ -187,7 +196,7 @@
                   <span class="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span> <span class="post-comments-count gitment-comments-count" data-xid="{{ url_for(post.path) }}" itemprop="commentsCount"></span>
                 </a>
               </span>
-            {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
+            {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey and theme.valine.count %}
               <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">

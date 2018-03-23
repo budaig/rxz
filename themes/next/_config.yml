@@ -72,10 +72,13 @@ footer:
     animated: true
     # Change the color of icon, using Hex Code.
     color: "#ff0000"
-  ICP_license: 湘ICP备18004795号-1
-  ICP_url: http://www.miitbeian.gov.cn
+  ICP:
+    enable: true
+    ICP_license: 湘ICP备18004795号-1
+    ICP_url: http://www.miitbeian.gov.cn
+    ICP_text:    # 或 湘ICP备18004795号-1
   # If not defined, will be used `author` from Hexo main config.
-  copyright: 布袋小知诺
+  copyright: 布袋知诺
   # -------------------------------------------------------------
   # Hexo link (Powered by Hexo).
   powered: false
@@ -126,7 +129,7 @@ menu:
   archives: /archives/ || archive
   #links: /links/ || link
   intro: /intro || hashtag
-  blogroll: /blogroll/ || external-link
+  blogroll: /blogroll/ || rss-square   #external-link
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -499,6 +502,7 @@ valine:
   avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
   guest_info: nick,mail,link # Comment header info
   pageSize: 10 # comment list page size
+  count: false
 
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc

@@ -1,15 +1,18 @@
 <div class="copyright">{#
 #}{% set current = date(Date.now(), "YYYY") %}{#
-#}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }} &mdash; {% endif %}{#
+#}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }}&mdash;{% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
   <span class="with-love" id="animate"> 
     <i class="fa fa-{{ theme.footer.icon.name }}"></i>
   </span>
   <span class="author" itemprop="copyrightHolder"><a href="{{ config.root }}">{{ theme.footer.copyright || config.author }}</a></span>
+
+  {% if theme.footer.ICP.enable %}
   <span class="with-love" id="animate"> 
     <i class="fa fa-{{ theme.footer.icon.name2 }}"></i>
   </span>
-  <span class="author" itemprop="ICPHolder"><a class="theme-link" target="_blank"{{ nofollow }} href="{{ theme.footer.ICP_url }}">{{ theme.footer.ICP_license }}</a></span>
+  <span class="author" itemprop="ICPHolder"><a class="theme-link" target="_blank"{{ nofollow }} href="{{ theme.footer.ICP.ICP_url }}" title="{{ theme.footer.ICP.ICP_text }}">{{ theme.footer.ICP.ICP_license }}</a></span>
+  {% endif %}
 
   {% if config.symbols_count_time.total_symbols %}
     <span class="post-meta-divider">|</span>
