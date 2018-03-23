@@ -50,7 +50,7 @@ page:
   totally: 共有
   tags: 标签
 footer:
-  powered: "Hosted by %s"
+  powered: "Powered by %s"
   hostedby: "Hosted by %s"
   theme: 主题
   total_views: 总访问量

@@ -67,11 +67,13 @@ footer:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
     # `heart` is recommended with animation in red (#ff0000).
     name: heart
+    name2: bullseye   #eye-slash
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#ff0000"
-
+  ICP_license: 湘ICP备18004795号-1
+  ICP_url: http://www.miitbeian.gov.cn
   # If not defined, will be used `author` from Hexo main config.
   copyright: 布袋小知诺
   # -------------------------------------------------------------
@@ -88,7 +90,7 @@ footer:
     version: false
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  #custom_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
+  #custom_text: ICP <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
 
 # ---------------------------------------------------------------
 # SEO Settings

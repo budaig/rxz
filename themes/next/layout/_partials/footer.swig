@@ -6,6 +6,10 @@
     <i class="fa fa-{{ theme.footer.icon.name }}"></i>
   </span>
   <span class="author" itemprop="copyrightHolder"><a href="{{ config.root }}">{{ theme.footer.copyright || config.author }}</a></span>
+  <span class="with-love" id="animate"> 
+    <i class="fa fa-{{ theme.footer.icon.name2 }}"></i>
+  </span>
+  <span class="author" itemprop="ICPHolder"><a class="theme-link" target="_blank"{{ nofollow }} href="{{ theme.footer.ICP_url }}">{{ theme.footer.ICP_license }}</a></span>
 
   {% if config.symbols_count_time.total_symbols %}
     <span class="post-meta-divider">|</span>
@@ -43,23 +47,18 @@
   #}{{ __('footer.powered', '<a class="theme-link" target="_blank"' + nofollow + ' href="https://hexo.io">Hexo</a>') }}{#
 #}</div>
 {% endif %}
-{% if theme.footer.hostedby %}
-  <div class="powered-by">{#
-  #}{{ __('footer.hostedby', '<a class="theme-link" target="_blank"' + nofollow + ' href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a>') }}{#
-#}</div>
+
+{% if theme.footer.powered and theme.footer.customhost %}
+  <span class="post-meta-divider">|</span>
 {% endif %}
+
 {% if theme.footer.customhost %}
   <div class="powered-by">{#
   #}{{ theme.footer.customhost }}{#
 #}</div>
 {% endif %}
 
-{% if theme.footer.powered and theme.footer.theme.enable %}
-  <span class="post-meta-divider">|</span>
-{% endif %}
-{% if theme.footer.hostedby and theme.footer.theme.enable %}
-  <span class="post-meta-divider">|</span>
-{% endif %}
+
 {% if theme.footer.customhost and theme.footer.theme.enable %}
   <span class="post-meta-divider">|</span>
 {% endif %}
