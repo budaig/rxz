@@ -637,7 +637,6 @@ leancloud_visitors:
   enable: true
   app_id: gmm95Ifj4kJcsSWXFaOWxfID-gzGzoHsz
   app_key: B3fsvdnzzYdLaS83Fio7SECO
-  # LeanCloud Counter Security Plugin (beta, currently under the testing).
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in lc counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set the `security` to `false`.
