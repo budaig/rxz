@@ -51,7 +51,6 @@ page:
   tags: 标签
 footer:
   powered: "Powered by %s"
-  hostedby: "Hosted by %s"
   theme: 主题
   total_views: 总访问量
   total_visitors: 总访客量
