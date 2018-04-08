@@ -26,7 +26,7 @@ keyword: 知诺 布袋小知诺 布袋知诺 zhinuo 知行诺一 # your keywords
 # url: http://bdg.zhinuo.space
 url: https://www.zhinuo.site
 root: / 
-permalink: :category/:abbrlink.html/      # :category/:id.html   #:id-:title.html 
+permalink: :category/:abbrlink.html      # :category/:id.html   #:id-:title.html 
 permalink_default:
   lang: zh-CN
 
