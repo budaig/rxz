@@ -16,3 +16,5 @@ cmd2Ruby.lnk
 _config.yml4site
 .travis.ymldatanext
 deploy.shdatanext
+amp-template/
+*.txt

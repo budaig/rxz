@@ -101,6 +101,9 @@
   <meta name="msapplication-config" content="{{ url_for(theme.favicon.ms_browserconfig) }}" />
 {% endif %}
 
+{% if is_post() && config.generator_amp %}
+  <link rel="amphtml" href="./amp/index.html">
+{% endif %}
 
 {% if theme.facebook_sdk.enable and theme.facebook_sdk.webmaster %}
   <meta property="fb:admins" content="{{ theme.facebook_sdk.fb_admin }}" />
