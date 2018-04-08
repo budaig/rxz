@@ -102,7 +102,7 @@
 {% endif %}
 
 {% if is_post() && config.generator_amp %}
-  <link rel="amphtml" href="./amp/index.html">
+  <link rel="amphtml" href=".//amp/index.html">
 {% endif %}
 
 {% if theme.facebook_sdk.enable and theme.facebook_sdk.webmaster %}
