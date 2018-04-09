@@ -220,15 +220,15 @@ generator_amp:
   logo:
     path: sample/logoznhs.png
     width: 120   #<= 600 px
-    height: 20   #<= 60 px
+    height: 30   #<= 60 px
   logo_topImage:                                  #(optional)
-    path:   sample/logoznvs.png       #(optional)
-    width:  150                                  #(optional)
-    height: 150                                   #(optional)
+    path: sample/logoznvs.png       #(optional)
+    width:  1024                                  #(optional)
+    height: 400                                   #(optional)
   substituteTitleImage:
-    path: sample/substituteTitleImage.jpg
-    width: 220   #>= 696 px
-    height: 150
+    path: sample/sample-substituteTitleImage.jpg
+    width: 1024   #>= 696 px
+    height: 800
   warningLog: false   # To display warning, please set true.
   placeholderImg:                                 #(optional)
     path: sample/sample-placeholder.png
@@ -238,14 +238,14 @@ generator_amp:
   # # Sample Template's option
   theme:                                        #(optional) Sample AMP template's option
      menu:                                      #(optional) Sample AMP template's menu option
-       home: /                #(optional) example menu
-       archives: /archives                      #(optional) example menu
+       首页: /                #(optional) example menu
+       归档: /archives                      #(optional) example menu
        #about: /about/
-       tags: /tags
-       categories: /categories
+       #tags: /tags
+       #categories: /categories
        #links: /links
-       intro: /intro
-       blogroll: /blogroll
+       自话: /intro
+       博萃: /blogroll
      # facebook_app_id: 1234567890                #(optional) api_id is necessary with the facebook's social button.
      # facebook_admins: 1234567890                #(optional) admins is necessary with the facebook's social button.
      # share_button:                              #(optional) Share button option
@@ -254,10 +254,10 @@ generator_amp:
        # google: true                             #(optional) Enable Goolge+ share button
        # hatena: true                             #(optional) Enable Hatena share button
        # tumblr: true                             #(optional) Enable Tumblr share button
-     category_posts: true                  #(optional) Enable category posts
-     category_posts_detailed: true              #(optional) Enable detailed category posts
+     category_posts: false                  #(optional) Enable category posts
+     category_posts_detailed: false              #(optional) Enable detailed category posts
      latests: true                              #(optional) Enable latests posts
-     list_limts: 6                              #(optional) This option limit the number of display in the above lists (default:5)
+     list_limts: 3                              #(optional) This option limit the number of display in the above lists (default:5)
      authorLink:                          #(optional) Enable footer profile link
        mail_url: budaig@outlook.com
        # twitter_id: xxx
@@ -270,12 +270,12 @@ generator_amp:
   # onlyForDeploy: false                          #(optional) #Deprecated <= v1.0.3
   # 7. Automatically validate AMP HTML
   validateAMP: false                               #(optional)
-# 8. Footer Option (authorDetail)
-# authorDetail:
-  # authorReading: Your name description            #(optional)
-  # avatar:                                         #(optional)
-    # path: sample/sample-avator.png              #(optional)
-    # width: 150                                   #(optional)
-    # height: 150                                   #(optional)
-  # description: Self introduction                  #(optional)
-# copyright_notice: The footer copyright notice     #(optional)
+  # 8. Footer Option (authorDetail)
+  authorDetail:
+    # authorReading: Your name description            #(optional)
+    # avatar:                                         #(optional)
+      # path: sample/sample-avator.png              #(optional)
+      # width: 150                                   #(optional)
+      # height: 150                                   #(optional)
+    description: Self introduction                  #(optional)
+  # copyright_notice: The footer copyright notice     #(optional)

@@ -132,7 +132,7 @@ menu:
   categories: /categories/ || tasks
   archives: /archives/ || archive
   #links: /links/ || link
-  intro: /intro || hashtag
+  intro: /intro/ || hashtag
   blogroll: /blogroll/ || rss-square   #external-link
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
