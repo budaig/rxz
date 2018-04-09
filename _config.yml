@@ -26,7 +26,7 @@ keyword: 知诺 布袋小知诺 布袋知诺 zhinuo 知行诺一 # your keywords
 # url: http://bdg.zhinuo.space
 url: https://www.zhinuo.site
 root: / 
-permalink: :category/:abbrlink.html/      # :category/:id.html   #:id-:title.html 
+permalink: article/:abbrlink.html      # :category/:id.html   #:id-:title.html
 permalink_default:
   lang: zh-CN
 
@@ -226,3 +226,4 @@ generator_amp:
     width:  1024
     height: 800
   warningLog: false   # To display warning, please set true.
+  generateAmpPath: amp/article/:abbrlink.html
