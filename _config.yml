@@ -272,7 +272,7 @@ generator_amp:
   validateAMP: false                               #(optional)
   # 8. Footer Option (authorDetail)
   authorDetail:
-    # authorReading: Your name description            #(optional)
+    authorReading: Your name description            #(optional)
     # avatar:                                         #(optional)
       # path: sample/sample-avator.png              #(optional)
       # width: 150                                   #(optional)
