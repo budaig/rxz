@@ -234,12 +234,18 @@ generator_amp:
     path: sample/sample-placeholder.png
   cssFilePath: sample/sample-amp.css         #(optional) Location of css or stylus or sass file to use
   templateFilePath: sample/sample-amp.ejs         #(optional) Location of ejs or pug template file to use
-  generateAmpPath: amp/article/:abbrlink.html  #(optional) Custom AMP HTML Path
+  generateAmpPath: amp/article/:abbrlink.html   #(optional) Custom AMP HTML Path
   # # Sample Template's option
   theme:                                        #(optional) Sample AMP template's option
      menu:                                      #(optional) Sample AMP template's menu option
-       intro: /intro                #(optional) example menu
+       home: /                #(optional) example menu
        archives: /archives                      #(optional) example menu
+       #about: /about/
+       tags: /tags
+       categories: /categories
+       #links: /links
+       intro: /intro
+       blogroll: /blogroll
      # facebook_app_id: 1234567890                #(optional) api_id is necessary with the facebook's social button.
      # facebook_admins: 1234567890                #(optional) admins is necessary with the facebook's social button.
      # share_button:                              #(optional) Share button option
@@ -263,13 +269,13 @@ generator_amp:
   cache: hexo-generator-amp-cached.json           #(optional) Enable cache (Improve generation speed)
   # onlyForDeploy: false                          #(optional) #Deprecated <= v1.0.3
   # 7. Automatically validate AMP HTML
-  validateAMP: true                               #(optional)
+  validateAMP: false                               #(optional)
 # 8. Footer Option (authorDetail)
 # authorDetail:
   # authorReading: Your name description            #(optional)
   # avatar:                                         #(optional)
-    # path:   sample/sample-avator.png              #(optional)
-    # width:  150                                   #(optional)
+    # path: sample/sample-avator.png              #(optional)
+    # width: 150                                   #(optional)
     # height: 150                                   #(optional)
   # description: Self introduction                  #(optional)
 # copyright_notice: The footer copyright notice     #(optional)
