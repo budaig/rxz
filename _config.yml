@@ -218,11 +218,11 @@ generator_amp:
   templateDir: amp-template
   assetDistDir: amp-dist
   logo:
-    path: sample/logoznhs.png
+    path: foto/logoznhs.png
     width: 120   #<= 600 px
     height: 30   #<= 60 px
   logo_topImage:                                  #(optional)
-    path: sample/logoznvs.png       #(optional)
+    path: foto/logoznvs.png       #(optional)
     width:  1024                                  #(optional)
     height: 400                                   #(optional)
   substituteTitleImage:
