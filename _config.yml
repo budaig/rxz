@@ -222,60 +222,36 @@ generator_amp:
     width: 600 # width <= 600px
     height: 60  # width <= 60px
   logo_topImage:
-    path: sample/sample-yoursite-logo.png       #(optional)
-    width: 1024                                  #(optional)
-    height: 400                                   #(optional)
+    path: sample/sample-yoursite-logo.png   #(optional)
+    width: 1024   #(optional)
+    height: 400   #(optional)
   substituteTitleImage:
     path: sample/sample-substituteTitleImage.jpg
     width: 1024   #>= 696 px
     height: 800
-  warningLog: false   # To display warning, please set true.
-  placeholderImg:                                 #(optional)
+  placeholderImg:
     path: sample/sample-placeholder.png
-  cssFilePath: sample/sample-amp.css         #(optional) Location of css or stylus or sass file to use
-  templateFilePath: sample/sample-amp.ejs         #(optional) Location of ejs or pug template file to use
+  cssFilePath: sample/sample-amp.css   #(optional) Location of css or stylus or sass file to use
+  templateFilePath: sample/sample-amp.ejs   #(optional) Location of ejs or pug template file to use
   generateAmpPath: amp/article/:abbrlink.html   #(optional) Custom AMP HTML Path
   # # Sample Template's option
-  theme:                                        #(optional) Sample AMP template's option
-     menu:                                      #(optional) Sample AMP template's menu option
-       首页: /                #(optional) example menu
-       归档: /archives                      #(optional) example menu
-       #about: /about/
-       #tags: /tags
-       #categories: /categories
-       #links: /links
-       自话: /intro
-       博萃: /blogroll
-     # facebook_app_id: 1234567890                #(optional) api_id is necessary with the facebook's social button.
-     # facebook_admins: 1234567890                #(optional) admins is necessary with the facebook's social button.
-     # share_button:                              #(optional) Share button option
-       # twitter: true                            #(optional) Enable Twitter share button
-       # facebook: true                           #(optional) Enable Facebook share button
-       # google: true                             #(optional) Enable Goolge+ share button
-       # hatena: true                             #(optional) Enable Hatena share button
-       # tumblr: true                             #(optional) Enable Tumblr share button
-     category_posts: false                  #(optional) Enable category posts
-     category_posts_detailed: false              #(optional) Enable detailed category posts
-     latests: true                              #(optional) Enable latests posts
-     list_limts: 3                              #(optional) This option limit the number of display in the above lists (default:5)
-     authorLink:                          #(optional) Enable footer profile link
-       mail_url: budaig@outlook.com
-       # twitter_id: xxx
-       # facebook_id: xxx
-       # youtube_channel: xxx
-       # instagram_id: xxx
-       github_id: budaig
+  theme:   #(optional) Sample AMP template's option
+    menu:   #(optional) Sample AMP template's menu option
+      首页: /   #(optional) example menu
+      归档: /archives   #(optional) example menu
+      #about: /about
+      #tags: /tags
+      #categories: /categories
+      #links: /links
+      自话: /intro
+      博萃: /blogroll
+    category_posts: false   #(optional) Enable category posts
+    category_posts_detailed: false   #(optional) Enable detailed category posts
+    latests: true   #(optional) Enable latests posts
+    list_limts: 3   #(optional) This option limit the number of display in the above lists (default:5)
+    authorLink:
+      mail_url: budaig@outlook.com
+      github_id: budaig
   # 6. Cache Option
-  cache: hexo-generator-amp-cached.json           #(optional) Enable cache (Improve generation speed)
-  # onlyForDeploy: false                          #(optional) #Deprecated <= v1.0.3
-  # 7. Automatically validate AMP HTML
-  validateAMP: false                               #(optional)
-  # 8. Footer Option (authorDetail)
-  authorDetail:
-    authorReading: Your name description            #(optional)
-    # avatar:                                         #(optional)
-      # path: sample/sample-avator.png              #(optional)
-      # width: 150                                   #(optional)
-      # height: 150                                   #(optional)
-    description: Self introduction                  #(optional)
-  # copyright_notice: The footer copyright notice     #(optional)
+  cache: hexo-generator-amp-cached.json   #(optional) Enable cache (Improve generation speed)
+
