@@ -215,27 +215,20 @@ restful:
 # hexo-generator-amp
 # The following settings is the quick start options.
 generator_amp:
-  templateDir: amp-template
+  templateDir:  amp-template
   assetDistDir: amp-dist
   logo:
-    path: sample/sample-logo.png
-    width: 600 # width <= 600px
+    path:   sample/sample-logo.png
+    width:  600 # width <= 600px
     height: 60  # width <= 60px
-  logo_topImage:
-    path: sample/sample-yoursite-logo.png   #(optional)
-    width: 1024   #(optional)
-    height: 400   #(optional)
   substituteTitleImage:
-    path: sample/sample-substituteTitleImage.jpg
-    width: 1024   #>= 696 px
+    path:   sample/sample-substituteTitleImage.png
+    width:  1024 # width >= 696px
     height: 800
   placeholderImg:
     path: sample/sample-placeholder.png
-  cssFilePath: sample/sample-amp.css   #(optional) Location of css or stylus or sass file to use
-  templateFilePath: sample/sample-amp.ejs   #(optional) Location of ejs or pug template file to use
   generateAmpPath: amp/article/:abbrlink.html   #(optional) Custom AMP HTML Path
-  # # Sample Template's option
-  theme:   #(optional) Sample AMP template's option
+  theme:
     menu:   #(optional) Sample AMP template's menu option
       首页: /   #(optional) example menu
       归档: /archives   #(optional) example menu
@@ -249,9 +242,5 @@ generator_amp:
     category_posts_detailed: false   #(optional) Enable detailed category posts
     latests: true   #(optional) Enable latests posts
     list_limts: 3   #(optional) This option limit the number of display in the above lists (default:5)
-    authorLink:
-      mail_url: budaig@outlook.com
-      github_id: budaig
-  # 6. Cache Option
   cache: hexo-generator-amp-cached.json   #(optional) Enable cache (Improve generation speed)
 
