@@ -141,7 +141,7 @@ encrypt:
 # abbrlink config
 abbrlink:
   alg: crc32  #support crc16(default) and crc32
-  # rep: hex    #support dec(default) and hex
+  rep: hex    #support dec(default) and hex
   # crc32 & hex e.g. https://post.zz173.com/posts/8ddf18fb.html
   # crc32 & dec e.g. https://post.zz173.com/posts/1690090958.html
 
@@ -218,12 +218,12 @@ generator_amp:
   templateDir:  amp-template
   assetDistDir: amp-dist
   logo:
-    path:   sample/sample-logo.png
-    width:  600 # width <= 600px
+    path: sample/sample-logo.png
+    width: 600 # width <= 600px
     height: 60  # width <= 60px
   substituteTitleImage:
-    path:   sample/sample-substituteTitleImage.png
-    width:  1024 # width >= 696px
+    path: sample/sample-substituteTitleImage.png
+    width: 1024 # width >= 696px
     height: 800
   placeholderImg:
     path: sample/sample-placeholder.png
@@ -243,4 +243,3 @@ generator_amp:
     latests: true   #(optional) Enable latests posts
     list_limts: 3   #(optional) This option limit the number of display in the above lists (default:5)
   cache: hexo-generator-amp-cached.json   #(optional) Enable cache (Improve generation speed)
-

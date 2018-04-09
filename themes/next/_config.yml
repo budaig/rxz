@@ -202,9 +202,9 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  布袋知诺: https://www.zhinuo.space
   日新知: https://www.rixin.site
   童趣畅想: https://www.daheng3.top
+  布袋知诺: https://www.zhinuo.space
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
@@ -383,7 +383,7 @@ sidebar_width:
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: true
+  enable: false
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
   host:
@@ -397,7 +397,7 @@ font:
   global:
     external: true
     family: Lato
-    size: 16.8
+    size:
 
   # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
   # Fallback to `global` font settings.
