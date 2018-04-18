@@ -72,7 +72,7 @@ tag_map:
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY年MM月DD日
 time_format: HH:mm:ss
-date_format_full: YYYY年MM月DD日 @ HH:mm
+date_format_full: YYYY年MM月DD日@HH:mm
 
 # Pagination
 ## Set per_page to 0 to disable pagination

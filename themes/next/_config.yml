@@ -982,7 +982,3 @@ vendors:
 css: css
 js: js
 images: images
-
-# Theme version
-version: 6.1.0
-
