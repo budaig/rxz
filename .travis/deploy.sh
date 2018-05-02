@@ -12,8 +12,9 @@ ssh-add ~/.ssh/4gcbdg
 cp .travis/ssh_config ~/.ssh/config
 
 # Set Git config
-git config --global user.name "budaig"
-git config --global user.email brux@qq.com
+git init
+git config user.name "budaig"
+git config user.email "brux@qq.com"
 # Deploy to GitHub
 hexo deploy
 # hexo deploy --config source/_data/next.yml
