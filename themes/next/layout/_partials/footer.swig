@@ -5,7 +5,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-{{ theme.footer.icon.name }}"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder"><a href="{{ config.root }}">{{ theme.footer.copyright || config.author }}</a></span>
+  <span class="author" itemprop="copyrightHolder"><a href="{{ config.root }}">{{ theme.footer.copyright | default(author) }}</a></span>
 
   {% if theme.footer.ICP.enable %}
   <span class="with-love" id="animate"> 
