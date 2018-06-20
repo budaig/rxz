@@ -15,6 +15,6 @@
   {%- endif -%}
   <li class="post-copyright-license">
     <strong>{{ __('post.copyright.license_title') + __('symbol.colon') }} </strong>{#
-  #}{{ post.copyright | default(__('post.copyright.license_content', theme.post_copyright.license)) }}{#
+  #}{{ __('post.copyright.license_content', theme.post_copyright.license) }}{#
 #}</li>
 </ul>
