@@ -133,7 +133,7 @@ menu:
   archives: /archives/ || archive
   #links: /links/ || link
   intro: /intro/ || hashtag
-  blogroll: /blogroll/ || rss-square   #external-link
+  #blogroll: /blogroll/ || rss-square   #external-link
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -239,6 +239,12 @@ sidebar:
   # Sidebar Position, available value: left | right (only for Pisces | Gemini).
   position: right
   #position: right
+
+  # Manual define the sidebar width.
+  # If commented, will be default for:
+  Muse | Mist: 320
+  # Pisces | Gemini: 240
+  width: 300
 
   # Sidebar Display, available value (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
@@ -383,15 +389,6 @@ highlight_theme: night
 # Enable "cheers" for archive page.
 cheers_enabled: true
 
-# Manual define the max content width
-# !!Only available for Gemini Scheme currently
-# Leave it empty for the default 75% (suggest not less than 1000px)
-#max_content_width: 1000px
-
-# Manual define the sidebar width
-# !!Only available for Gemini Scheme currently
-# Leave it empty for the default 240
-sidebar_width:
 
 # ---------------------------------------------------------------
 # Font Settings
