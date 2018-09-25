@@ -32,7 +32,7 @@
               var offsetTop = $('#comments').offset().top - $(window).height();
               var scrollTop = $(window).scrollTop();
 
-               // pre-load comments a bit? (margin or anything else)
+              // pre-load comments a bit? (margin or anything else)
               if (offsetTop - scrollTop < 60) {
                 $(window).off('.disqus_scroll');
                 loadComments();
