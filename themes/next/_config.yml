@@ -288,6 +288,10 @@ auto_excerpt:
   enable: true
   length: 168
 
+# Read more button
+# If true, the read more button would be displayed in excerpt section
+read_more_btn: true
+
 # Post meta display settings
 post_meta:
   item_text: true
@@ -470,8 +474,6 @@ math:
     #cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).
     #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
-    # For automatic detect latest version link to MathJax.js and get from Bootcss.
-    #cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin)
   # needed to full Katex support.
@@ -491,10 +493,14 @@ han: false
 pangu: false
 
 # Swiftype Search API Key
-#swiftype_key:
+#swiftype_key: 
 
 # Baidu Analytics ID
 # baidu_analytics: 6ac4538130df06cdc96c06f820d69383
+
+# Growingio Analytics ID
+# Copyright 2015-2018 GrowingIO, Inc. More info available at http://www.growingio.com
+#growingio_analytics: #your projectId
 
 # Disqus
 disqus:
@@ -698,13 +704,16 @@ baidu_push: false
 #
 # API Documentation:
 # https://developers.google.com/google-apps/calendar/v3/reference/events/list
+# Enabled APIs and services
+# api_key: https://console.developers.google.com/
+# Create & manage a public Google calendar: https://support.google.com/calendar/answer/37083?hl=en
 calendar:
   enable: false
-  calendar_id: <required>
+  calendar_id: <required> # Your Google account E-Mail
   api_key: <required>
   orderBy: startTime
-  offsetMax: 24
-  offsetMin: 4
+  offsetMax: 24 # Time Range
+  offsetMin: 4 # Time Range
   timeZone:
   showDeleted: false
   singleEvents: true
@@ -848,7 +857,13 @@ pace_theme: pace-theme-minimal
 
 # Canvas-nest
 # Dependencies: https://github.com/theme-next/theme-next-canvas-nest
-canvas_nest: true
+canvas_nest:
+  enable: true
+  onmobile: true # display on mobile or not
+  color: '0,0,255' # RGB values, use ',' to separate
+  opacity: 0.18 # the opacity of line: 0~1
+  zIndex: -1 # z-index property of the background
+  count: 88 # the number of lines
 
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
@@ -955,11 +970,9 @@ vendors:
   pace_css:
 
   # Internal version: 1.0.0
-  # https://github.com/hustcc/canvas-nest.js
-  # Example: 
-  # canvas_nest: //cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js
-  # canvas_nest: //cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/1.0.1/canvas-nest.min.js
-  canvas_nest:
+  # See: https://github.com/theme-next/theme-next-canvas-nest
+  canvas_nest: #//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest.min.js
+  canvas_nest_nomobile: #//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1.0.0/canvas-nest-nomobile.min.js
 
   # Internal version: 1.0.0
   # See: https://github.com/theme-next/theme-next-three

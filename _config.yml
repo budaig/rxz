@@ -244,6 +244,7 @@ generator_amp:
     list_limts: 3   #(optional) This option limit the number of display in the above lists (default:5)
   cache: hexo-generator-amp-cached.json   #(optional) Enable cache (Improve generation speed)
 
-
+# aplayer:
+  # meting: true
 
 # theme_config:
