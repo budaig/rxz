@@ -109,7 +109,7 @@
       },
       "wechat": function (el) {
         var myoptions = getOptions(el);
-        var imgSrc = "https://pan.baidu.com/share/qrcode?w=400&h=400&url=" + encodeURIComponent(myoptions.url);
+        var imgSrc = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + encodeURIComponent(myoptions.url);
         var dropdownEl = el.querySelector(".need-share-button_dropdown");
         var img = dropdownEl.getElementsByClassName("need-share-wechat-code-image")[0];
         if (img) {
@@ -224,29 +224,6 @@
         url += "&url=" + encodeURIComponent(myoptions.url);
         url += "&title=" + encodeURIComponent(myoptions.title);
         url += "&source=" + encodeURIComponent(myoptions.source);
-
-        root.popup(url);
-      },
-      "slashdot": function (el) {
-        var myoptions = getOptions(el);
-        var url = myoptions.protocol + "slashdot.org/bookmark.pl?";
-        url += "url=" + encodeURIComponent(myoptions.url);
-        url += "&title=" + encodeURIComponent(myoptions.title);
-
-        root.popup(url);
-      },
-      "technorati": function (el) {
-        var myoptions = getOptions(el);
-        var url = myoptions.protocol + "technorati.com/faves?";
-        url += "add=" + encodeURIComponent(myoptions.url);
-        url += "&title=" + encodeURIComponent(myoptions.title);
-
-        root.popup(url);
-      },
-      "posterous": function (el) {
-        var myoptions = getOptions(el);
-        var url = myoptions.protocol + "posterous.com/share?";
-        url += "linkto=" + encodeURIComponent(myoptions.url);
 
         root.popup(url);
       },
@@ -425,7 +402,9 @@
       var myoptions = getOptions(el);
 
       // set dropdown row length
-      if (myoptions.iconStyle == "box" && myoptions.boxForm == "horizontal") {
+      if (myoptions.iconStyle == "default" && myoptions.boxForm == "vertical") {
+        dropdownEl.className += " need-share-button_dropdown-box-vertical";
+      } else if (myoptions.iconStyle == "box" && myoptions.boxForm == "horizontal") {
         dropdownEl.className += " need-share-button_dropdown-box-horizontal";
       } else if (myoptions.iconStyle == "box" && myoptions.boxForm == "vertical") {
         dropdownEl.className += " need-share-button_dropdown-box-vertical";
