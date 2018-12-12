@@ -127,7 +127,7 @@ theme: next
 deploy: # github coding 同时部署
 - type: git
   repo: 
-     github: git@gitbdg:budaig/budaig.github.com.git,master   
+     github: git@gitbdg:budaig/budaig.github.com.git,master
      coding: git@codingbdg:budaig/budaig.git,coding-pages
 - type: baidu_url_submitter
 - type: baidu_xz_url_submitter

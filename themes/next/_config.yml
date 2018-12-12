@@ -89,6 +89,7 @@ footer:
   customhost:
     enable: true
     customhost_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
+  # customhost_text: Hosted by <a target="_blank" rel="external nofollow" href="https://www.netlify.com"><b>netlify</b></a>
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
@@ -137,6 +138,7 @@ exturl: false
 # Key is the name of menu item. If translate for this menu will find in languages - this translate will be loaded; if not - Key name will be used. Key is case-senstive.
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
+# External url should start with http:// or https:// .
 menu:
   home: / || home
   #about: /about/ || user
@@ -359,22 +361,20 @@ related_posts:
     #isImage: false
     #isExcerpt: false
 
-# Declare license on posts
-post_copyright:
-  enable: true
-  license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a>
-
 # Post edit
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
 post_edit:
   enable: false
-  url: https://github.com/theme-next/theme-next.org/_posts/tree/master/ # Link for view source.
-# url: https://github.com/theme-next/theme-next.org/_posts/edit/master/ # Link for fork & edit.
+  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # Link for view source.
+  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit.
 
 
 # ---------------------------------------------------------------
 # Misc Theme Settings
 # ---------------------------------------------------------------
+
+# Disable Baidu tranformation on mobile devices.
+disable_baidu_tranformation: true
 
 # Reduce padding / margin indents on devices with narrow width.
 mobile_layout_economy: false
@@ -550,11 +550,11 @@ valine:
   enable: true
   appid: 6RhYnLpY01UcXsbPoCPXpXA2-gzGzoHsz
   appkey: OndGsvjtin0exLtIkQLbsOhf
-  notify: false # Mail notify, https://github.com/xCss/Valine/wiki
-  verify: false # Verify code
+  notify: false # mail notifier, https://github.com/xCss/Valine/wiki
+  verify: false # Verification code
   placeholder: 闻言如见其人
-  avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
-  guest_info: nick,mail,link # Comment header info
+  avatar: mm # Gravatar style: mm/identicon/monsterid/wavatar/retro/hide
+  guest_info: nick,mail,link # custom comment header
   pageSize: 10 # comment list page size
   count: false
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
@@ -579,7 +579,7 @@ gitment:
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
-# Gitalk 
+# Gitalk
 # Demo: https://gitalk.github.io
 # Reference: https://asdfv1929.github.io/2018/01/20/gitalk/, https://liujunzhou.cn/2018/8/10/gitalk-error/#more
 gitalk:
@@ -864,7 +864,7 @@ fastclick: false
 
 # Added switch option for separated repo in 6.0.0.
 # Dependencies: https://github.com/theme-next/theme-next-jquery-lazyload
-lazyload: true 
+lazyload: true
 
 # Progress bar in the top during page loading.
 # Dependencies: https://github.com/theme-next/theme-next-pace
