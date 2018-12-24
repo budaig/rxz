@@ -361,6 +361,10 @@ related_posts:
     #isImage: false
     #isExcerpt: false
 
+# Post copyright lastupdate
+post_lastupdate:
+  enable: false
+
 # Post edit
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
 post_edit:
