@@ -2,7 +2,7 @@
 type: "intro"
 title: 自话
 noDate: true
-comments: false
+comments: true
 ---
   
 一时兴趣，折腾出来这么一个小站。算是个人的随想记录吧。  

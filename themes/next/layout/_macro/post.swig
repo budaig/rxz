@@ -260,6 +260,7 @@
     {#################}
     <div class="post-body{% if theme.han %} han-init-context{% endif %}{% if post.direction && post.direction.toLowerCase() === 'rtl' %} rtl{% endif %}" itemprop="articleBody">
 
+
       {# Gallery support #}
       {% if post.photos and post.photos.length %}
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
@@ -307,12 +308,14 @@
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
-         {% endif %}
+          {% endif %}
           <!--/noindex-->
         {% elif theme.auto_excerpt.enable %}
-          {% set content = post.content | striptags %}
-          {{ content.substring(0, theme.auto_excerpt.length) }}
-          {% if content.length > theme.auto_excerpt.length %}...{% endif %}
+          {% set content = post.content | replace('<td class="gutter">.*?</td>', "", "g") | striptags %}
+            <p>
+              {{ content.substring(0, theme.auto_excerpt.length) }}
+              {% if content.length > theme.auto_excerpt.length %}...{% endif %}
+            </p>
           <!--noindex-->
           {% if theme.read_more_btn %}
             <div class="post-button text-center">
@@ -333,6 +336,14 @@
         {{ post.content }}
       {% endif  %}
     </div>
+
+        {% if not is_index and theme.read_qr.enable %}
+			<br>
+            <div align="center" class="mobileHide">
+			  <img src="{{- qrcode(url) }}" text="{{ url_for(post.title) }}">
+			  <h4>{{ __('post.read_qr') }}</h4>
+			</div>
+        {% endif %}
 
     {% if theme.related_posts.enable and (theme.related_posts.display_in_home or not is_index) %}
       {% include '../_partials/post/post-related.swig' with { post: post } %}
