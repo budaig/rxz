@@ -25,6 +25,7 @@
     "hexo-generator-topindex": "^0.3.0",
     "hexo-helper-qrcode": "^1.0.2",
     "hexo-lazyload-image": "^1.0.3",
+    "hexo-leancloud-counter-security": "^1.4.0",
     "hexo-pagination": "^0.1.0",
     "hexo-processor-static": "^1.1.0",
     "hexo-related-popular-posts": "^3.0.3",
