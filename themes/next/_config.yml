@@ -43,7 +43,7 @@ cache:
 # And if you want to place your icons in `hexo-site/source/` root directory, you must remove `/images` prefix from pathes.
 
 # For example, you put your favicons into `hexo-site/source/images` directory.
-# Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
+# Then need to rename & redefine them on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
   small: /images/favicon-16x16.png
   medium: /images/favicon-32x32.png
@@ -64,7 +64,7 @@ footer:
 
   # Icon between year and copyright info.
   icon:
-    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons
+    # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
     name: heart
     name2: bullseye   #eye-slash
@@ -110,7 +110,7 @@ footer:
 
 # Creative Commons 4.0 International License.
 # https://creativecommons.org/share-your-work/licensing-types-examples
-# Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+# Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 creative_commons:
   license: by-nc-sa
   sidebar: false
@@ -184,7 +184,7 @@ scheme: Mist
 # Posts / Categories / Tags in sidebar.
 site_state: true
 
-# Social Links.
+# Social Links
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
@@ -259,7 +259,7 @@ sidebar:
   # Pisces | Gemini: 240
   width: 300
 
-  # Sidebar Display, available value (only for Muse | Mist):
+  # Sidebar Display, available values (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
@@ -390,7 +390,7 @@ mobile_layout_economy: false
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
 android_chrome_color: "#222"
 
-# Custom Logo.
+# Custom Logo
 # Do not support Scheme Mist currently.
 # Options:
 #   enabled: If true, will enable custom logo
@@ -484,10 +484,12 @@ math:
   mathjax:
     # Use 2.7.1 as default, jsdelivr as default CDN, works everywhere even in China
     cdn: //cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-    # For newMathJax CDN (cdnjs.cloudflare.com) with fallback to oldMathJax (cdn.mathjax.org).
-    #cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
-    # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com).
+    # For direct link to MathJax.js with CloudFlare CDN (cdnjs.cloudflare.com)
     #cdn: //cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML
+
+    # See: https://mhchem.github.io/MathJax-mhchem/
+    #mhchem: //cdn.jsdelivr.net/npm/mathjax-mhchem@3
+    #mhchem: //cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0
 
   # hexo-renderer-markdown-it-plus (or hexo-renderer-markdown-it with markdown-it-katex plugin) needed to full Katex support.
   katex:
@@ -565,7 +567,7 @@ valine:
   notify: false # mail notifier, https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: 闻言如见其人
-  avatar: mm # Gravatar style: mm/identicon/monsterid/wavatar/retro/hide
+  avatar: mm # gravatar style: mm/identicon/monsterid/wavatar/retro/hide
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # comment list page size
   count: false
@@ -576,7 +578,7 @@ valine:
 # livere_uid: MTAyMC8yOTU1NS82MTIz
 
 # Gitment
-# Introduction: https://imsun.net/posts/gitment-introduction
+# Introduction: https://github.com/imsun/gitment
 gitment:
   enable: false
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
@@ -604,7 +606,7 @@ gitalk:
   distraction_free_mode: true # Facebook-like distraction free mode
 
 # Baidu Share
-# Available value:
+# Available values:
 #    button | slide
 # Warning: Baidu Share does not support https.
 #baidushare:
@@ -615,8 +617,7 @@ gitalk:
 
 # NeedMoreShare2
 # Dependencies: https://github.com/theme-next/theme-next-needmoreshare2
-# See: https://github.com/revir/need-more-share2
-# Also see: https://github.com/DzmVasileusky/needShareButton
+# See: https://github.com/revir/need-more-share2, https://github.com/DzmVasileusky/needShareButton
 # iconStyle: default | box
 # boxForm: horizontal | vertical
 # position: top / middle / bottom + Left / Center / Right
@@ -801,6 +802,7 @@ bookmark:
 # Tags Settings
 # ---------------------------------------------------------------
 
+# See: https://theme-next.org/docs/tag-plugins/
 # Note tag (bs-callout)
 note:
   # Note tag style values:

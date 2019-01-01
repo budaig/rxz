@@ -130,7 +130,7 @@ deploy: # github coding 同时部署
      github: git@gitbdg:budaig/budaig.github.com.git,master
      coding: git@codingbdg:budaig/budaig.git,coding-pages
 - type: baidu_url_submitter
-- type: baidu_xz_url_submitter
+# - type: baidu_xz_url_submitter
 
 # Security
 ## https://github.com/MikeCoder/hexo-blog-encrypt 密码不能为纯数字
@@ -151,9 +151,9 @@ baidu_url_submit:
   host: www.zhinuo.site ## 在百度站长平台中注册的域名
   token: s9xxwoiUViShjVH0 ## 请注意这是您的秘钥，请不要发布在公众仓库里!
   path: baidu_urls.txt ## 文本文档的地址，新链接会保存在此文本文档里
-  xz_appid: 'xxxxxx' ## 你的熊掌号 appid
-  xz_token: 'xxxxxx' ## 你的熊掌号 token
-  xz_count: 10 ## 从所有的提交的数据当中选取最新的10条,该数量跟你的熊掌号而定
+  # xz_appid: 'xxxxxx' ## 你的熊掌号 appid
+  # xz_token: 'xxxxxx' ## 你的熊掌号 token
+  # xz_count: 10 ## 从所有的提交的数据当中选取最新的10条,该数量跟你的熊掌号而定
 
 # hexo default is empty, change to exact languages, and add xx.yml under your theme languages dir.
 # language: [zh,en]
