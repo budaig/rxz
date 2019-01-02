@@ -425,7 +425,7 @@
             {% if theme.needmoreshare2.enable and theme.needmoreshare2.postbottom.enable %}
                <div id="needsharebutton-postbottom">
                  <span class="btn">
-                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    <i class="fa fa-share-alt" aria-hidden="true"></i> {{ __('post.shareto') }}
                  </span>
                </div>
             {% endif %}

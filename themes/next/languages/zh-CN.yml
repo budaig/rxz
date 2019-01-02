@@ -42,6 +42,7 @@ post:
   copy_success: 复制成功
   copy_failure: 复制失败
   read_qr: 移动设备 扫码阅读
+  shareto: 分享至
   copyright:
     author: 文章作者
     link: 文章链接
