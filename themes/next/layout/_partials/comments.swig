@@ -10,12 +10,12 @@
       </div>
     </div>
 
-  {% elif theme.vkontakte_api.enable and theme.vkontakte_api.comments %}
+  {% elseif theme.vkontakte_api.enable and theme.vkontakte_api.comments %}
     <div class="comments" id="comments">
       <div id="vk_comments"></div>
     </div>
 
-  {% elif theme.disqus.enable %}
+  {% elseif theme.disqus.enable %}
     <div class="comments" id="comments">
       <div id="disqus_thread">
         <noscript>{#
@@ -24,31 +24,31 @@
       </div>
     </div>
 
-  {% elif theme.livere_uid %}
+  {% elseif theme.livere_uid %}
     <div class="comments" id="comments">
       <div id="lv-container" data-id="city" data-uid="{{ theme.livere_uid }}"></div>
     </div>
 
-  {% elif theme.changyan.enable and theme.changyan.appid and theme.changyan.appkey %}
+  {% elseif theme.changyan.enable and theme.changyan.appid and theme.changyan.appkey %}
     <div class="comments" id="comments">
       <div id="SOHUCS"></div>
     </div>
 
-  {% elif theme.gitment.enable %}
+  {% elseif theme.gitment.enable %}
     <div class="comments" id="comments">
       {% if theme.gitment.lazy %}
         <div onclick="showGitment()" id="gitment-display-button">{{ __('gitmentbutton') }}</div>
-        <div id="gitment-container" style="display: none"></div>
+        <div id="gitment-container" style="display:none"></div>
       {% else %}
         <div id="gitment-container"></div>
       {% endif %}
     </div>
 
-  {% elif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
+  {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
     <div class="comments" id="comments">
     </div>
 
-  {% elif theme.gitalk.enable %}
+  {% elseif theme.gitalk.enable %}
     <div id="gitalk-container">
     </div>
 
