@@ -18,12 +18,14 @@
     {% set postURL = post.url || post.permalink %}
     {{ next_url(postURL, postURL, {title: post.title}) }}
   </li>
-  {% if time_diff and theme.post_lastupdate.enable -%}
+
+  {% if date_diff and theme.post_lastupdate.enable %}
   <li class="post-updated">
     <strong>{{ __('post.copyright.post_lastupdate') + __('symbol.colon') }}</strong>{#
-  #} @{{- date(post.updated) -}}@{{- time(post.updated) -}}{#
+  #} {{ date(post.updated) -}}@{{ time(post.updated) -}}{#
 #}</li>
-  {%- endif -%}
+  {% endif %}
+
   <li class="post-copyright-license">
     <strong>{{ __('post.copyright.license_title') + __('symbol.colon') }} </strong>{#
   #}{{ __('post.copyright.license_content', next_url(ccURL, ccIcon + ccText)) }}{#
