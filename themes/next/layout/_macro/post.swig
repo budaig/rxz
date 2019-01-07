@@ -342,7 +342,7 @@
     </div>
 
         {% if not is_index and theme.read_qr.enable %}
-			<br>
+	  <br/>
             <div align="center" class="mobileHide">
 			  <img src="{{- qrcode(url) }}" text="{{ url_for(post.title) }}">
 			  <h4>{{ __('post.read_qr') }}</h4>
