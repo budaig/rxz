@@ -244,7 +244,7 @@ toc:
   # Automatically add list number to toc.
   number: false
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # Maximum heading depth of generated toc. You can set it in one post through `toc_max_depth` var.
   max_depth: 6
 
@@ -1055,7 +1055,7 @@ vendors:
   # Internal version: 1.1
   # See: https://github.com/theme-next/theme-next-reading-progress
   # Example:
-  # reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1.1/reading_progress.min.js
+  # reading_progress: //cdn.jsdelivr.net/gh/theme-next/theme-next-reading-progress@1/reading_progress.min.js
   reading_progress:
 
   # leancloud-storage
