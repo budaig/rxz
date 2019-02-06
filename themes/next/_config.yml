@@ -255,9 +255,9 @@ sidebar:
 
   # Manual define the sidebar width.
   # If commented, will be default for:
-  Muse | Mist: 320
+  # Muse | Mist: 320
   # Pisces | Gemini: 240
-  width: 300
+  #width: 300
 
   # Sidebar Display, available values (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
