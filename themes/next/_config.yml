@@ -110,11 +110,15 @@ footer:
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
-# Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+# Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
+# You can set a language value if you prefer a translated version of CC license.
+# CC licenses are available in 39 languages, where you can find the specific and correct abbreviation you need.
+# Valid values of language: deed.zh, deed.fr, deed.de , etc.
 creative_commons:
   license: by-nc-sa
   sidebar: false
   post: true
+  language:
 
 
 # ---------------------------------------------------------------
@@ -327,12 +331,14 @@ symbols_count_time:
 codeblock:
   # Manual define the border radius in codeblock
   # Leave it empty for the default 1
-  border_radius:
+  border_radius: 3
   # Add copy button on codeblock
   copy_button:
     enable: true
     # Show text copy result
     show_result: true
+    # Style: only 'flat' is currently available, leave it blank if you prefer default theme
+    style:
 
 # Wechat Subscriber
 #wechat_subscriber:
@@ -530,10 +536,20 @@ han: false
 # For more information: https://github.com/vinta/pangu.js
 pangu: false
 
-# quicklink Support
+# Quicklink Support
 # Dependencies: https://cdn.jsdelivr.net/npm/quicklink/dist/
 # Visit https://github.com/GoogleChromeLabs/quicklink for details
-quicklink: false
+quicklink:
+  enable: false
+  timeout: 3000 # Custom a timeout (milliseconds) for prefetching resources
+  priority: true # Set true to enable fetch() or falls back to XHR
+  # For more flexibility you can add some patterns (RegExp, Function, or Array) to ignores
+  # See: https://github.com/GoogleChromeLabs/quicklink#custom-ignore-patterns
+  # Leave ignores as empty if you don't understand what it means
+  # Example:
+  # ignores: uri => uri.includes('.xml'), (uri, elem) => elem.hasAttribute('noprefetch')
+  # ignores: [/\/api\/?/, uri => uri.includes('123.html')]
+  ignores:
 
 # Swiftype Search API Key
 #swiftype_key: 455JKvyq8jqxu6Fa-7xg
@@ -650,7 +666,7 @@ needmoreshare2:
 #google_site_verification:
 
 # Google Analytics
-# google_analytics: 
+# google_analytics:
 #   tracking_id:
 #   localhost_ignored: true
 
