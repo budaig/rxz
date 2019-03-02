@@ -85,7 +85,7 @@ footer:
   customhost:
     enable: true
     customhost_text: Hosted by <a target="_blank" rel="external nofollow" href="https://pages.coding.me"><b>Coding Pages</b></a>
-  # customhost_text: Hosted by <a target="_blank" rel="external nofollow" href="https://www.netlify.com"><b>netlify</b></a>
+    # customhost_text: Hosted by <a target="_blank" rel="external nofollow" href="https://www.netlify.com"><b>netlify</b></a>
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).

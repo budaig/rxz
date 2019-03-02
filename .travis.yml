@@ -1,7 +1,9 @@
 language: node_js
 node_js: 8.10.0
 before_install:
-  - export TZ='Asia/Shanghai'
+- export TZ='Asia/Shanghai'
+- openssl aes-256-cbc -K $encrypted_0073154072eb_key -iv $encrypted_0073154072eb_iv
+  -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
 install:
 - npm install
 - npm install hexo-cli -g
@@ -13,6 +15,7 @@ addons:
   ssh_known_hosts: git.coding.net
 before_script:
 - npm install -g gulp
+- npm install -g --silent firebase-tools
 script:
 - hexo clean
 - hexo generate
@@ -21,14 +24,14 @@ branches:
   - source
 env:
   global:
-  - secure: "xWjC/0hUlUOL3j31U/TH6LPT7VEJ7mnR5/VV4ZMRayQajcIQyqeOsgOZvQqtCVLEQqWWL51aYVEfFxiSTzH05O+/uuEwbP3ru8f7TwVUhs3brElOEHQOl9qLgv0S9n7wWDKNDXKpXW+yetfSXA8t0KSgjL3yTSGhX6R87cjhhC7IY26trEg3qXKhKKC23So8dH4awzi1OpZhkMF/o3Zwp+nDS7V+Cmt4DOHLCyNxueRkZXzVXqnLYSeDdAW++3gLYe6a5bUuXbKDA/eydClbwj+P7I0bweIpL3cq0HN+hsQfPp2CVFlll3tN+pLYdKBifZE+eqfCkWFb9Kq+j7pO6j9ke3DNDCvdM50Co+q985QpF/lMOXABjY4TOHQ2cYXnP2d9QaaD23TuWyjgdcswXvSPdNxffNn34hfCThebLZIKqsxlT0qSlvUUCFFArbpJGQaLatxmEV4lkUiAmFhhG1u8hKziNBiR7DrJ5xij8mUzY5hUbO7EFuWWqoxsCOTVZEOq1/7rzDUVzDoeakDpA3i9br9K+GiRRkhvXE7Ci7lpYKSvy5wgN8If0MNbWBd21GUAAfG8NZsw5oKWrcp6wWiaJekOIWBCUHpld3h+fMsqI3mxQ/B+xV+2c2lBXT0nNlhcCy3r2zJkgXPzNdxJsV5OCMyKavj4D9CjepJ8nHI="
-before_install:
-- export TZ='Asia/Shanghai'
-- openssl aes-256-cbc -K $encrypted_0073154072eb_key -iv $encrypted_0073154072eb_iv
-  -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
+  - secure: xWjC/0hUlUOL3j31U/TH6LPT7VEJ7mnR5/VV4ZMRayQajcIQyqeOsgOZvQqtCVLEQqWWL51aYVEfFxiSTzH05O+/uuEwbP3ru8f7TwVUhs3brElOEHQOl9qLgv0S9n7wWDKNDXKpXW+yetfSXA8t0KSgjL3yTSGhX6R87cjhhC7IY26trEg3qXKhKKC23So8dH4awzi1OpZhkMF/o3Zwp+nDS7V+Cmt4DOHLCyNxueRkZXzVXqnLYSeDdAW++3gLYe6a5bUuXbKDA/eydClbwj+P7I0bweIpL3cq0HN+hsQfPp2CVFlll3tN+pLYdKBifZE+eqfCkWFb9Kq+j7pO6j9ke3DNDCvdM50Co+q985QpF/lMOXABjY4TOHQ2cYXnP2d9QaaD23TuWyjgdcswXvSPdNxffNn34hfCThebLZIKqsxlT0qSlvUUCFFArbpJGQaLatxmEV4lkUiAmFhhG1u8hKziNBiR7DrJ5xij8mUzY5hUbO7EFuWWqoxsCOTVZEOq1/7rzDUVzDoeakDpA3i9br9K+GiRRkhvXE7Ci7lpYKSvy5wgN8If0MNbWBd21GUAAfG8NZsw5oKWrcp6wWiaJekOIWBCUHpld3h+fMsqI3mxQ/B+xV+2c2lBXT0nNlhcCy3r2zJkgXPzNdxJsV5OCMyKavj4D9CjepJ8nHI=
+  - secure: fhV/EcVr/7S6g+GohryiK8jz+wgyd1RCFP2HgIGzTrqwPl98kuFEE2GqpMg3T+m3WjVJTRcZbanMFt6Opa+Feq+vT6UtB72/t1k1khb6F8f0WvdiYOBUQ4Dl0I8ZAbpAUQFddWYwEiaWWZ9N1ws+PR8lsverWkUSI7SVuhAgPXwq0ljK5BlYThAVDCb5d6REuQk/YL/9nPiwqGO0i2I3Y+irXOHq6hQbT3Km20LJk59ey6niWHnN07O/E8Z4RmMvXJIINR4AM+gGqFmmw+vSbyOs/QhiFBDt+uMa9CbPmsHOR44696lzkDVlaEdh6eQzU5M+VFBq9qv+Me0hM+NBTxyLxdyTkXeQ8IthBIvCbv/2kooM7lqdAgCKyjTcWm6UxeZC1p/dDKZ9dEB5BmPMnrZVjTBHbsoicuK+cr7IU8Aagny6wCuXEKORa+xxZ86ONX/1WaI5LRwWspDEJ7rH/aU0q79r98KZ5eGSxNFIYZFY02Hrp5v9b8yYmPhDCRelyBF/Yu6cCnq09mA6aD/5EhyrTc3SzlvYgJ/zzaC4J+KEOJxtYPH5OuR4kcip69+vHV++4xDafnpe4kA5/GieVYH3mjpEFdTTroSxY8cCR19V85j/QSAvqZD8HhY8zZ69BRJKOmcZuPu6ISzs9OZc7bIdIm2Rmj2m864ggxxwhmE=
 deploy:
   provider: script
   script: sh .travis/deploy.sh
   skip_cleanup: true
   on:
     branch: source
+# Deploy to Firebase
+after_success:
+  - firebase deploy --non-interactive --token $FIREBASE_TOKEN
