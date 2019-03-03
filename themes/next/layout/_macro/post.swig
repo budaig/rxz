@@ -128,11 +128,11 @@
 
           {% if post.comments %}
            {% macro comments() %}
-          {###       <span class="post-comments-count">
+          {###   <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
-                </span> ###}
+                </span>   ###}
             {% endmacro %}
             {% if theme.facebook_comments_plugin.enable %}
               {{ comments() }}
@@ -170,9 +170,9 @@
               </span>
             {% elif (is_post() or theme.valine.comment_count.enable) and theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
               {{ comments() }}
-                 {### <span class ="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span>
+                 {###   <span class="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(post.path) }}" itemprop="commentCount"></span> ###}
+                  <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(post.path) }}" itemprop="commentCount"></span>   ###}
                 </a>
               </span>
             {% endif %}
