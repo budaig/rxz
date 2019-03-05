@@ -80,7 +80,7 @@
                 <span class="post-meta-item-text">{{ __('post.posted') }}</span>
               {% endif %}
 
-              {% if !date_diff && time_diff && theme.post_meta.updated_at.enabled && theme.post_meta.updated_at.another_day %}
+              {% if !date_diff && time_diff && theme.post_meta.updated_at.enable && theme.post_meta.updated_at.another_day %}
                 {% set create_title = __('post.created') + __('symbol.colon') + full_date(post.date) + ' / ' + __('post.modified') + __('symbol.colon') + time(post.updated) %}
               {% else %}
                 {% set create_title = __('post.created') + __('symbol.colon') + full_date(post.date) %}
@@ -346,10 +346,8 @@
     {### END POST BODY ###}
     {#####################}
 
-    {% if theme.wechat_subscriber.enabled and not is_index %}
-      <div>
-        {% include '../_partials/post/wechat-subscriber.swig' %}
-      </div>
+    {% if theme.wechat_subscriber.enable and not is_index %}
+      {% include '../_partials/post/wechat-subscriber.swig' %}
     {% endif %}
 
     {% if page.reward === undefined and theme.reward.enable %}

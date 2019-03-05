@@ -7,11 +7,11 @@
   </span>
   <span class="author" itemprop="copyrightHolder"><a href="{{ config.root }}">{{ theme.footer.copyright || author }}</a></span>
 
-  {% if theme.footer.ICP.enable %}
+  {% if theme.footer.beian.enable %}
   <span class="with-love" id="animate"> 
     <i class="fa fa-{{ theme.footer.icon.name2 }}"></i>
   </span>
-  <span class="author" itemprop="ICPHolder"><a class="theme-link" target="_blank"{{ nofollow }} href="{{ theme.footer.ICP.ICP_url }}" title="{{ theme.footer.ICP.ICP_text }}">{{ theme.footer.ICP.ICP_license }}</a></span>
+  <span class="author" itemprop="ICPHolder"><a class="theme-link" target="_blank"{{ nofollow }} href="{{ theme.footer.beian.ICP_url }}" title="{{ theme.footer.beian.ICP_text }}">{{ theme.footer.beian.ICP_license }}</a></span>
   {% endif %}
 
   {% if config.symbols_count_time.total_symbols %}
@@ -57,7 +57,6 @@
   #}{{ theme.footer.customhost.customhost_text }}{#
 #}</div>
 {% endif %}
-
 
 {% if theme.footer.customhost.enable and theme.footer.theme.enable %}
   <span class="post-meta-divider">|</span>
