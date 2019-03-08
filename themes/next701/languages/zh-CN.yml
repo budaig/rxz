@@ -1,0 +1,107 @@
+---
+title:
+  archive: 归档
+  category: 分类
+  tag: 标签
+  link: 链接
+  intro: 自话
+  blogroll: 博萃
+  schedule: 日程表
+menu:
+  home: 首页
+  archives: 归档
+  categories: 分类
+  tags: 标签
+  links: 链接
+  intro: 自话
+  blogroll: 博萃
+  about: 关于
+  search: 搜索
+  schedule: 日程表
+  sitemap: 站点地图
+  commonweal: 公益 404
+sidebar:
+  overview: 站点概览
+  toc: 文章目录
+post:
+  posted: 发表
+  edited: 更新
+  created: 创建
+  modified: 更新
+  edit: 编辑文章
+  in: 分类
+  more: 更多
+  read_more: 阅读全文
+  untitled: 未命名
+  sticky: 置顶
+  toc_empty: 此文章未包含目录
+  views: 浏览
+  comments_count: 评论
+  related_posts: 相似文章
+  copy_button: 复制
+  copy_success: 复制成功
+  copy_failure: 复制失败
+  read_qr: 移动设备 扫码阅读
+  shareto: 分享至
+  copyright:
+    author: 文章作者
+    link: 文章链接
+    license_title: 版权声明
+    post_lastupdate: 最后更新
+    license_content: "本博客文章除特别声明外，均采用 %s 许可协议。转载请注明出处！"
+page:
+  totally: 共有
+  tags: 标签
+footer:
+  powered: "Powered by %s"
+  theme: 主题
+  total_views: 总访问量
+  total_visitors: 总访客数
+counter:
+  tag_cloud:
+    zero: 暂无标签
+    one: 目前共计 1 条标签
+    other: "目前共计 %d 条标签"
+  categories:
+    zero: 暂无分类
+    one: 目前共计 1 个分类
+    other: "目前共计 %d 个分类"
+  archive_posts:
+    zero: 暂无日志。
+    one: 目前共计 1 篇日志。
+    other: "目前共计 %d 篇日志。"
+state:
+  posts: 日志
+  pages: 页面
+  tags: 标签
+  categories: 分类
+search:
+  placeholder: 搜索...
+cheers:
+  um: 嗯..
+  ok: OK
+  nice: 不错
+  good: 很好
+  great: 非常好
+  excellent: 太棒了
+keep_on: 继续努力。
+symbol:
+  comma: "，"
+  period: "。"
+  colon: "："
+reward:
+  donate: 赞赏
+  wechatpay: 微信支付
+  alipay: 支付宝
+  bitcoin: 比特币
+gitmentbutton: 显示 Gitment 评论
+accessibility:
+  nav_toggle: 切换导航栏
+  prev_page: 上一页
+  next_page: 下一页
+symbols_count_time:
+  count: 字数
+  count_total: 字数总计
+  time: 阅读时长
+  time_total: 总阅读时长
+  time_minutes: 分钟
