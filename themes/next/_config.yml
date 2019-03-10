@@ -272,7 +272,7 @@ sidebar:
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: true
   # Click any blank part of the page to close sidebar (only for Muse | Mist).
-  dimmer: true
+  dimmer: false
 
 back2top:
   enable: true
@@ -417,8 +417,8 @@ tagcloud:
   # All values below are same as default, change them by yourself
   min: 13 # min font size in px
   max: 30 # max font size in px
-  start: '#ccc' # start color (hex, rgba, hsla or color keywords)
-  end: '#111' # end color (hex, rgba, hsla or color keywords)
+  start: "#ccc" # start color (hex, rgba, hsla or color keywords)
+  end: "#111" # end color (hex, rgba, hsla or color keywords)
   amount: 200 # amount of tags, chage it if you have more than 200 tags
 
 

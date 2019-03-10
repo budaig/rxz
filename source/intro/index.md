@@ -10,8 +10,8 @@ comments: true
 知诺小站 http://www.zhinuo.site , 托管在 Coding.net 上，基于 hexo 。  
 
 **知诺备份网址：**  
-布袋知诺 <a href="http://www.zhinuo.space" target="_blank" rel="external">http://www.zhinuo.space</a> , 托管在 Github 上，主题不同，内容基本相同。  
-小布袋知诺 <a href="http://zhinuo.site" target="_blank" rel="external">http://zhinuo.site</a> , 基于 typecho ，内容基本相同。
+日新知 <a href="http://rixin.site" target="_blank" rel="external">http://rixin.site</a> , 托管在 Github 上，主题不同，内容基本相同。  
+小布袋知诺 <a href="http://zhinuo.space" target="_blank" rel="external">http://zhinuo.space</a> , 基于 typecho ，内容基本相同。
 
 **知诺 RSS 订阅网址：**  
 http://www.zhinuo.space/rss2.xml 或 
