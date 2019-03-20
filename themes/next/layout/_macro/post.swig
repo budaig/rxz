@@ -141,7 +141,7 @@
                   <span class="post-comments-count fb-comments-count" data-href="{{ post.permalink }}" itemprop="commentCount">0</span>
                 </a>
               </span>
-            {% elif theme.disqus.enable and ( theme.disqus.count or theme.disqus.count_local ) %}
+            {% elif theme.disqus.enable and theme.disqus.count %}
               {{ comments() }}
                 <span class="post-meta-item-text">{{ __('post.comments_count') + __('symbol.colon') }}</span>
                 <a href="{{ url_for(post.path) }}#comments" itemprop="discussionUrl">
@@ -346,12 +346,12 @@
       {% include '../_partials/post/wechat-subscriber.swig' %}
     {% endif %}
 
-    {% if page.reward === undefined and theme.reward.enable %}
+    {% if page.reward === undefined and theme.reward_settings.enable %}
       {% set reward_able = true %}
     {% else %}
       {% set reward_able = page.reward %}
     {% endif %}
-    {% if reward_able and (theme.reward.alipay or theme.reward.wechatpay or theme.reward.bitcoin) and not is_index %}
+    {% if reward_able and not is_index %}
       <div>
         {% include '../_partials/post/reward.swig' %}
       </div>
