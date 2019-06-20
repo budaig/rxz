@@ -127,8 +127,8 @@
           {% endif %}
 
           {% if post.comments %}
-           {% macro comments() %}
-          {###   <span class="post-comments-count">
+            {% macro comments() %}
+       {###   <span class="post-comments-count">
                 <span class="post-meta-divider">|</span>
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
@@ -365,9 +365,14 @@
 
     <footer class="post-footer">
       {% if (post.tags and post.tags.length and is_index) or (post.tags and post.tags.length and is_post) %}
+        {% if theme.tag_icon %}
+          {% set tag_indicate = '<i class="fa fa-tag"></i>' %}
+        {% else %}
+          {% set tag_indicate = '#' %}
+        {% endif %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag">{{ tag_indicate }} {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}
