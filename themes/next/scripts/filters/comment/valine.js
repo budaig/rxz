@@ -30,7 +30,7 @@ hexo.extend.filter.register('theme_inject', injects => {
       <span class="post-comments-count valine-comment-count" data-xid="{{ url_for(post.path) }}" itemprop="commentCount"></span>
     </a>
   </span>
-  {% endif %} 
+  {% endif %}
   `);*/
 
 }, priority.valine_post_meta);

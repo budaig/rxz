@@ -2,9 +2,9 @@
 {%- if theme.vendors.valine %}
   {%- set valine_uri = theme.vendors.valine %}
 {%- endif %}
-<script src="{{ valine_uri }}"></script>
 
 <script>
+NexT.utils.getScript('{{ valine_uri }}', function() {
   var GUEST = ['nick', 'mail', 'link'];
   var guest = '{{ theme.valine.guest_info }}';
   guest = guest.split(',').filter(function(item) {
@@ -21,6 +21,8 @@
     meta: guest,
     pageSize: '{{ theme.valine.pageSize }}' || 10,
     visitor: {{ theme.valine.visitor }},
-    lang: '{{ theme.valine.language }}' || 'zh-cn'
+    lang: '{{ theme.valine.language }}' || 'zh-cn',
+    path: location.pathname
   });
+}, window.Valine);
 </script>

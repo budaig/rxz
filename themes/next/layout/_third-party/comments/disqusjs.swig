@@ -11,7 +11,7 @@
 {%- endif %}
 
 <script>
-  function initialDsq() {
+  NexT.utils.getScript('{{ disqusjs_js_url }}', function() {
     window.dsqjs = new DisqusJS({
       api: '{{ theme.disqusjs.api }}' || 'https://disqus.com/api/',
       apikey: '{{ theme.disqusjs.apikey }}',
@@ -20,15 +20,6 @@
       identifier: {{ page.path | json }},
       title: '{{ page.title | addslashes }}',
     });
-  }
-
-  function loadDsqJS() {
-    var d = document, s = d.createElement('script');
-    s.src = '{{ disqusjs_js_url }}';
-    s.onload = initialDsq;
-    (d.head || d.body).appendChild(s);
-  }
-  
-  window.addEventListener('load', loadDsqJS, false);
+  }, window.DisqusJS);
 </script>
 {%- endif %}
