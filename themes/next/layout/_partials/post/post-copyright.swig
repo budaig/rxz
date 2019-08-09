@@ -9,6 +9,7 @@
 {%- endif %}
 {%- set ccURL = 'https://creativecommons.org/' + ccType %}
 
+<div>
 <ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>{{ __('post.copyright.author') + __('symbol.colon') }} </strong>{#
@@ -32,3 +33,4 @@
   #}{{ __('post.copyright.license_content', next_url(ccURL, ccIcon + ccText)) }}{#
 #}</li>
 </ul>
+</div>
