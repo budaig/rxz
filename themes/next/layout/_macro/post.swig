@@ -240,7 +240,7 @@
         {{ post.content }}
       {%- endif %}
 
-        {%- if post.tags and post.tags.length || is_index %}
+        {%- if post.tags and post.tags.length and is_index %}
           {%- if theme.tag_icon %}
             {%- set tag_indicate = '<i class="fa fa-tag"></i>' %}
           {% else %}

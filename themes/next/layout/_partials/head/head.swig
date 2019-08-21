@@ -1,5 +1,4 @@
 <meta charset="UTF-8">
-<meta name="generator" content="Hexo {{ hexo_env('version') }}">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -54,27 +53,23 @@
 
 {{ next_font() }}
 
-{%- set font_awesome_uri = theme.vendors.fontawesome | default(url_for(theme.vendors._internal + '/font-awesome/css/font-awesome.min.css?v=4.7.0')) %}
+{%- set font_awesome_uri = theme.vendors.fontawesome | default(next_vendors('font-awesome/css/font-awesome.min.css?v=4.7.0')) %}
 <link rel="stylesheet" href="{{ font_awesome_uri }}">
 
 {%- if theme.fancybox %}
-  {%- set fancybox_css_uri = theme.vendors.fancybox_css | default(url_for(theme.vendors._internal + '/fancybox/source/jquery.fancybox.css')) %}
+  {%- set fancybox_css_uri = theme.vendors.fancybox_css | default(next_vendors('//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css')) %}
   <link rel="stylesheet" href="{{ fancybox_css_uri }}">
 {%- endif %}
 
-{%- if theme.likely.enable %}
-  {%- set likely_css_uri = theme.vendors.likely_css | default('//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.css') %}
-  <link rel="stylesheet" href="{{ likely_css_uri }}">
-{%- endif %}
-
 {%- if theme.needmoreshare2.enable %}
-  {%- set needmoreshare2_css_uri = theme.vendors.needmoreshare2_css | default(url_for(theme.vendors._internal + '/needsharebutton/needsharebutton.css')) %}
+  {%- set needmoreshare2_css_uri = theme.vendors.needmoreshare2_css | default(next_vendors('needsharebutton/needsharebutton.css')) %}
   <link rel="stylesheet" href="{{ needmoreshare2_css_uri }}">
 {%- endif %}
+ <!--/add needmoreshare2 in post-->
 
 {%- if theme.pace.enable %}
-  {%- set pace_css_uri = theme.vendors.pace_css | default(url_for(theme.vendors._internal + '/pace/pace-theme-' + theme.pace.theme + '.min.css?v=1.0.2')) %}
-  {%- set pace_js_uri = theme.vendors.pace | default(url_for(theme.vendors._internal + '/pace/pace.min.js?v=1.0.2')) %}
+  {%- set pace_css_uri = theme.vendors.pace_css | default(next_vendors('pace/pace-theme-' + theme.pace.theme + '.min.css?v=1.0.2')) %}
+  {%- set pace_js_uri = theme.vendors.pace | default(next_vendors('pace/pace.min.js?v=1.0.2')) %}
   <link rel="stylesheet" href="{{ pace_css_uri }}">
   <script src="{{ pace_js_uri }}"></script>
 {%- endif %}
@@ -88,9 +83,9 @@
     version: '{{ version }}',
     exturl: {{ theme.exturl }},
     sidebar: {{ theme.sidebar | json_encode }},
-    back2top: {{ theme.back2top | json_encode }},
-    save_scroll: {{ theme.save_scroll }},
     copycode: {{ theme.codeblock.copy_button | json_encode }},
+    back2top: {{ theme.back2top | json_encode }},
+    bookmark: {{ theme.bookmark | json_encode }},
     fancybox: {{ theme.fancybox }},
     mediumzoom: {{ theme.mediumzoom }},
     lazyload: {{ theme.lazyload }},
@@ -106,9 +101,9 @@
     path: '{{ config.search.path }}',
     motion: {{ theme.motion | json_encode }},
     translation: {
-      copy_button: '{{__("post.copy_button")}}',
-      copy_success: '{{__("post.copy_success")}}',
-      copy_failure: '{{__("post.copy_failure")}}'
+      copy_button: '{{ __("post.copy_button") }}',
+      copy_success: '{{ __("post.copy_success") }}',
+      copy_failure: '{{ __("post.copy_failure") }}'
     }
   };
 </script>

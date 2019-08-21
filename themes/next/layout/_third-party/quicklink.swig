@@ -1,5 +1,5 @@
 {%- if theme.quicklink.enable %}
-  {%- set quicklink_uri = theme.vendors.quicklink | default(url_for(theme.vendors._internal + '/quicklink/quicklink.umd.js')) %}
+  {%- set quicklink_uri = theme.vendors.quicklink | default(next_vendors('//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js')) %}
 
   {%- if is_home() %}
     {%- if theme.quicklink.home %}
@@ -12,7 +12,7 @@
       {%- set loadQL = true %}
     {%- endif %}
   {%- endif %}
-  
+
   {%- if loadQL or (page.quicklink or post.quicklink) %}
     <script src="{{ quicklink_uri }}"></script>
     <script>

@@ -1,12 +1,14 @@
 /* global NexT, CONFIG */
 
-window.addEventListener('DOMContentLoaded', () => {
+NexT.boot = {};
+
+NexT.boot.registerEvents = function() {
 
   NexT.utils.registerScrollPercent();
   NexT.utils.registerCanIUseTag();
 
   // Mobile top menu bar.
-  $('.site-nav-toggle button').on('click', () => {
+  document.querySelector('.site-nav-toggle button').addEventListener('click', () => {
     var $siteNav = $('.site-nav');
     var ON_CLASS_NAME = 'site-nav-on';
     var isSiteNavOn = $siteNav.hasClass(ON_CLASS_NAME);
@@ -18,30 +20,53 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .add(NexT.motion.middleWares.logo)
-      .add(NexT.motion.middleWares.menu)
-      .add(NexT.motion.middleWares.postList)
-      .add(NexT.motion.middleWares.sidebar)
-      .bootstrap();
-  } else {
-    NexT.utils.updateSidebarPosition();
-  }
-});
+  var TAB_ANIMATE_DURATION = 200;
+  $('.sidebar-nav li').on('click', event => {
+    var item = $(event.currentTarget);
+    var activeTabClassName = 'sidebar-nav-active';
+    var activePanelClassName = 'sidebar-panel-active';
+    if (item.hasClass(activeTabClassName)) return;
 
-$(document).on('DOMContentLoaded pjax:success', () => {
+    var target = $('.' + item.data('target'));
+    var currentTarget = target.siblings('.sidebar-panel');
+    currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, () => {
+      currentTarget.hide();
+      target
+        .stop()
+        .css({ 'opacity': 0, 'display': 'block' })
+        .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, () => {
+          // Prevent adding TOC to Overview if Overview was selected when close & open sidebar.
+          currentTarget.removeClass(activePanelClassName, 'motion-element');
+          target.addClass(activePanelClassName, 'motion-element');
+        });
+    });
 
-  if (CONFIG.save_scroll) {
-    // Read position from localStorage
-    var value = localStorage.getItem('scroll' + location.pathname);
-    $('html, body').animate({ scrollTop: value || 0 });
-    // Write position in localStorage
-    NexT.utils.saveScrollTimer = setInterval(() => {
-      localStorage.setItem('scroll' + location.pathname, window.scrollY);
-    }, 1000);
+    item.siblings().removeClass(activeTabClassName);
+    item.addClass(activeTabClassName);
+  });
+
+  /**
+   * Init Sidebar & TOC inner dimensions on all pages and for all schemes.
+   * Need for Sidebar/TOC inner scrolling if content taller then viewport.
+   */
+  function initSidebarDimension() {
+    // Initialize Sidebar & TOC Height.
+    var sidebarWrapperHeight = document.body.clientHeight - NexT.utils.getSidebarSchemePadding();
+    $('.site-overview-wrap, .post-toc-wrap').css('max-height', sidebarWrapperHeight);
   }
+  initSidebarDimension();
+  window.addEventListener('resize', initSidebarDimension);
+
+  window.addEventListener('hashchange', () => {
+    var tHash = location.hash;
+    if (tHash !== '' && !tHash.match(/%\S{2}/)) {
+      var target = document.querySelector(`.tabs ul.nav-tabs li a[href="${tHash}"]`);
+      target && target.click();
+    }
+  });
+};
+
+NexT.boot.refresh = function() {
 
   /**
    * Register JS handlers by condition option.
@@ -58,28 +83,37 @@ $(document).on('DOMContentLoaded pjax:success', () => {
   NexT.utils.registerActiveMenuItem();
   NexT.utils.embeddedVideoTransformer();
 
-  /**
-   * Init Sidebar & TOC inner dimensions on all pages and for all schemes.
-   * Need for Sidebar/TOC inner scrolling if content taller then viewport.
-   */
-  function updateSidebarHeight(height) {
-    height = height || 'auto';
-    $('.site-overview, .post-toc').css('max-height', height);
+  var sidebarNav = document.querySelector('.sidebar-nav');
+  if (document.querySelector('.post-toc-wrap').childElementCount > 0) {
+    sidebarNav.style.display = '';
+    sidebarNav.classList.add('motion-element');
+    document.querySelector('.sidebar-nav-toc').click();
+  } else {
+    sidebarNav.style.display = 'none';
+    sidebarNav.classList.remove('motion-element');
+    document.querySelector('.sidebar-nav-overview').click();
   }
 
-  function initSidebarDimension() {
+  $('table').not('.gist table').wrap('<div class="table-container"></div>');
+};
 
-    window.addEventListener('resize', () => {
-      var sidebarWrapperHeight = document.body.clientHeight - NexT.utils.getSidebarSchemePadding();
-      updateSidebarHeight(sidebarWrapperHeight);
-    });
-    // Initialize Sidebar & TOC Height.
-    updateSidebarHeight(document.body.clientHeight - NexT.utils.getSidebarSchemePadding());
+NexT.boot.motion = function() {
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .add(NexT.motion.middleWares.logo)
+      .add(NexT.motion.middleWares.menu)
+      .add(NexT.motion.middleWares.postList)
+      .add(NexT.motion.middleWares.sidebar)
+      .bootstrap();
+  } else {
+    NexT.utils.updateSidebarPosition();
   }
-  initSidebarDimension();
+};
 
-  function wrapTable() {
-    $('table').not('.gist table').wrap('<div class="table-container"></div>');
-  }
-  wrapTable();
+window.addEventListener('DOMContentLoaded', () => {
+  NexT.boot.registerEvents();
+  NexT.boot.refresh();
+  NexT.boot.motion();
 });
+window.addEventListener('pjax:success', NexT.boot.refresh);

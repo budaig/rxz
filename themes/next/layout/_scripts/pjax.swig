@@ -1,22 +1,15 @@
 <script>
 var pjax = new Pjax({
   selectors: [
-    'title',
+    'head title',
     '#page-configurations',
     '.content-wrap',
-    '.sidebar-inner',
+    '.post-toc-wrap',
     '#pjax'
   ],
-  switches: {
-    '.sidebar-inner': Pjax.switches.innerHTML
-  },
   analytics: false,
   cacheBust: false,
-  scrollTo: !CONFIG.save_scroll
-});
-window.addEventListener('pjax:send', () => {
-  $('.sidebar-inner').stop().fadeTo('fast', 0);
-  CONFIG.save_scroll && clearInterval(NexT.utils.saveScrollTimer);
+  scrollTo: !CONFIG.bookmark.enable
 });
 window.addEventListener('pjax:success', () => {
   document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
@@ -29,8 +22,6 @@ window.addEventListener('pjax:success', () => {
       .add(NexT.motion.middleWares.postList)
       .bootstrap();
   }
-  $('.sidebar-inner .motion-element').css('opacity', 1);
-  $('.sidebar-inner').fadeTo('fast', 1);
   NexT.utils.updateSidebarPosition();
 });
 </script>
