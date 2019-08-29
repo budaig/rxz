@@ -1,6 +1,6 @@
 <div class="copyright">{#
 #}{%- set current = date(Date.now(), "YYYY") %}{#
-#}&copy; {%- if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }}-{%- endif %}{#
+#}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }}-{% endif %}{#
 #}<span itemprop="copyrightYear">{{ current }}</span>
   <span class="with-love" id="animate">
     <i class="fa fa-{{ theme.footer.icon.name }}"></i>
@@ -11,8 +11,12 @@
   <span class="with-love" id="animate"> 
     <i class="fa fa-{{ theme.footer.icon.name2 }}"></i>
   </span>
-  <span class="author" itemprop="ICPHolder"><a class="theme-link" target="_blank"{{ nofollow }} href="{{ theme.footer.beian.ICP_url }}" title="{{ theme.footer.beian.ICP_text }}">{{ theme.footer.beian.ICP_license }}</a></span>
+  {{ next_url('http://www.beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
+  {%- if theme.footer.beian.gongan_icon_url %}<span><img src="{{ theme.footer.beian.gongan_icon_url }}" style="display:inline-block;"/>
   {%- endif %}
+  {{ next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=' + theme.footer.beian.gongan_id,
+  theme.footer.beian.gongan_num + ' ') }}{#
+#}{%- endif %}
 
   {%- if config.symbols_count_time.total_symbols %}
     <span class="post-meta-divider">|</span>
@@ -68,5 +72,39 @@
   #}{%- if theme.footer.theme.version %} v{{ version }}{%- endif %}{#
 #}</div>
 {%- endif %}
+
+{%- if theme.add_this_id %}
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ theme.add_this_id }}" async="async"></script>
+  </div>
+{%- endif %}
+
+{%- if theme.needmoreshare2.float.enable %}
+  <div id="needsharebutton-float">
+    <span class="btn">
+      <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </span>
+  </div>
+{%- endif %}
+
+{%- set needmoreshare2_js_uri = theme.vendors.needmoreshare2_js | default(next_vendors('needsharebutton/needsharebutton.js')) %}
+<script src="{{ needmoreshare2_js_uri }}"></script>
+<script>
+  {%- if theme.needmoreshare2.postbottom.enable %}
+    pbOptions = {};
+    {%- for k,v in theme.needmoreshare2.postbottom.options %}
+      pbOptions.{{ k }} = "{{ v }}";
+    {%- endfor %}
+    new needShareButton('#needsharebutton-postbottom', pbOptions);
+  {%- endif %}
+  {%- if theme.needmoreshare2.float.enable %}
+    flOptions = {};
+    {%- for k,v in theme.needmoreshare2.float.options %}
+      flOptions.{{ k }} = "{{ v }}";
+    {%- endfor %}
+    new needShareButton('#needsharebutton-float', flOptions);
+  {%- endif %}
+</script>
+ <!--/add needmoreshare2 in post-->
 
 {{- next_inject('footer') }}

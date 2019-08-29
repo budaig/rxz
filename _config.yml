@@ -28,7 +28,12 @@ url: https://www.zhinuo.site
 root: / 
 permalink: article/:abbrlink.html      # :category/:id.html   #:id-:title.html
 permalink_default:
-  lang: zh-CN
+  lang: 
+
+# # config hexo-generator-i18n option (optional, this is default option)
+# i18n:
+  # type: [page, post]
+  # generator: [index, archive, category, tag]
 
 # Directory
 source_dir: source

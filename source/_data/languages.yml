@@ -1,0 +1,31 @@
+zh-CN:
+  name: 中文
+  disqus: en
+  subtitle: 知行诺一
+  author: 知诺
+  description: 易知 简能
+  menu:
+    home: 首页
+    archives: 归档
+    categories: 分类
+    tags: 标签
+    links: 链接
+    intro: 自话
+en:
+  name: English
+  disqus: en
+  subtitle: zhinuo blog
+  author: zhinuo
+  description: Stay Simple. Stay true to the heart.
+  menu:
+    home: Home
+    tags: Tags
+    categories: Categories
+    archives: Archives
+    intro: Intro
+zh-TW:
+  name: Chinese
+  disqus: zh-TW
+  subtitle: zhinuo blog
+  author: zhinuo
+  description: Stay Simple. Stay true to the heart.

@@ -85,12 +85,16 @@ footer:
     # Version info of NexT after scheme info (vX.X.X).
     version: false
 
-  # Beian ICP information for Chinese users. See: http://www.beian.miit.gov.cn
+  # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: false
-    ICP_license: 湘ICP18004795-1
-    ICP_url: http://www.beian.miit.gov.cn
-    ICP_text:    # 或 湘ICP备18004795号-1
+    icp: 湘ICP18004795-1
+    # The digit in the num of gongan beian.
+    gongan_id:
+    # The full num of gongan beian.
+    gongan_num:
+    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
+    gongan_icon_url: 
 
   # Any custom text can be defined here.
   #custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank"><b>Coding Pages</b></a>
@@ -167,6 +171,8 @@ menu:
   archives: /archives/ || archive
   #links: /links/ || link
   intro: /intro/ || hashtag
+  #language: /en/ || language
+    #en: 
   #blogroll: /blogroll/ || rss-square   #external-link
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -223,11 +229,14 @@ social_icons:
   transition: false
 
 # Blog rolls
-links_icon: link
-links_title: Links
-links_layout: block
-#links_layout: inline
+links_settings:
+  icon: link
+  title: Links
+  # Available values: block | inline
+  layout: block
+
 links:
+  #Title: http://example.com
   日新知: https://www.rixin.site
   童趣畅想: https://www.daheng3.top
   布袋知诺: https://www.zhinuo.space
@@ -296,7 +305,7 @@ chat:
 scroll_to_more: true
 
 # Automatically excerpt description in homepage as preamble text.
-excerpt_description: true
+excerpt_description: false
 
 # Automatically excerpt (Not recommend).
 # Use <!-- more --> in the post to control excerpt accurately.
@@ -470,7 +479,7 @@ bookmark:
   enable: true
   # Customize the color of the bookmark.
   color: "#65002F"
-  # If auto, save the reading progres when closing the page or clicking the bookmark-icon.
+  # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
   save: auto
 
@@ -582,7 +591,7 @@ mediumzoom: false
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://github.com/ApoorvSaxena/lozad.js
-lazyload: false
+lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
@@ -625,11 +634,15 @@ comments:
   active:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
-  # Modify icons and texts for any style, here are some examples.
+  # Modify texts or order for any navs, here are some examples.
   nav:
-    #disqus: disqus
-    #facebook_comments_plugin: <i class="fa fa-facebook-official" aria-hidden="true"></i> facebook
-    #gitalk: Load Gitalk
+    #disqus:
+    #  text: Load Disqus
+    #  order: -1
+    #facebook_comments_plugin:
+    #  text: <i class="fa fa-facebook-official" aria-hidden="true"></i> facebook
+    #gitalk:
+    #  order: -2
 
 # Disqus
 disqus:
@@ -637,6 +650,7 @@ disqus:
   shortname:
   count: true
   lazyload: false
+  #post_meta_order: 0
 
 # DisqusJS
 # Alternative Disqus - Render comment component using Disqus API.
@@ -658,6 +672,7 @@ changyan:
   enable: false
   appid:
   appkey:
+  #post_meta_order: 0
 
 # Valine
 # You can get your appid and appkey from https://leancloud.cn
@@ -675,6 +690,7 @@ valine:
   language: # Language, available values: en, zh-cn
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: false # If false, comment count will only be displayed in post page, not in home page
+  #post_meta_order: 0
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
@@ -718,6 +734,7 @@ facebook_comments_plugin:
   num_of_posts: 10    # Minimum posts num is 1
   width:        100%  # Default width is 550px
   scheme:       light # Default scheme is light (light or dark)
+  #post_meta_order: 0
 
 # VKontakte API Support
 # To get your AppID visit https://vk.com/editapp?act=create
@@ -1004,11 +1021,10 @@ vendors:
   # Internal path prefix. Please do not edit it.
   _internal: lib
 
-  # Internal version: 3.4.1
+  # Internal version: 3.1.0
   # Example:
-  # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
-  # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-  jquery:
+  # anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
+  anime: //cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js
 
   # Internal version: 4.7.0
   # Example:
@@ -1038,14 +1054,14 @@ vendors:
   # Internal version: 0.2.8
   # Example:
   # pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
-  pjax: //cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js
+  pjax:
 
   # FancyBox
   # Example:
+  # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   # fancybox: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js
-  # fancybox: //cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js
   # fancybox_css: //cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css
-  # fancybox_css: //cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css
+  jquery:
   fancybox:
   fancybox_css:
 
@@ -1058,7 +1074,7 @@ vendors:
   # Example:
   # lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
   # lazyload: //cdnjs.cloudflare.com/ajax/libs/lozad.js/1.9.0/lozad.min.js
-  lazyload:
+  lazyload: //cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js
 
   # Pangu
   # Example:
