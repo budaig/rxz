@@ -1,7 +1,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hexo {{ hexo_env('version') }}">
 <meta name="referrer" content="no-referrer" />{###  ###}
 
 {%- if theme.favicon.apple_touch_icon %}
@@ -23,6 +23,13 @@
   <meta name="msapplication-config" content="{{ url_for(theme.favicon.ms_browserconfig) }}">
 {%- endif %}
 
+{%- if theme.rss === '' and config.feed.path %}
+  {%- set theme.rss = config.feed.path %}
+{%- endif %}
+{%- if theme.rss %}
+  <link rel="alternate" href="{{ url_for(theme.rss) }}" title="{{ title }}" type="application/atom+xml">
+{%- endif %}
+
 {%- if theme.disable_baidu_transformation %}
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
@@ -40,7 +47,7 @@
   <meta name="baidu-site-verification" content="{{ theme.baidu_site_verification }}">
 {%- endif %}
 
-{%- if is_post() && config.generator_amp %}
+{%- if is_post() and config.generator_amp %}
   <link rel="amphtml" href="./amp/index.html">
 {%- endif %}
 
