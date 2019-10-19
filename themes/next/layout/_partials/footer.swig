@@ -1,11 +1,11 @@
-<div class="copyright">{#
-#}{%- set current = date(Date.now(), "YYYY") %}{#
-#}&copy; {% if theme.footer.since and theme.footer.since != current %}{{ theme.footer.since }}-{% endif %}{#
-#}<span itemprop="copyrightYear">{{ current }}</span>
-  <span class="with-love" id="animate">
+<div class="copyright">
+  {% set copyright_year = date(null, 'YYYY') %}
+  &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }}-{% endif %}
+  <span itemprop="copyrightYear">{{ copyright_year }}</span>
+  <span class="with-love">
     <i class="fa fa-{{ theme.footer.icon.name }}"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder"><a href="{{ config.root }}">{{ theme.footer.copyright || author }}</a></span>
+  <span class="author" itemprop="copyrightHolder"><a href="{{ config.root }}">{{ theme.footer.copyright or author }}</a></span>
 
   {%- if theme.footer.beian.enable %}
   <span class="with-love" id="animate"> 
@@ -15,8 +15,8 @@
   {%- if theme.footer.beian.gongan_icon_url %}<span><img src="{{ theme.footer.beian.gongan_icon_url }}" style="display:inline-block;"/>
   {%- endif %}
   {{ next_url('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=' + theme.footer.beian.gongan_id,
-  theme.footer.beian.gongan_num + ' ') }}{#
-#}{%- endif %}
+  theme.footer.beian.gongan_num + ' ') }}
+  {%- endif %}
 
   {%- if config.symbols_count_time.total_symbols %}
     <span class="post-meta-divider">|</span>
@@ -26,9 +26,7 @@
     {%- if theme.symbols_count_time.item_text_total %}
       <span class="post-meta-item-text">{{ __('symbols_count_time.count_total') + __('symbol.colon') }}</span>
     {%- endif %}
-    <span title="{{ __('symbols_count_time.count_total') }}">{#
-    #}{{ symbolsCountTotal(site) }}{#
-  #}</span>
+    <span title="{{ __('symbols_count_time.count_total') }}">{{ symbolsCountTotal(site) }}</span>
   {%- endif %}
 
   {%- if config.symbols_count_time.total_time %}
@@ -39,17 +37,15 @@
     {%- if theme.symbols_count_time.item_text_total %}
       <span class="post-meta-item-text">{{ __('symbols_count_time.time_total') }} &asymp;</span>
     {%- endif %}
-    <span title="{{ __('symbols_count_time.time_total') }}">{#
-    #}{{ symbolsTimeTotal(site, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}{#
-  #}</span>
+    <span title="{{ __('symbols_count_time.time_total') }}">{{ symbolsTimeTotal(site, theme.symbols_count_time.awl, theme.symbols_count_time.wpm, __('symbols_count_time.time_minutes')) }}</span>
   {%- endif %}
 </div>
 
 {%- if theme.footer.powered.enable %}
-  <div class="powered-by">{#
-  #}{{ __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'})) }}{#
-  #}{%- if theme.footer.powered.version %} v{{ hexo_env('version') }}{%- endif %}{#
- #}</div>
+  <div class="powered-by">
+    {{- __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'})) }}
+    {%- if theme.footer.powered.version %} v{{ hexo_version }}{%- endif %}
+  </div>
 {%- endif %}
 
 {%- if theme.footer.powered.enable and theme.footer.customhost.enable %}
@@ -57,9 +53,9 @@
 {%- endif %}
 
 {%- if theme.footer.customhost.enable %}
-  <div class="powered-by">{#
-  #}{{ theme.footer.customhost.customhost_text }}{#
-#}</div>
+  <div class="powered-by">
+    {{ theme.footer.customhost.customhost_text }}
+  </div>
 {%- endif %}
 
 {%- if theme.footer.customhost.enable and theme.footer.theme.enable %}
@@ -67,10 +63,14 @@
 {%- endif %}
 
 {%- if theme.footer.theme.enable %}
-  <div class="theme-info">{#
-  #}{{ __('footer.theme') }} – {{ next_url('https://theme-next.org', 'NexT.' + theme.scheme, {class: 'theme-link'}) }}{#
-  #}{%- if theme.footer.theme.version %} v{{ version }}{%- endif %}{#
-#}</div>
+  <div class="theme-info">
+    {%- set next_site = 'https://theme-next.org' %}
+    {%- if theme.scheme !== 'Gemini' %}
+      {%- set next_site = 'https://' + theme.scheme.toLowerCase() + '.theme-next.org' %}
+    {%- endif %}
+    {{- __('footer.theme') }} – {{ next_url(next_site, 'NexT.' + theme.scheme, {class: 'theme-link'}) }}
+    {%- if theme.footer.theme.version %} v{{ next_version }}{%- endif %}
+  </div>
 {%- endif %}
 
 {%- if theme.add_this_id %}

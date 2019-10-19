@@ -94,7 +94,7 @@ footer:
     # The full num of gongan beian.
     gongan_num:
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
-    gongan_icon_url: 
+    gongan_icon_url:
 
   # Any custom text can be defined here.
   #custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank"><b>Coding Pages</b></a>
@@ -141,7 +141,7 @@ menu:
   #links: /links/ || link
   intro: /intro/ || hashtag
   #language: /en/ || language
-    #en: 
+    #en:
   #blogroll: /blogroll/ || rss-square   #external-link
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -232,7 +232,7 @@ links:
   童趣畅想: https://www.daheng3.top
   布袋知诺: https://www.zhinuo.space
 
-# Table Of Contents in the Sidebar
+# Table of Contents in the Sidebar
 toc:
   enable: true
   # Automatically add list number to toc.
@@ -460,8 +460,6 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  # Use custom fonts families or not.
-  # Depended options: `external` and `family`.
   enable: false
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
@@ -798,6 +796,9 @@ growingio_analytics: # <project_id>
 google_analytics:
   tracking_id: # <app_id>
   localhost_ignored: true
+  # By default, NexT will load an external gtag.js script on your site.
+  # If you only need the pageview feature, set the following option to true to get a better performance.
+  only_pageview: false
 
 # CNZZ count
 cnzz_siteid:
@@ -862,7 +863,7 @@ algolia_search:
     hits_stats: "${hits} results found in ${time} ms"
 
 # Local Search
-# Dependencies: https://github.com/wzpan/hexo-generator-search
+# Dependencies: https://github.com/theme-next/hexo-generator-searchdb
 local_search:
   enable: true
   # If auto, trigger search by changing input.
@@ -955,12 +956,12 @@ motion:
   async: false
   transition:
     # Transition variants:
-    # fadeIn | fadeOut | flipXIn | flipXOut | flipYIn | flipYOut | flipBounceXIn | flipBounceXOut | flipBounceYIn | flipBounceYOut
-    # swoopIn | swoopOut | whirlIn | whirlOut | shrinkIn | shrinkOut | expandIn | expandOut
-    # bounceIn | bounceOut | bounceUpIn | bounceUpOut | bounceDownIn | bounceDownOut | bounceLeftIn | bounceLeftOut | bounceRightIn | bounceRightOut
-    # slideUpIn | slideUpOut | slideDownIn | slideDownOut | slideLeftIn | slideLeftOut | slideRightIn | slideRightOut
-    # slideUpBigIn | slideUpBigOut | slideDownBigIn | slideDownBigOut | slideLeftBigIn | slideLeftBigOut | slideRightBigIn | slideRightBigOut
-    # perspectiveUpIn | perspectiveUpOut | perspectiveDownIn | perspectiveDownOut | perspectiveLeftIn | perspectiveLeftOut | perspectiveRightIn | perspectiveRightOut
+    # fadeIn | flipXIn | flipYIn | flipBounceXIn | flipBounceYIn
+    # swoopIn | whirlIn | shrinkIn | expandIn
+    # bounceIn | bounceUpIn | bounceDownIn | bounceLeftIn | bounceRightIn
+    # slideUpIn | slideDownIn | slideLeftIn | slideRightIn
+    # slideUpBigIn | slideDownBigIn | slideLeftBigIn | slideRightBigIn
+    # perspectiveUpIn | perspectiveDownIn | perspectiveLeftIn | perspectiveRightIn
     post_block: fadeIn
     post_header: slideDownIn
     post_body: slideDownIn
