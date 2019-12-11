@@ -5,29 +5,22 @@
 <meta name="referrer" content="no-referrer" />{###  ###}
 
 {%- if theme.favicon.apple_touch_icon %}
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}?v={{ next_version }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}">
 {%- endif %}
 {%- if theme.favicon.medium %}
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for(theme.favicon.medium) }}?v={{ next_version }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for(theme.favicon.medium) }}">
 {%- endif %}
 {%- if theme.favicon.small %}
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for(theme.favicon.small) }}?v={{ next_version }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for(theme.favicon.small) }}">
 {%- endif %}
 {%- if theme.favicon.safari_pinned_tab %}
-  <link rel="mask-icon" href="{{ url_for(theme.favicon.safari_pinned_tab) }}?v={{ next_version }}" color="{{ theme.android_chrome_color }}">
+  <link rel="mask-icon" href="{{ url_for(theme.favicon.safari_pinned_tab) }}" color="{{ theme.android_chrome_color }}">
 {%- endif %}
 {%- if theme.favicon.android_manifest %}
   <link rel="manifest" href="{{ url_for(theme.favicon.android_manifest) }}">
 {%- endif %}
 {%- if theme.favicon.ms_browserconfig %}
   <meta name="msapplication-config" content="{{ url_for(theme.favicon.ms_browserconfig) }}">
-{%- endif %}
-
-{%- if theme.rss === '' and config.feed.path %}
-  {%- set theme = theme | attr('rss', config.feed.path) %}
-{%- endif %}
-{%- if theme.rss %}
-  <link rel="alternate" href="{{ url_for(theme.rss) }}" title="{{ title }}" type="application/atom+xml">
 {%- endif %}
 
 {%- if theme.disable_baidu_transformation %}
@@ -51,16 +44,11 @@
   <link rel="amphtml" href="./amp/index.html">
 {%- endif %}
 
-{%- if theme.facebook_sdk.enable and theme.facebook_sdk.webmaster %}
-  <meta property="fb:admins" content="{{ theme.facebook_sdk.fb_admin }}">
-  <meta property="fb:app_id" content="{{ theme.facebook_sdk.app_id }}">
-{%- endif %}
-
-<link rel="stylesheet" href="{{ url_for(theme.css) }}/main.css?v={{ next_version }}">
+<link rel="stylesheet" href="{{ url_for(theme.css) }}/main.css">
 
 {{ next_font() }}
 
-{%- set font_awesome_uri = theme.vendors.fontawesome or next_vendors('font-awesome/css/font-awesome.min.css?v=4.7.0') %}
+{%- set font_awesome_uri = theme.vendors.fontawesome or next_vendors('font-awesome/css/font-awesome.min.css') %}
 <link rel="stylesheet" href="{{ font_awesome_uri }}">
 
 {%- if theme.fancybox %}
@@ -75,16 +63,17 @@
  <!--/add needmoreshare2 in post-->
 
 {%- if theme.pace.enable %}
-  {%- set pace_css_uri = theme.vendors.pace_css or next_vendors('pace/pace-theme-' + theme.pace.theme + '.min.css?v=1.0.2') %}
-  {%- set pace_js_uri = theme.vendors.pace or next_vendors('pace/pace.min.js?v=1.0.2') %}
+  {%- set pace_css_uri = theme.vendors.pace_css or next_vendors('pace/pace-theme-' + theme.pace.theme + '.min.css') %}
+  {%- set pace_js_uri = theme.vendors.pace or next_vendors('pace/pace.min.js') %}
   <link rel="stylesheet" href="{{ pace_css_uri }}">
   <script src="{{ pace_js_uri }}"></script>
 {%- endif %}
 
-{# Export some HEXO Configurations to Front-End #}
+{# Export some Hexo Configurations to Front-End #}
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
+    hostname: new URL('{{ config.url }}').hostname,
     root: '{{ config.root }}',
     scheme: '{{ theme.scheme }}',
     version: '{{ next_version }}',
@@ -97,6 +86,7 @@
     mediumzoom: {{ theme.mediumzoom }},
     lazyload: {{ theme.lazyload }},
     pangu: {{ theme.pangu }},
+    comments: {{ theme.comments | json }},
     algolia: {
       appID: '{{ config.algolia.applicationID }}',
       apiKey: '{{ config.algolia.apiKey }}',
@@ -106,12 +96,6 @@
     },
     localsearch: {{ theme.local_search | json }},
     path: '{{ config.search.path }}',
-    motion: {{ theme.motion | json }},
-    translation: {
-      copy_button: '{{ __("post.copy_button") }}',
-      copy_success: '{{ __("post.copy_success") }}',
-      copy_failure: '{{ __("post.copy_failure") }}'
-    },
-    sidebarPadding: 40
+    motion: {{ theme.motion | json }}
   };
 </script>

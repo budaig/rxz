@@ -11,12 +11,9 @@ comments: true
 
 **知诺备份网址：**  
 日新知 <a href="http://rixin.site" target="_blank" rel="external">http://rixin.site</a> , 托管在 Github 上，主题不同，内容基本相同。  
-小布袋知诺 <a href="http://zhinuo.space" target="_blank" rel="external">http://zhinuo.space</a> , 基于 typecho ，内容基本相同。
 
 **知诺 RSS 订阅网址：**  
-http://www.zhinuo.space/rss2.xml 或 
 http://www.zhinuo.site/atom.xml 
-http://zhinuo.space/feed 。  
   
 RSS （简易信息聚合）阅读器可以更方便的浏览小站文章。  
 
