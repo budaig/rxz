@@ -3,20 +3,26 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 布袋小知诺
-subtitle: 知行诺一
-description: 易知 简能
+# title: 布袋小知诺
+# subtitle: 知行诺一
+# description: 易知 简能
+# author: zhinuo
+# language: zh-CN
+# timezone: Asia/Shanghai
+title: 日新知
+subtitle: 苟日新 日日新
+description: 日新之谓盛德
 author: zhinuo
 language: zh-CN
 timezone: Asia/Shanghai
 
 # custom Site settings
 # more detail check out docs
-SEOTitle: 知诺 zhinuo 布袋小知诺 布袋知诺 知行诺一
+SEOTitle: 日新知 知诺 zhinuo 布袋小知诺 布袋知诺 知行诺一
 header-img:  # header-img.png 
 email: imovomi@gmail.com # your email
 # email: brux4me@gmail.com # your email
-keyword: 知诺 布袋小知诺 布袋知诺 zhinuo 知行诺一 # your keywords
+keyword: 日新知 知诺 布袋小知诺 布袋知诺 zhinuo 知行诺一 # your keywords
 # custom end
 
 
@@ -24,7 +30,8 @@ keyword: 知诺 布袋小知诺 布袋知诺 zhinuo 知行诺一 # your keywords
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 # url: http://www.zhinuo.space
 # url: http://bdg.zhinuo.space
-url: https://www.zhinuo.site
+# url: http://www.zhinuo.site
+url: https://www.rixin.site
 root: / 
 permalink: article/:abbrlink.html      # :category/:id.html   #:id-:title.html
 permalink_default:
@@ -158,8 +165,8 @@ abbrlink:
 
 baidu_url_submit:
   count: 3 ## 比如3，代表提交最新的三个链接
-  host: www.zhinuo.site ## 在百度站长平台中注册的域名
-  token: s9xxwoiUViShjVH0 ## 请注意这是您的秘钥，请不要发布在公众仓库里!
+  host: www.rixin.site ## 在百度站长平台中注册的域名
+  token: L4PiiYWHNRZdoIF8 ## 请注意这是您的秘钥，请不要发布在公众仓库里!
   path: baidu_urls.txt ## 文本文档的地址，新链接会保存在此文本文档里
   # xz_appid: 'xxxxxx' ## 你的熊掌号 appid
   # xz_token: 'xxxxxx' ## 你的熊掌号 token

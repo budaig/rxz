@@ -63,7 +63,7 @@ footer:
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright: 布袋知诺
+  copyright: 日新知   #布袋知诺
 
   powered:
     # Hexo link (Powered by Hexo).
