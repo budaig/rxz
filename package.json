@@ -8,11 +8,11 @@
   "dependencies": {
     "hexo": "^4.2.0",
     "hexo-abbrlink": "^2.0.5",
-    "hexo-auto-excerpt": "^1.1.2",
     "hexo-baidu-url-submit": "0.0.6",
     "hexo-blog-encrypt": "^3.0.9",
     "hexo-cli": "^3.1.0",
     "hexo-deployer-git": "^1.0.0",
+    "hexo-excerpt": "^1.1.4",
     "hexo-fs": "^1.0.0",
     "hexo-generator-amp": "^3.2.0",
     "hexo-generator-archive": "^0.1.5",
