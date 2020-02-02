@@ -265,7 +265,7 @@ excerpt:
   depth: 3
   excerpt_excludes: []
   more_excludes: []
-  hideWholePostExcerpts: true
+  hideWholePostExcerpts: false
 
 # excerpt_length: 150
 

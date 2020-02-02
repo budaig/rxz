@@ -176,11 +176,11 @@
 
       {%- if is_index %}
 
-        {%- if post.itemlistimg %}
+        <!-- {%- if post.itemlistimg %}
           <a class="post-gallery-img fancybox" href="{{ url_for(post.itemlistimg) }}" itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
             <img src="{{ url_for(post.itemlistimg) }}" itemprop="contentUrl">
           </a>
-        {%- endif %}
+        {%- endif %} -->
 
         {%- if post.description and theme.excerpt_description %}
           {{ post.description }}
