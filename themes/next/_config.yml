@@ -262,7 +262,7 @@ auto_excerpt:
   length: 100
 
 excerpt:
-  depth: 3
+  depth: 1
   excerpt_excludes: []
   more_excludes: []
   hideWholePostExcerpts: false
