@@ -199,12 +199,12 @@ symbols_count_time:
   total_symbols: false
   total_time: false
 
-leancloud_counter_security:
-  enable_sync: false
-  app_id: <<your app id>>
-  app_key: <<your app key>>
-  username: <<your username>> # Will be asked while deploying if is left blank
-  password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
+# leancloud_counter_security:
+  # enable_sync: false
+  # app_id: <<your app id>>
+  # app_key: <<your app key>>
+  # username: <<your username>> # Will be asked while deploying if is left blank
+  # password: <<your password>> # Recommmended to be left blank. Will be asked while deploying if is left blank
 
 
 restful:
