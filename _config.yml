@@ -238,6 +238,14 @@ restful:
 generator_amp:
   templateDir: amp-template
   assetDistDir: amp-dist
+  logo:
+    path: sample/sample-logo.png
+    width: 600 # width <= 600px
+    height: 60  # width <= 60px
+  substituteTitleImage:
+    path: sample/sample-substituteTitleImage.png
+    width: 1024 # width >= 696px
+    height: 800
   placeholderImg:
     path: sample/sample-placeholder.png
   generateAmpPath: amp/article/:abbrlink.html   #(optional) Custom AMP HTML Path
