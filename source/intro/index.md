@@ -7,13 +7,11 @@ comments: true
   
 一时兴趣，折腾出来这么一个小站。算是个人的随想记录吧。  
 主要记载和备份个人对国学经典的感悟，中医名博文章的随想。  
-知诺小站 http://www.zhinuo.site , 托管在 Coding.net 上，基于 hexo 。  
+日新知 http://rixin.site , 托管在 Coding.net 上，基于 hexo 。  
 
-**知诺备份网址：**  
-日新知 <a href="http://rixin.site" target="_blank" rel="external">http://rixin.site</a> , 托管在 Github 上，主题不同，内容基本相同。  
 
-**知诺 RSS 订阅网址：**  
-http://www.zhinuo.site/atom.xml 
+**RSS 订阅网址：**  
+http://rixin.site/atom.xml 
   
 RSS （简易信息聚合）阅读器可以更方便的浏览小站文章。  
 
