@@ -1,13 +1,7 @@
 .sidebar {
-  background: $body-bg-color;
-  box-shadow: none;
-  margin-top: 100%;
-  position: static;
-  width: $sidebar-desktop;
+  bottom: auto;
+  right: auto;
 
-  +tablet-mobile() {
-    display: none;
-  }
   a, span.exturl {
     color: $black-light;
 
@@ -16,10 +10,6 @@
       color: $black-deep;
     }
   }
-}
-
-.sidebar-toggle {
-  display: none;
 }
 
 .sidebar-inner {
@@ -48,7 +38,7 @@
   padding: 0 10px;
 }
 
-.sidebar-button {
+.feed-link, .chat {
   border-bottom: 1px dotted $grey-light;
   border-top: 1px dotted $grey-light;
   margin-top: 10px;

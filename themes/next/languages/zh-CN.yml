@@ -44,9 +44,12 @@ post:
     license_title: 版权声明
     post_lastupdate: 最后更新
     license_content: "本博客文章除特别声明外，均采用 %s 许可协议。转载请注明出处！"
+page:
+  totally: 共有
+  tags: 标签
 footer:
   powered: "Powered by %s"
-  theme: Theme
+  theme: 主题
   total_views: 总访问量
   total_visitors: 总访客数
 counter:
@@ -64,6 +67,7 @@ counter:
     other: "目前共计 %d 篇日志。"
 state:
   posts: 日志
+  pages: 页面
   tags: 标签
   categories: 分类
 search:
@@ -85,8 +89,6 @@ reward:
   wechatpay: 微信支付
   alipay: 支付宝
   bitcoin: 比特币
-follow_me:
-  welcome: 欢迎关注我的其它发布渠道
 accessibility:
   nav_toggle: 切换导航栏
   prev_page: 上一页

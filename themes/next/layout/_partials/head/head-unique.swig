@@ -8,6 +8,8 @@
   CONFIG.page = {
     sidebar: {{ page.sidebar | json }},
     isHome: {{ is_home() }},
-    isPost: {{ is_post() }}
+    isPost: {{ is_post() }},
+    isPage: {{ is_page() }},
+    isArchive: {{ is_archive() }}
   };
 </script>

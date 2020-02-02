@@ -1,4 +1,4 @@
-<script{{ pjax }}>
+<script>
 (function() {
   // Initialization
   var calendar = {
@@ -43,10 +43,7 @@
     FIELD_MAXRESULTS   + '=' + calendar.maxResults;
 
   fetchData();
-  var fetchDataTimer = setInterval(fetchData, 60000);
-  window.addEventListener('pjax:send', () => {
-    clearInterval(fetchDataTimer);
-  });
+  var queryLoop = setInterval(fetchData, 60000);
 
   function fetchData() {
     var eventList = document.querySelector('.event-list');
@@ -55,10 +52,6 @@
     fetch(request_url).then(response => {
       return response.json();
     }).then(data => {
-      if (data.items.length === 0) {
-        eventList.innerHTML = '<hr>';
-        return;
-      }
       // Clean the event list
       eventList.innerHTML = '';
       var prevEnd = 0; // used to decide where to insert an <hr>

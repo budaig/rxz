@@ -54,7 +54,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Merge hits into slices
   const mergeIntoSlice = (start, end, index, searchText) => {
     let item = index[index.length - 1];
-    let { position, word } = item;
+    let position = item.position;
+    let word = item.word;
     let hits = [];
     let searchTextCountInSlice = 0;
     while (position + word.length <= end && index.length !== 0) {
@@ -81,9 +82,9 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     }
     return {
-      hits,
-      start,
-      end,
+      hits           : hits,
+      start          : start,
+      end            : end,
       searchTextCount: searchTextCountInSlice
     };
   };
@@ -153,7 +154,8 @@ window.addEventListener('DOMContentLoaded', () => {
           let slicesOfContent = [];
           while (indexOfContent.length !== 0) {
             let item = indexOfContent[indexOfContent.length - 1];
-            let { position, word } = item;
+            let position = item.position;
+            let word = item.word;
             // Cut out 100 characters
             let start = position - 20;
             let end = position + 80;
@@ -279,7 +281,7 @@ window.addEventListener('DOMContentLoaded', () => {
   } else {
     document.querySelector('.search-icon').addEventListener('click', inputEventFunction);
     input.addEventListener('keypress', event => {
-      if (event.key === 'Enter') {
+      if (event.keyCode === 13) {
         inputEventFunction();
       }
     });

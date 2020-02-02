@@ -38,6 +38,7 @@
       <div class="footer-inner">
         {{ partial('_partials/footer.swig', {}, {cache: theme.cache.enable}) }}
         {{ partial('_third-party/statistics/index.swig', {}, {cache: theme.cache.enable}) }}
+        {% block footer %}{% endblock %}
       </div>
     </footer>
   </div>
@@ -48,10 +49,12 @@
   {%- if theme.pjax %}
     <div id="pjax">
   {%- endif %}
+
   {% include '_third-party/math/index.swig' %}
   {% include '_third-party/quicklink.swig' %}
 
   {{- next_inject('bodyEnd') }}
+
   {%- if theme.pjax %}
     </div>
   {%- endif %}

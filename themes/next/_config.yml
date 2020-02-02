@@ -47,6 +47,10 @@ favicon:
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
+# hexo-generator-feed required for rss support. Leave rss as blank to use site's feed link.
+# Set rss to false to disable feed link. Set rss to specific value if you have burned your feed already.
+rss: atom.xml
+
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
   since: 2016
@@ -63,7 +67,7 @@ footer:
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright: 日新知   #布袋知诺
+  copyright: 布袋知诺
 
   powered:
     # Hexo link (Powered by Hexo).
@@ -170,8 +174,6 @@ sidebar:
   #  - remove  totally remove sidebar including sidebar toggle.
   display: post
 
-  # Sidebar padding in pixels.
-  padding: 18
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
   # Enable sidebar on narrow view (only for Muse | Mist).
@@ -202,6 +204,7 @@ social:
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
+  #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
@@ -223,6 +226,7 @@ links:
   #Title: http://yoursite.com
   日新知: https://www.rixin.site
   童趣畅想: https://www.daheng3.top
+  布袋知诺: https://www.zhinuo.space
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
@@ -258,16 +262,8 @@ excerpt_description: false
 # Automatically excerpt (Not recommend).
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 100
-
-excerpt:
-  depth: 1
-  excerpt_excludes: []
-  more_excludes: []
-  hideWholePostExcerpts: false
-
-# excerpt_length: 150
 
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
@@ -307,14 +303,6 @@ reward:
   alipay: /images/alipay.png
   #bitcoin: /images/bitcoin.jpg
 
-# Subscribe through Telegram Channel, Twitter, etc.
-# Usage: `Key: permalink || icon (Font Awesome)
-follow_me:
-  #Twitter: https://twitter.com/username || twitter
-  #Telegram: https://t.me/channel_name || telegram
-  #Wechat: /images/wechat_channel.jpg || wechat
-  RSS: /atom.xml || rss
-
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
@@ -343,15 +331,14 @@ post_edit:
   url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source
   #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name # Link for fork & edit
 
-# Show previous post and next post in post footer if exists
-# Available values: left | right | false
-post_navigation: left
-
 
 # ---------------------------------------------------------------
 # Custom Page Settings
 # See: https://theme-next.org/docs/theme-settings/custom-pages
 # ---------------------------------------------------------------
+
+# Enable "cheers" for archive page.
+cheers: true
 
 # TagCloud settings for tags page.
 tagcloud:
@@ -467,30 +454,30 @@ font:
 
   # Global font settings used for all elements inside <body>.
   global:
-    external: false
+    external: true
     family: Lato
     size:
 
   # Font settings for site title (.site-title).
   title:
-    external: false
+    external: true
     family:
     size:
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
-    external: false
+    external: true
     family:
     size:
 
   # Font settings for posts (.post-body).
   posts:
-    external: false
+    external: true
     family:
 
   # Font settings for <code> and code blocks.
   codes:
-    external: false
+    external: true
     family:
 
 
@@ -566,6 +553,7 @@ math:
 
 # Easily enable fast Ajax navigation on your website.
 # Dependencies: https://github.com/theme-next/theme-next-pjax
+# For moreinformation: https://github.com/MoOx/pjax
 pjax: true
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
@@ -622,8 +610,6 @@ comments:
   active:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
-  # Lazyload all comment systems.
-  lazyload: true
   # Modify texts or order for any navs, here are some examples.
   nav:
     #disqus:
@@ -637,6 +623,7 @@ disqus:
   enable: false
   shortname:
   count: true
+  lazyload: false
   #post_meta_order: 0
 
 # DisqusJS
@@ -646,7 +633,8 @@ disqus:
 disqusjs:
   enable: false
   # API Endpoint of Disqus API (https://disqus.com/api/).
-  # Leave api empty if you are able to connect to Disqus API. Otherwise you need a reverse proxy for it.
+  # Leave api empty if you are able to connect to Disqus API.
+  # Otherwise you need a reverse proxy for Disqus API.
   # For example:
   # api: https://disqus.skk.moe/disqus/
   api:
@@ -661,6 +649,7 @@ changyan:
   #post_meta_order: 0
 
 # Valine
+# You can get your appid and appkey from https://leancloud.cn
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
   enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
@@ -673,8 +662,8 @@ valine:
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
   language: # Language, available values: en, zh-cn
-  visitor: false # Article reading statistic
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
+  visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+  comment_count: false # If false, comment count will only be displayed in post page, not in home page
   recordIP: false # Whether to record the commenter IP
   serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
   #post_meta_order: 0
@@ -684,7 +673,8 @@ valine:
 livere_uid: # MTAyMC8yOTU1NS82MTIz
 
 # Gitalk
-# For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
+# Demo: https://gitalk.github.io
+# For more information: https://github.com/gitalk/gitalk
 gitalk:
   enable: false
   github_id: # GitHub repo owner
@@ -749,6 +739,7 @@ needmoreshare2:
 # Google Analytics
 google_analytics:
   tracking_id: # <app_id>
+  localhost_ignored: true
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
@@ -762,10 +753,14 @@ growingio_analytics: # <project_id>
 # CNZZ count
 cnzz_siteid:
 
-# Show number of visitors of each article.
+# Tencent analytics
+tencent_analytics: # <app_id>
+
+# Tencent MTA
+tencent_mta: # <app_id>
+
+# Show number of visitors to each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
-# AppID and AppKey are recommended to be the same as valine's for counter compatibility.
-# Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
   enable: true
   app_id: gmm95Ifj4kJcsSWXFaOWxfID-gzGzoHsz
@@ -867,6 +862,7 @@ note:
   #  - disabled  disable all CSS styles import of note tag.
   style: simple
   icons: false
+  border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
@@ -876,6 +872,7 @@ tabs:
   transition:
     tabs: false
     labels: true
+  border_radius: 0
 
 # PDF tag, requires two plugins: pdfObject and pdf.js
 # pdfObject will try to load pdf files natively, if failed, pdf.js will be used.

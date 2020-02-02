@@ -1,5 +1,13 @@
+{%- set ccLicense = theme.creative_commons.license | lower %}
+{%- set ccLanguage = theme.creative_commons.language %}
 {%- set ccIcon = '<i class="fa fa-fw fa-creative-commons"></i>' %}
-{%- set ccText = theme.creative_commons.license | upper %}
+{%- set ccText = ccLicense | upper %}
+{%- if ccLicense === 'zero' %}
+  {%- set ccType = 'publicdomain/zero/1.0/' + ccLanguage %}
+{% else %}
+  {%- set ccType = 'licenses/' + ccLicense + '/4.0/' + ccLanguage %}
+{%- endif %}
+{%- set ccURL = 'https://creativecommons.org/' + ccType %}
 
 <div>
 <ul class="post-copyright">
@@ -9,7 +17,8 @@
   </li>
   <li class="post-copyright-link">
     <strong>{{ __('post.copyright.link') + __('symbol.colon') }}</strong>
-    {{ next_url(page.permalink, page.permalink, {title: page.title}) }}
+    {%- set postURL = page.url or page.permalink %}
+    {{ next_url(postURL, postURL, {title: page.title}) }}
   </li>
 
   {%- if date_diff and theme.post_lastupdate.enable %}

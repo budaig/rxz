@@ -6,11 +6,10 @@
   {%- endif %}
   <li class="menu-item menu-item-{{ itemName | replace(' ', '-') }}">
 
-    {%- set menuIcon = '' %}
+    {%- set menuText = __('menu.' + name) | replace('menu.', '') %}
     {%- if theme.menu_settings.icons %}
       {%- set menuIcon = '<i class="fa fa-fw fa-' + value.split('||')[1] | trim + '"></i>' %}
     {%- endif %}
-    {%- set menuText = __('menu.' + name) | replace('menu.', '') %}
 
     {%- set menuBadge = '' %}
     {%- if theme.menu_settings.badges %}

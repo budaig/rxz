@@ -9,6 +9,7 @@
 
     function getCount(doc, increaseCount) {
       // IncreaseCount will be false when not in article page
+
       return doc.get().then(d => {
         var count = 0;
         if (!d.exists) { // Has no data, initialize count
@@ -47,7 +48,7 @@
       if (CONFIG.page.isPost) { // Is article page
         var title = document.querySelector('.post-title').innerText.trim();
         var doc = articles.doc(title);
-        var increaseCount = CONFIG.hostname === location.hostname;
+        var increaseCount = true;
         if (localStorage.getItem(title)) {
           increaseCount = false;
         } else {

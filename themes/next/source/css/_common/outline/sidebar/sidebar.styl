@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   opacity: 0.8;   //add;
+  z-index: $zindex-2;
 
   a, span.exturl {
     border-bottom-color: $black-light;
@@ -25,8 +26,13 @@
 
 .sidebar-inner {
   color: $grey-dark;
-  padding: $sidebar-padding 10px;
+  padding: 20px 10px;
   text-align: center;
+}
+
+.site-overview-wrap {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .cc-license {

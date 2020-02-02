@@ -2,7 +2,7 @@
   {### POST BLOCK ###}
   {##################}
   <article itemscope itemtype="http://schema.org/Article" class="post-block {% if is_index %}home{% endif %}" lang="{{ post.lang or post.language or config.language }}">
-    <link itemprop="mainEntityOfPage" href="{{ post.permalink }}">
+    <link itemprop="mainEntityOfPage" href="{{ config.url }}{{ url_for(post.path) }}">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="{{ url_for(theme.avatar.url or theme.images + '/avatar.gif') }}">
@@ -168,9 +168,15 @@
       {# Gallery support #}
       {%- if post.photos and post.photos.length %}
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          {%- for photo in post.photos %}
-            <img src="{{ url_for(photo) }}" itemprop="contentUrl">
+          {%- set COLUMN_NUMBER = 3 %}
+          {%- for photo in post.photos.toArray() %}
+            {%- if loop.index0 % COLUMN_NUMBER === 0 %}<div class="post-gallery-row">{%- endif %}
+              <img src="{{ url_for(photo) }}" itemprop="contentUrl">
+            {%- if loop.index0 % COLUMN_NUMBER === 2 %}</div>{%- endif %}
           {%- endfor %}
+
+          {# Append end tag for `post-gallery-row` when (photos size mod COLUMN_NUMBER) is less than COLUMN_NUMBER #}
+          {%- if post.photos.length % COLUMN_NUMBER > 0 %}</div>{%- endif %}
         </div>
       {%- endif %}
 
@@ -255,10 +261,6 @@
         {{ partial('_partials/post/post-copyright.swig') }}
       {%- endif %}
 
-      {%- if theme.follow_me %}
-        {{ partial('_partials/post/post-followme.swig', {}, {cache: theme.cache.enable}) }}
-      {%- endif %}
-
       <footer class="post-footer">
         {%- if post.tags and post.tags.length %}
           {%- if theme.tag_icon %}
@@ -275,7 +277,27 @@
 
         {{ partial('_partials/post/post-footer.swig', {}, {cache: theme.cache.enable}) }}
 
-        {{ post_nav(post) }}
+        {%- if post.prev or post.next %}
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              {%- if post.next %}
+                <a href="{{ url_for(post.next.path) }}" rel="next" title="{{ post.next.title }}">
+                  <i class="fa fa-chevron-left"></i> {{ post.next.title }}
+                </a>
+              {%- endif %}
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              {%- if post.prev %}
+                <a href="{{ url_for(post.prev.path) }}" rel="prev" title="{{ post.prev.title }}">
+                  {{ post.prev.title }} <i class="fa fa-chevron-right"></i>
+                </a>
+              {%- endif %}
+            </div>
+          </div>
+        {%- endif %}
       </footer>
     {% else %}
       <footer class="post-footer">
