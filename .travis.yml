@@ -6,10 +6,10 @@ before_install:
   -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
 install:
 - npm install hexo-cli -g
+- npm install
 addons:
   ssh_known_hosts: git.coding.net
 before_script:
-- npm install -g gulp
 - npm install -g --silent firebase-tools
 script:
 - hexo clean
