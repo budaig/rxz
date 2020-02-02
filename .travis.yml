@@ -5,12 +5,12 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_0073154072eb_key -iv $encrypted_0073154072eb_iv
   -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
 install:
+- npm install eslint@6.8.0 -g
 - npm install hexo-cli -g
 - npm install
 addons:
   ssh_known_hosts: git.coding.net
 before_script:
-- npm install eslint@6.8.0
 - npm install -g --silent firebase-tools
 script:
 - hexo clean
