@@ -10,6 +10,7 @@ install:
 addons:
   ssh_known_hosts: git.coding.net
 before_script:
+- npm install eslint@6.8.0
 - npm install -g --silent firebase-tools
 script:
 - hexo clean
