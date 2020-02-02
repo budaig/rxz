@@ -6,10 +6,7 @@ before_install:
   -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
 install:
 - npm install
-cache:
-  apt: true
-  directories:
-  - node_modules
+- npm install hexo-cli -g
 addons:
   ssh_known_hosts: git.coding.net
 before_script:
