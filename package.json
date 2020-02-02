@@ -26,7 +26,7 @@
     "hexo-lazyload-image": "^1.0.3",
     "hexo-pagination": "^0.1.0",
     "hexo-processor-static": "^1.1.0",
-    "hexo-related-popular-posts": "^3.0.3",
+    "hexo-related-popular-posts": "^4.0.0",
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
