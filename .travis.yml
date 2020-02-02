@@ -5,9 +5,12 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_0073154072eb_key -iv $encrypted_0073154072eb_iv
   -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
 install:
-- npm install eslint --save-dev
 - npm install hexo-cli -g
 - npm install
+cache:
+  apt: true
+  directories:
+  - node_modules
 addons:
   ssh_known_hosts: git.coding.net
 before_script:
