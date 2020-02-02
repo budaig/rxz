@@ -6,7 +6,6 @@ before_install:
   -in .travis/4gcbdg.enc -out ~/.ssh/4gcbdg -d
 install:
 - npm install
-- npm install hexo-cli -g
 cache:
   apt: true
   directories:
