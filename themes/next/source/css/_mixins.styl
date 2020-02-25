@@ -68,18 +68,6 @@ random-color($min, $max) {
   return floor(math(0, 'random') * ($max - $min + 1) + $min);
 }
 
-// Clearfix. http://nicolasgallagher.com/micro-clearfix-hack/
-clearfix() {
-  &::before, &::after {
-    content: ' ';
-    display: table;
-  }
-
-  &::after {
-    clear: both;
-  }
-}
-
 word-wrap() {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -92,18 +80,24 @@ disable-user-select() {
   user-select: none;
 }
 
-.mobileShow {
-  display: none;
-}
-/* Smartphone Portrait and Landscape */
-@media only screen and (min-width: 320px) and (max-width: 480px) { 
-  .mobileShow { display: inline;}
+sidebar-inline-links-item() {
+  margin: 5px 0 0;
+
+  a, span.exturl {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 0;
+    max-width: 216px;
+    overflow: hidden;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
-.mobileHide {
-  display: block;
-}
-/* Smartphone Portrait and Landscape */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  .mobileHide { display: none;}
+flex-column() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

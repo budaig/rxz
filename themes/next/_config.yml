@@ -117,6 +117,9 @@ scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
 
+# Dark Mode
+darkmode: false
+
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -315,6 +318,9 @@ follow_me:
   #Telegram: https://t.me/channel_name || telegram
   #WeChat: /images/wechat_channel.jpg || wechat
   RSS: /atom.xml || rss
+  GitHub: https://budaig.github.io || github
+  #微博: https://weibo.com/budaig || weibo
+
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
