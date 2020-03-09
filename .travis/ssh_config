@@ -10,6 +10,7 @@ Host gitbdg
   
 Host codingbdg
   Hostname git.coding.net
+  Hostname e.coding.net
   StrictHostKeyChecking no
   IdentityFile ~/.ssh/4gcbdg
   IdentitiesOnly yes
