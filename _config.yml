@@ -140,7 +140,7 @@ deploy: # github coding 同时部署
 - type: git
   repo: 
      github: git@gitbdg:budaig/budaig.github.com.git,master
-     coding:  git@e.coding.net:budaig/budaig/budaig.git,coding-pages
+     coding: git@e.coding.net:budaig/budaig/budaig.git,coding-pages
      #coding: git@codingbdg:budaig/budaig.git,coding-pages
 - type: baidu_url_submitter
 # - type: baidu_xz_url_submitter

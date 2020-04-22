@@ -1,7 +1,7 @@
   {##################}
   {### POST BLOCK ###}
   {##################}
-  <article itemscope itemtype="http://schema.org/Article" class="post-block {% if is_index %}home{% endif %}" lang="{{ post.lang or post.language or config.language }}">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="{{ post.lang or config.language }}">
     <link itemprop="mainEntityOfPage" href="{{ post.permalink }}">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -16,21 +16,21 @@
 
     {%- if post.header !== false %}
       <header class="post-header">
-        <{%- if theme.seo %}h2{% else %}h1{%- endif %} class="post-title{%- if post.direction and post.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}" itemprop="name headline">
+        <{%- if is_index %}h2{% else %}h1{%- endif %} class="post-title{%- if post.direction and post.direction.toLowerCase() === 'rtl' %} rtl{%- endif %}" itemprop="name headline">
           {# Link posts #}
           {%- if post.link %}
             {%- if post.sticky > 0 %}
               <span class="post-sticky-flag" title="{{ __('post.sticky') }}">
-                <i class="fa fa-thumb-tack"></i>
+                <i class="fa fa-thumbtack"></i>
               </span>
             {%- endif %}
-            {%- set postTitleIcon = '<i class="fa fa-external-link"></i>' %}
+            {%- set postTitleIcon = '<i class="fa fa-external-link-alt"></i>' %}
             {%- set postText = post.title or post.link %}
             {{ next_url(post.link, postText + postTitleIcon, {class: 'post-title-link post-title-link-external', itemprop: 'url'}) }}
           {% elif is_index %}
             {%- if post.sticky > 0 %}
               <span class="post-sticky-flag" title="{{ __('post.sticky') }}">
-                <i class="fa fa-thumb-tack"></i>
+                <i class="fa fa-thumbtack"></i>
               </span>
             {%- endif %}
             {{ next_url(post.path, post.title or __('post.untitled'), {class: 'post-title-link', itemprop: 'url'}) }}
@@ -38,7 +38,7 @@
             {{- post.title }}
             {{- post_edit(post.source) }}
           {%- endif %}
-        </{%- if theme.seo %}h2{% else %}h1{%- endif %}>
+        </{%- if is_index %}h2{% else %}h1{%- endif %}>
 
         <div class="post-meta">
 
@@ -49,7 +49,7 @@
           {%- if theme.post_meta.created_at %}
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">{{ __('post.posted') }}</span>
 
@@ -76,7 +76,7 @@
           {%- if post.categories and post.categories.length and theme.post_meta.categories %}
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
+                <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">{{ __('post.in') }}</span>
               {%- for cat in post.categories.toArray() %}
@@ -116,7 +116,7 @@
           {%- if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.post_views %}
             <span class="post-meta-item" title="{{ __('post.views') }}" id="busuanzi_container_page_pv" style="display: none;">
               <span class="post-meta-item-icon">
-                <i class="fa fa-{{ theme.busuanzi_count.post_views_icon }}"></i>
+                <i class="{{ theme.busuanzi_count.post_views_icon }}"></i>
               </span>
               <span class="post-meta-item-text">{{ __('post.views') + __('symbol.colon') }}</span>
               <span id="busuanzi_value_page_pv"></span>
@@ -129,7 +129,7 @@
           {%- if theme.symbols_count_time.separated_meta %}<br>{%- endif %}
             <span class="post-meta-item" title="{{ __('symbols_count_time.count') }}">
               <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
+                <i class="far fa-file-word"></i>
               </span>
               {%- if theme.symbols_count_time.item_text_post %}
                 <span class="post-meta-item-text">{{ __('symbols_count_time.count') + __('symbol.colon') }}</span>
@@ -141,7 +141,7 @@
           {%- if config.symbols_count_time.time %}
             <span class="post-meta-item" title="{{ __('symbols_count_time.time') }}">
               <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
+                <i class="far fa-clock"></i>
               </span>
               {%- if theme.symbols_count_time.item_text_post %}
                 <span class="post-meta-item-text">{{ __('symbols_count_time.time') }} &asymp;</span>
