@@ -268,7 +268,7 @@ excerpt_description: false
   # length: 100
 
 excerpt:
-  depth: 6
+  depth: 10
   excerpt_excludes: []
   more_excludes: []
   hideWholePostExcerpts: true
