@@ -1,6 +1,6 @@
 <div class="copyright">
   {% set copyright_year = date(null, 'YYYY') %}
-  &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }}-{% endif %}
+  &copy; {% if theme.footer.since and theme.footer.since != copyright_year %}{{ theme.footer.since }} - {% endif %}
   <span itemprop="copyrightYear">{{ copyright_year }}</span>
   <span class="with-love">
     <i class="{{ theme.footer.icon.name }}"></i>
@@ -69,7 +69,7 @@
     {%- if theme.scheme !== 'Gemini' %}
       {%- set next_site = 'https://' + theme.scheme | lower + '.theme-next.org' %}
     {%- endif %}
-    {{- __('footer.theme') }} – {{ next_url(next_site, 'NexT.' + theme.scheme, {class: 'theme-link'}) }}
+    {{- __('footer.theme') }} - {{ next_url(next_site, 'NexT.' + theme.scheme, {class: 'theme-link'}) }}
     {%- if theme.footer.theme.version %} v{{ next_version }}{%- endif %}
   </div>
 {%- endif %}
