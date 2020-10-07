@@ -11,7 +11,7 @@
   <span class="with-love" id="animate">
     <i class="fa fa-{{ theme.footer.icon.name2 }}"></i>
   </span>
-  {{ next_url('http://www.beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
+  {{ next_url('https://beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
   {%- if theme.footer.beian.gongan_icon_url %}<span><img src="{{ url_for(theme.footer.beian.gongan_icon_url) }}" style="display:inline-block;"/>
   {%- endif %}
     {%- if theme.footer.beian.gongan_id and theme.footer.beian.gongan_num %}

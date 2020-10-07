@@ -84,7 +84,7 @@ footer:
     # Version info of NexT after scheme info (vX.X.X).
     version: false
 
-  # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
+  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: false
     icp: 湘ICP18004795-1
