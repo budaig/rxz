@@ -9,4 +9,4 @@ Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/
-Sitemap: http://www.zhinuo.site/sitemap.xml
+Sitemap: http://www.rixin.site/sitemap.xml
