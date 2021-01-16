@@ -731,7 +731,7 @@ needmoreshare2:
       iconStyle: default
       boxForm: horizontal
       position: bottomCenter
-      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
+      networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook,Reddit,Evernote
   float:
     enable: false
     options:
